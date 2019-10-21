@@ -1,6 +1,6 @@
   
 <template>
-  <q-layout view="lHh Lpr fff" class="bg-grey-1">
+  <q-layout view="lHh Lpr fFf" class="bg-grey-1">
     <q-header elevated class="bg-orange text-grey-8" height-hint="64">
       <q-toolbar class="GPL__toolbar" style="height: 64px">
         <q-btn
@@ -77,9 +77,11 @@
       <q-scroll-area class="fit bg-light-blue-10">
         <q-toolbar class="GPL__toolbar">
           <q-toolbar-title class="row items-center text-white">
-            <span class="q-ml-sm">Aprender Aymara</span>
+            <span class="q-ml-sm" to="/juegos">Aprender Aymara</span>
           </q-toolbar-title>
         </q-toolbar>
+
+         <q-separator class="q-my-md" />
 
         <q-list padding >
           <q-item v-for="link in links1" :key="link.text" clickable class="GPL__drawer-item">
@@ -87,7 +89,9 @@
               <q-icon :name="link.icon" />
             </q-item-section>
             <q-item-section>
-              <q-item-label>{{ link.text }}</q-item-label>
+
+              <q-item-label >{{ link.text }}</q-item-label>
+              
             </q-item-section>
           </q-item>
 
@@ -130,15 +134,17 @@
     </q-drawer>
 
     <q-page-container class="GPL__page-container">
-      <router-view />
-
+      
+      <router-view /> 
  
     </q-page-container>
-    <q-footer elevated class=" bg-orange text-white">
+    <q-footer elevated class="bg-orange-8 text-white">
       <q-toolbar class="justify-center">
         <q-tabs
           v-model="tab"
-          indicator-color="purple"
+          indicator-color="blue-9"
+          switch-indicator
+          to='/programas'
           class=""
         >
           <q-tab v-for="item in links1" :key="item.text" :name="item.icon" :icon="item.icon" >
@@ -147,6 +153,7 @@
         </q-tabs>
       </q-toolbar>
     </q-footer>
+    
   </q-layout>
 </template>
 
@@ -164,7 +171,8 @@ export default {
         { icon: 'g_translate', text: 'Vocabularios' },
         { icon: 'translate', text: 'Primeras Palabras' },
         { icon: 'sort_by_alpha', text: 'Frases' },
-        { icon: 'fastfood', text: 'Alimentos' }
+        
+        { icon: 'games  ', text: 'Juegos' }
       ],
       links2: [
         { icon: 'color_lens', text: 'Colores' },

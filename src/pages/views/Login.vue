@@ -35,7 +35,7 @@
                     xml:space="preserve" width="128px" height="128px"
                     v-html="logoMethod">
                 </svg>
-                <h4> App_mara</h4>
+                <h5>App_mara</h5>
             </div>
             <div class=" bg-white ">
                 <div class="stacked-label">
