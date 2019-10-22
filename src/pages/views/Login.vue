@@ -26,7 +26,7 @@
         </div>
       </div>
     </div> -->
-    <q-card class="my-card shadow-10">
+    <q-card class="my-card shadow-10 vertical-middle">
         <div class="text-white text-center" >
             <div class="card-title" :class="finalBgColor">
                 <br>
@@ -38,14 +38,33 @@
                 <h5>App_mara</h5>
             </div>
             <div class=" bg-white ">
-                <div class="stacked-label">
+                <!-- <div class="stacked-label">
                 <input required class="full-width" type="email" v-model="email">
                 <label>Email</label>
-                </div>
-                <div class="stacked-label">
+                </div> -->
+
+                <q-input class="q-ma-md" color="orange" outlined v-model="email" label="e-mail">
+                  <template v-slot:append>
+                      <q-icon color="blue-9" name="account_box" style="font-size: 2em;" />
+                  </template>
+                </q-input>
+              
+                <q-input class="q-ma-md" color="orange" outlined :type="isPwd ? 'password' : 'text'" v-model="email" label="password">
+                  <template v-slot:append>
+                      <q-icon
+                      :name="isPwd ? 'visibility_off' : 'visibility'"
+                      class="cursor-pointer"
+                      @click="isPwd = !isPwd"
+                      style="font-size: 1.7em;"
+                      color="blue-9"
+                      />
+                  </template>
+                </q-input>
+
+                <!-- <div class="stacked-label">
                 <input required class="full-width" type="password" v-model="password">
                 <label>Password</label>
-                </div>
+                </div> -->
             </div>
             <button class="teal raised full-width " @click="startAnimation()">Animate !</button>
             <div class="card-actions inline-block vertical-middle">
@@ -119,6 +138,7 @@
         logos: Object.keys(logoData),
         logo: 'Digitalizer',
         email: 'quasar@admin.com',
+        isPwd: true,
         password: '123456',
         bgColor: 'amber',
         toneColor: 10,
