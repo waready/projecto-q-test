@@ -133,7 +133,7 @@
       </q-scroll-area>
     </q-drawer>
 
-    <q-page-container class="GPL__page-container">
+    <q-page-container >
       
       <router-view /> 
  
