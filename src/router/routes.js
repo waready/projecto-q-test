@@ -8,6 +8,7 @@ const routes = [
       { path:'login', component: () => import('pages/views/Login.vue')},
       { path:'juegos', component: () => import('pages/juegos/App.vue')},
       { path:'juegos2', component: () => import('pages/juego_dad/App.vue')},
+      { path:'juegos3', component: () => import('pages/juego_dad/Aorcado.vue')},
       { path:'menu', component: () => import('pages/menus/Mjuegos/MenuJuego.vue')}
       
     ]

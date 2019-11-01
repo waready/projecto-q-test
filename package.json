@@ -15,6 +15,7 @@
     "axios": "^0.18.1",
     "quasar": "^1.0.0",
     "vivus": "^0.4.5",
+    "vue-games": "^0.2.2",
     "vue-i18n": "^8.0.0",
     "vuedraggable": "^2.23.2"
   },

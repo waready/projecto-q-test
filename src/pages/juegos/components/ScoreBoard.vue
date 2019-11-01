@@ -4,7 +4,7 @@
      
       <span class="text">{{ turnCount }}</span>
       <div>
-        <span v-for="turn in score" :class="`turn turn--${turn}`" />
+        <span v-for="turn in score" :key="turn.id" :class="`turn turn--${turn}`" />
       </div>
     </div>
   </div>
