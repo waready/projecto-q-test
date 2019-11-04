@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "aos": "^2.3.4",
     "axios": "^0.18.1",
     "quasar": "^1.0.0",
     "vivus": "^0.4.5",
