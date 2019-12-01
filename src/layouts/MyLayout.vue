@@ -84,13 +84,13 @@
          <q-separator class="q-my-md" />
 
         <q-list padding >
-          <q-item v-for="link in links1" :key="link.text" clickable class="GPL__drawer-item">
+          <q-item v-for="link in links1" :key="link.text" clickable class="GPL__drawer-item" :to="link.url">
             <q-item-section avatar>
               <q-icon :name="link.icon" />
             </q-item-section>
             <q-item-section>
 
-              <q-item-label >{{ link.text }}</q-item-label>
+              <q-item-label >{{ link.text }} </q-item-label>
               
             </q-item-section>
           </q-item>
@@ -167,12 +167,11 @@ export default {
       search: '',
       storage: 0.26,
       links1: [
-       { icon:  'home', text: 'Inicio' },
-        { icon: 'g_translate', text: 'Vocabularios' },
-        { icon: 'translate', text: 'Primeras Palabras' },
-        { icon: 'sort_by_alpha', text: 'Frases' },
-        
-        { icon: 'games  ', text: 'Juegos' }
+       { icon:  'home', text: 'Inicio', url:"/" },
+        { icon: 'g_translate', text: 'Vocabularios', url:"" },
+        { icon: 'translate', text: 'Primeras Palabras', url:"" },
+        { icon: 'sort_by_alpha', text: 'Frases', url:"" },
+        { icon: 'games  ', text: 'Juegos', url:"/menu" }
       ],
       links2: [
         { icon: 'color_lens', text: 'Colores' },
