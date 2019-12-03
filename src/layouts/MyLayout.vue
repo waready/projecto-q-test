@@ -19,13 +19,6 @@
 
         <q-space />
 
-        <!-- <q-input class="GPL__toolbar-input" dense standout="bg-primary" v-model="search" placeholder="Search">
-          <template v-slot:prepend>
-            <q-icon v-if="search === ''" name="search" />
-            <q-icon v-else name="clear" class="cursor-pointer" @click="search = ''" />
-          </template>
-        </q-input> -->
-
 
     <!-- boton para drowdow para saber que subir -->
         <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="primary" icon="add" no-caps label="Create" class="q-ml-sm q-px-md">
@@ -108,7 +101,7 @@
 
           <q-separator class="q-my-md" />
 
-          <q-item v-for="link in links3" :key="link.text" clickable class="GPL__drawer-item">
+          <q-item v-for="link in links3" :key="link.text" clickable class="GPL__drawer-item" :to="link.url">
             <q-item-section avatar>
               <q-icon :name="link.icon" />
             </q-item-section>
@@ -139,20 +132,25 @@
  
     </q-page-container>
     <q-footer elevated class="bg-orange-8 text-white">
-      <q-toolbar class="justify-center">
+      <q-toolbar class="justify-center">  
         <q-tabs
-          v-model="tab"
           indicator-color="blue-9"
           switch-indicator
-          to='/programas'
+          active-bg-color="blue-9"
           class=""
         >
-          <q-tab v-for="item in links1" :key="item.text" :name="item.icon" :icon="item.icon" >
-          </q-tab>
-
+          <q-route-tab
+            v-for="item in links1"
+            :key="item.text"
+            :name="item.icon" 
+            :icon="item.icon"
+            :to="item.url"
+            exact
+          />
         </q-tabs>
       </q-toolbar>
     </q-footer>
+    
     
   </q-layout>
 </template>
@@ -167,11 +165,11 @@ export default {
       search: '',
       storage: 0.26,
       links1: [
-       { icon:  'home', text: 'Inicio', url:"/" },
+       { icon:  'home', text: 'Inicio', url:"/"  },
         { icon: 'g_translate', text: 'Vocabularios', url:"" },
         { icon: 'translate', text: 'Primeras Palabras', url:"" },
         { icon: 'sort_by_alpha', text: 'Frases', url:"" },
-        { icon: 'games  ', text: 'Juegos', url:"/menu" }
+        { icon: 'videogame_asset', text: 'Juegos', url:"menu" }
       ],
       links2: [
         { icon: 'color_lens', text: 'Colores' },
@@ -180,9 +178,9 @@ export default {
       ],
       links3: [
         
-        { icon: 'fingerprint', text: 'Login' },
-        { icon: 'verified_user', text: 'Register' },
-        { icon: 'settings', text: 'Settings' }
+        { icon: 'fingerprint', text: 'Login',url:'login' },
+        { icon: 'verified_user', text: 'Register',url:'' },
+        { icon: 'settings', text: 'Settings',url:'' }
       ],
       createMenu: [
         { icon: 'photo_album', text: 'Album' },

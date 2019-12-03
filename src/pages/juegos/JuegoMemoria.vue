@@ -1,7 +1,5 @@
 <template>
   <div id="app" class="">
-    asdasdasdsadsadsadsadsadsada
-    
     <div class="bg-color-blue">
       <button @click="askMotionPermission" class="btn">
         Enable motion

@@ -1,9 +1,6 @@
 <template>
     <q-page class="container q-ma-lg">
-            <!-- <pre class="q-ma-none container">{{ scrollInfo.position }}</pre>
-            <q-scroll-observer @scroll="onScroll" /> -->
       <h5 class="text-center" border>Juegos</h5>   
-      {{mensajeAlreves}}   {{prop}}
       <div class="row q-gutter-lg justify-center">
         <div class="col-md-3 col-xs-12" v-for="item in menu" :key="item.id" data-aos="fade-up" data-aos-duration="1500">
             <q-card class="my-card">
@@ -31,9 +28,9 @@ export default {
       scrollInfo: {},
       prop:"juegos",
       menu:[
-        {id:1,name:"cards", img:"https://cdn.quasar.dev/img/mountains.jpg", desc:"juego de comparacion de tarjetas", url:"/juegos1" },
-        {id:2,name:"number", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"juego para ordenar (numeros)", url:"/juegos1" },
-        {id:3,name:"aorcado", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"juego para adivinar la palabra correcta", url:"/juegos1" },
+        {id:1,name:"cards", img:"https://cdn.quasar.dev/img/mountains.jpg", desc:"juego de comparacion de tarjetas", url:"/juego_memoria" },
+        {id:2,name:"number", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"juego para ordenar (numeros)", url:"/juego_orden_numero" },
+        {id:3,name:"aorcado", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"juego para adivinar la palabra correcta", url:"/juego_ahorcado" },
       ]
     }
   },
@@ -43,12 +40,7 @@ export default {
   methods: {
   onScroll (info) {
     this.scrollInfo = info
-  },
-    computed:{
-      mensajeAlreves:function() {
-        return this.prop.split('').reverse().join('')
-      },
-    }
+  }
 }
 }
 </script>
