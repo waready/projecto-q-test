@@ -19,8 +19,7 @@
 
         <q-space />
 
-
-    <!-- boton para drowdow para saber que subir -->
+        <!-- boton para drowdow para saber que subir -->
         <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="primary" icon="add" no-caps label="Create" class="q-ml-sm q-px-md">
           <q-menu anchor="top right" self="top right">
             <q-list class="text-grey-8" style="min-width: 100px">
@@ -90,7 +89,7 @@
 
           <q-separator class="q-my-md" />
 
-          <q-item v-for="link in links2" :key="link.text" clickable class="GPL__drawer-item">
+          <q-item v-for="link in links2" :key="link.text" clickable class="GPL__drawer-item" :to="link.url">
             <q-item-section avatar>
               <q-icon :name="link.icon" />
             </q-item-section>
@@ -166,15 +165,15 @@ export default {
       storage: 0.26,
       links1: [
        { icon:  'home', text: 'Inicio', url:"/"  },
-        { icon: 'g_translate', text: 'Vocabularios', url:"" },
-        { icon: 'translate', text: 'Primeras Palabras', url:"" },
-        { icon: 'sort_by_alpha', text: 'Frases', url:"" },
+        { icon: 'g_translate', text: 'Vocabulario', url:"vocabulario" },
+        { icon: 'translate', text: 'Primeras Palabras', url:"palabras" },
+        { icon: 'sort_by_alpha', text: 'Frases', url:"frases" },
         { icon: 'videogame_asset', text: 'Juegos', url:"menu" }
       ],
       links2: [
-        { icon: 'color_lens', text: 'Colores' },
-        { icon: 'format_list_numbered_rtl', text: 'Numeros' },
-        { icon: 'access_time', text: 'Tiempo' }
+        { icon: 'color_lens', text: 'Colores',url:"colores" },
+        { icon: 'format_list_numbered_rtl', text: 'Numeros',url:"numeros" },
+        { icon: 'access_time', text: 'Tiempo', url:"tiempo" }
       ],
       links3: [
         
