@@ -188,7 +188,7 @@ methods: {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .sortable{
     width:100%;
     background: red;
@@ -208,4 +208,5 @@ methods: {
 
 
 </style>
+
   
