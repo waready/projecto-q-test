@@ -1,37 +1,15 @@
-<template>
-    
-    <div class="q-pa-md">
-        <h4>Los numeros del 0 - 100</h4>
-        <q-table
-        title="Los Numeros en Aymara"
-        :data="data"
-        :columns="columns"
-        row-key="id"
-        
-        color="amber"
-      />
-    </div>
-  </template>
-<script>
-export default {
-    data(){
-        return{
-            columns: [
-            { name: 'numeros', align: 'center', label: 'Numeros', field: 'id', sortable: true },
-            { name: 'aymara', align: 'center',label: 'Numeros en Aymara', field: 'name'},
-            ],
-            data: [
+items:[
             {name:"ch’usa, Muruq’u, Muyuga", id:0, color:"bg-purple",check:null},
-            {name:"Maya", id:1, color:"bg-indigo",check:null},
-            {name:"Paya", id:2,color:"bg-cyan",check:null},
             {name:"Kimsa", id:3, color:"bg-lime",check:null},
-            {name:"Pusi", id:4, color:"bg-teal",check:null},
+            {name:"Maya", id:1, color:"bg-indigo",check:null},
             {name:"Phisqa", id:5, color:"bg-brown",check:null},
+            {name:"Pusi", id:4, color:"bg-teal",check:null},
+            {name:"Paya", id:2,color:"bg-cyan",check:null},
             {name:"Suxta", id:6, color:"bg-deep-orange",check:null},
-            {name:"Paqallqu", id:7, color:"bg-blue-grey",check:null},
             {name:"Kimsaqallqu", id:8, color:"bg-deep-purple",check:null},
+            {name:"Paqallqu", id:7, color:"bg-blue-grey",check:null},
+            {name:"Tunka", id:10, color:"bg-light-green",check:null},
             {name:"Llätunka", id:9, color:"bg-light-blue",check:null},
-            
 
             {name:"tunka", id:10, color:"bg-light-blue",check:null},
             {name:"tunka-mayani", id:11, color:"bg-light-blue",check:null},
@@ -124,9 +102,6 @@ export default {
             {name:"llatunka-tunka-paqalquni", id:97, color:"bg-light-blue",check:null},
             {name:"llatunka-tunka-kimsaqalquni", id:98, color:"bg-light-blue",check:null},
             {name:"llatunka-tunka-llatunkani", id:99, color:"bg-light-blue",check:null},
-            {name:"pataka", id:100, color:"bg-light-blue",check:null}
-            ]
-        }
-    }
-}
-</script>
+            {name:"pataka", id:100, color:"bg-light-blue",check:null},
+            
+        ],

@@ -1,7 +1,7 @@
 <template>
     <q-page id="app" class="app container">
             <!-- <button @click="random_element(items)">saf</button>  -->
-        <h3 class="q-ma-xs">Prueba</h3>
+        <h3 class="q-ma-xs">Juego Orden Numero</h3>
         <div class="row justify-center">
             <div class="col-4 col-md-4 col-xs-10" >
            
@@ -20,7 +20,7 @@
                         </div>
                     </q-card> -->
                    
-            <div class="q-pa-xs " >
+            <div class="q-pa-xs " v-if="random==true">
                 <q-list bordered separator>
                 <draggable v-model="items" ghost-class="ghost" @end="onEnd">
                     <transition-group type="transition" name="flip-list" >
@@ -52,15 +52,50 @@
                     </draggable>
                 </q-list>
             </div>
+
+            <div class="q-pa-xs " v-else>
+                    <q-list bordered separator>
+                    <draggable v-model="items" ghost-class="ghost" @end="onEnd">
+                        <transition-group type="transition" name="flip-list" >
+                        <q-item style="min-height: 1px" :class="item.color" clickable v-ripple v-for="item in original" :key="item.id">
+                            <div v-if="item.check != null">
+                                <div v-if="item.check==true">
+                                    <q-item-section avatar class="texto-borde">
+                                        <q-icon color="green" name="check_circle" />
+                                    </q-item-section>
+                                </div>
+                                <div v-else>
+                                    <q-item-section avatar class="texto-borde">
+                                        <q-icon color="red" name="cancel" />
+                                    </q-item-section>
+                                </div>
+                            </div>
+                            <div v-else>
+                                    <q-item-section avatar>
+                                            <q-icon color="white" name="help" />
+                                    </q-item-section>
+                            </div>
+    
+                            <q-item-section class="text-white text-center text-bold ">
+                               {{item.id}} {{item.name}}
+                            </q-item-section>
+                        </q-item>
+                        
+                        </transition-group>
+                        </draggable>
+                    </q-list>
+                </div>
     
 
                    
             </div>
+        </div>
+        <div class="row justify-center q-gutter-md q-ma-xs">
+            <q-btn outline style="color: blue;" label="Otra vez" @click="try_again(items)" />
+            <q-btn outline style="color: blue;" label="Comparar" @click="comparar_elementos(items,original)" />
+            <q-btn outline style="color: blue;" label="Original" @click="ver_resultados(original)" />
         </div>     
         
-        <button @click="try_again(items)">otra vez</button>
-        <button @click="comparar_elementos(items,original)">comparar</button>
-        <button @click="ver_resultados(original)">original</button>
 
         <hr>
         <pre>
@@ -114,7 +149,7 @@ data () {
         oldIndex:'',
         newIndex:'',
         element:[],
-
+        random:true
     }
 },
 methods: {
@@ -169,17 +204,20 @@ methods: {
     ver_resultados(original){
         for(let i=0;i<original.length;i++){
             original[i].check=true
+            
             // console.log(this.element.push(original))
         }
         // console.log(this.element.push(original))
         this.element.push(original)
         this.element = []
+        this.random=false
     },
     try_again(items){
         this.random_element(items);
         for(let i=0;i<items.length;i++){
             items[i].check=null;
         }
+        this.random=true
         
     }
 },
