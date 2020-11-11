@@ -165,10 +165,10 @@ export default {
       storage: 0.26,
       links1: [
        { icon:  'home', text: 'Inicio', url:"/"  },
-        { icon: 'g_translate', text: 'Vocabulario', url:"vocabulario" },
+        { icon: 'g_translate', text: 'Vocabulario', url:"vocabularios" },
         { icon: 'translate', text: 'Primeras Palabras', url:"palabras" },
         { icon: 'sort_by_alpha', text: 'Frases', url:"frases" },
-        { icon: 'videogame_asset', text: 'Juegos', url:"menu" }
+        { icon: 'videogame_asset', text: 'Juegos', url:"juegos"}
       ],
       links2: [
         { icon: 'color_lens', text: 'Colores',url:"colores" },
