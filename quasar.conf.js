@@ -45,7 +45,7 @@ module.exports = function (ctx) {
 
       components: [],
       directives: [],
-
+  
       // Quasar plugins
       plugins: []
     },

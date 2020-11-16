@@ -33,7 +33,7 @@ export default {
         {id:3,name:"Cuerpo Humano", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"Nombres de partes de nuestro cuerpo humano en aymara...", url:"/juego_ahorcado" },
         {id:3,name:"Animales", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"Lista de animales aymara...", url:"/juego_ahorcado" },
         {id:3,name:"Naturaleza y Lugares", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"Nombres de la naturaleza en aymara...", url:"/juego_ahorcado" },
-        {id:3,name:"Abecedario", img:"https://trucoslondres.com/wp-content/uploads/2017/03/alfabeto.jpg",desc:"Abecedario en aymara...", url:"/juego_ahorcado" },
+        {id:3,name:"Abecedario", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"Abecedario en aymara...", url:"/juego_ahorcado" },
       ]
     }
   },
