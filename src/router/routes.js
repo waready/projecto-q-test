@@ -9,8 +9,14 @@ const routes = [
       { path:'vocabularios', component: () => import('pages/menus/MenuVocabulario.vue') },
       { path:'juegos', component: () => import('pages/menus/MenuJuego.vue')},
       { path:'frases', component: () => import('pages/menus/MenuFrases')},
-      { path:'palabras', component: () => import('pages/menus/MenuPrimerasPalabras.vue')},
-
+      { path:'gramatica', component: () => import('pages/menus/MenuGramaticas.vue')},
+        /**gramatica**/
+        { path:'palabras', component: () => import('pages/views/gramatica/Palabras.vue')},
+        { path:'sufijos', component: () => import('pages/views/gramatica/SistemaSufijos.vue')},
+        { path:'verbos', component: () => import('pages/views/gramatica/Verbos.vue')},
+        { path:'adjetivos', component: () => import('pages/views/gramatica/Adjetivos.vue')},
+        { path:'adverbio', component: () => import('pages/views/gramatica/Adverbio.vue')},
+      
 
 
       { path:'login', component: () => import('pages/views/Login.vue')},
