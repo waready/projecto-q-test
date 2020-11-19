@@ -22,7 +22,7 @@ export default {
             ],
             data: [
             {name:"ch’usa, Muruq’u, Muyuga", id:0, color:"bg-purple",check:null},
-            {name:"Maya", id:1, color:"bg-indigo",check:null},
+            {name:"Mayaaaaa", id:1, color:"bg-indigo",check:null},
             {name:"Paya", id:2,color:"bg-cyan",check:null},
             {name:"Kimsa", id:3, color:"bg-lime",check:null},
             {name:"Pusi", id:4, color:"bg-teal",check:null},

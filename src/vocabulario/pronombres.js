@@ -1,0 +1,25 @@
+personales
+{name:"Naya",id:"Yo"},
+{name:"Juma",id:"Tú"},
+{name:"Jupa",id:"Él"},
+{name:"",id:"Ella"},
+{name:"Jiwasa",id:"Nosotros"},
+{name:"Jiwasanaka",id:"Nosotros"},
+{name:"Nänaka",id:"Nosotros"},
+{name:"Jumanaka",id:"Ustedes"},
+{name:"Jupanaka",id:"Ellos"},
+demostrativos
+{name:"Aka" ,id:"esto, esta, este"},
+{name:"Uka" ,id:"eso, esa, ese"},
+{name:"Khaya" ,id:"aquel, aquella, aquello"},
+{name:"Akanaka" ,id:"Estos (as)"}, 
+{name:"Ukanaka" ,id:"Esos (as)"},
+{name:"Khayanaka" ,id:"Aquellos (as)"}
+interrogativos
+{name:"¿Kuna?",id:"¿Qué?"},
+{name:"¿Kawki?",id:"¿Dónde?"},
+{name:"¿Khithi?",id:"¿Quién?"},
+{name:"¿Qawqha?",id:"¿Cuánto?"},
+{name:"¿Kunjama?",id:"¿Cómo?"},
+{name:"¿Kuna pacha? ¿Kunärsa?",id:"¿Cuándo?"},
+{name:"¿Kawkïri? ¿Kawknïri?",id:"¿Cuál?"},
