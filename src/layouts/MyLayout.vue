@@ -165,10 +165,18 @@ export default {
       storage: 0.26,
       links1: [
        { icon:  'home', text: 'Inicio', url:"/"  },
+<<<<<<< HEAD
         { icon: 'g_translate', text: 'Aymara y vocabulario', url:"vocabulario" },
         { icon: 'translate', text: 'Gramatica', url:"palabras" },
         { icon: 'record_voice_over', text: 'Pronunciación', url:"frases" },
         { icon: 'videogame_asset', text: 'Juegos', url:"juegos" }
+=======
+
+        { icon: 'g_translate', text: 'Aymara y vocabulario', url:"vocabularios" },
+        { icon: 'translate', text: 'Gramatica', url:"gramatica" },
+        { icon: 'record_voice_over', text: 'Pronunciación', url:"frases" },
+        { icon: 'videogame_asset', text: 'Juegos', url:"juegos"}
+>>>>>>> d029bd98a691989ea27217687db35d830b62b77b
       ],
       links2: [
         { icon: 'color_lens', text: 'Colores',url:"colores" },
