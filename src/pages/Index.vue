@@ -17,17 +17,17 @@
         >
       </vue-flashcard> -->
       <div class="container">
-        <div class="row q-gutter-md">
+        <div class="row q-gutter-lg justify-center">
       
-                  <q-card class="my-card back inset-shadow-1 flex-center  text-white col " v-for="item in tam" :key="tam">
+                  <q-card class="my-card back inset-shadow-1 flex-center  text-white col-md-2 col-sm-5 col-xs-11" v-for="item in tam" :key="tam">
                     <q-card-section>
-                    {{ lorem }}
+                      <div class="text-h6 text-center">Our Changing Planet</div>
                     </q-card-section>
                     <q-card-section>
-                    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+                      <q-img src="https://www.fundacion-affinity.org/sites/default/files/el-gato-necesita-tener-acceso-al-exterior.jpg" />
                     </q-card-section>
                     <q-card-section>
-                      footer
+                      <div class="text-h5 text-center text-black text-weight-bold">Our Changing Planet</div>
                     </q-card-section>
                   </q-card>
        
@@ -37,7 +37,9 @@
 
 
     </div>
-      
+    <div class="q-pa-md">
+  
+    </div>
 
   </q-page>
 </template>
