@@ -15,11 +15,6 @@
                   <q-btn color="secondary" rounded class="full-width" label="Iniciar"  :to="item.url"/>
                 </q-card-section>
               </q-card>
-              <q-page-container >
-      
-      <router-view /> 
- 
-    </q-page-container>
         </div>
       </div>
     </q-page>
