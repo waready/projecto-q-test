@@ -6,7 +6,7 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Index.vue') },
 
-      { path:'vocabularios', component: () => import('pages/menus/MenuVocabulario.vue') },
+      { path:'vocabulario', component: () => import('pages/menus/MenuVocabulario.vue') },
       { path:'juegos', component: () => import('pages/menus/MenuJuego.vue')},
       { path:'frases', component: () => import('pages/menus/MenuFrases')},
       { path:'gramatica', component: () => import('pages/menus/MenuGramaticas.vue')},
