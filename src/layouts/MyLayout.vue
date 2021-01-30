@@ -125,9 +125,9 @@
       </q-scroll-area>
     </q-drawer>
 
-    <q-page-container >
+    <q-page-container class="q-mx-xl q-my-md">
       
-      <router-view /> 
+      <router-view />
  
     </q-page-container>
     <q-footer elevated class="bg-orange-8 text-white">

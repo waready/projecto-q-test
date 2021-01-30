@@ -1,14 +1,14 @@
-{name:"anu, anuqara", id:"perro"}
-{name:"phisi, misi, michi", id:"gato"}
-{name:"khuchi", id:"chancho"}
-{name:"wank’u", id:"conejo"}
-{name:"Iwija, Iwisa", id:"oveja"}
-{name:"Chita", id:"mascota"}
-{name:"Waka", id:"vaca"}
-{name:"Qarwa, qawra", id:"llamo"}
-{name:"Alpaqa, allpachu", id:"alpaca"}
-{name:"Wari", id:"vicuña"}
-{name:"Wanaku", id:"guanaco"}
-{name:"Kawallu", id:"caballo"}
-{name:"Wurru", id:"burro"}
-{name:"Wallpa", id:"gallina"}
+{id:1,name:"anu, anuqara", nombre:"perro"}
+{id:2,name:"phisi, misi, michi", nombre:"gato"}
+{id:3,name:"khuchi", nombre:"chancho"}
+{id:4,name:"wank’u", nombre:"conejo"}
+{id:5,name:"Iwija, Iwisa", nombre:"oveja"}
+{id:6,name:"Chita", nombre:"mascota"}
+{id:7,name:"Waka", nombre:"vaca"}
+{id:8,name:"Qarwa, qawra", nombre:"llamo"}
+{id:9,name:"Alpaqa, allpachu", nombre:"alpaca"}
+{id:0,name:"Wari", nombre:"vicuña"}
+{id:11,name:"Wanaku", nombre:"guanaco"}
+{id:12,name:"Kawallu", nombre:"caballo"}
+{id:13,name:"Wurru", nombre:"burro"}
+{id:14,name:"Wallpa", nombre:"gallina"}
