@@ -1,0 +1,16 @@
+[
+  { "id": 1, "name": "Achu", "nombre": "fruto, producto" },
+  { "id": 2, "name": "Ayru, ali", "nombre": "planta" },
+  { "id": 3, "name": "Kallcha", "nombre": "gavilla" },
+  { "id": 4, "name": "Wayu", "nombre": "racimo" },
+  { "id": 5, "name": "Chira", "nombre": "pepa, semilla" },
+  { "id": 6, "name": "Sillp’i", "nombre": "cáscara" },
+  { "id": 7, "name": "Phina", "nombre": "montón (papa, quinoa)" },
+  { "id": 8, "name": "Qullqa", "nombre": "almacen (papa, quinoa)" },
+  { "id": 9, "name": "Phirwa", "nombre": "granero" },
+  { "id": 10, "name": "Laphi", "nombre": "hoja" },
+  { "id": 11, "name": "Phaqalli, Phanqara", "nombre": "flor" },
+  { "id": 12, "name": "Saphi, Sap’i", "nombre": "raíz" },
+  { "id": 13, "name": "Pallqa", "nombre": "rama" },
+  { "id": 14, "name": "Tunu", "nombre": "tronco " }
+]

@@ -1,0 +1,20 @@
+[
+  { "id": 1, "name": "Laqu", "nombre": "gusano" },
+  { "id": 2, "name": "Ch’uspi", "nombre": "mosquito" },
+  { "id": 3, "name": "K’uti", "nombre": "pulga" },
+  { "id": 4, "name": "Lap’a", "nombre": "piojo" },
+  { "id": 5, "name": "Ch’iñi", "nombre": "liendre" },
+  { "id": 6, "name": "Sut’i", "nombre": "nigua" },
+  { "id": 7, "name": "Chhichhilinka", "nombre": "mosca" },
+  { "id": 8, "name": "Wayrunqu", "nombre": "moscardón" },
+  { "id": 9, "name": "Jamak’u", "nombre": "garrapata" },
+  { "id": 10, "name": "Thutha", "nombre": "polilla" },
+  { "id": 11, "name": "K’isimiri", "nombre": "hormiga" },
+  { "id": 12, "name": "Siripita", "nombre": "grillo" },
+  { "id": 13, "name": "Pilpintu", "nombre": "mariposa" },
+  { "id": 14, "name": "Nina nina", "nombre": "luciérnaga" },
+  { "id": 15, "name": "Tamuraya, pupa", "nombre": "abeja" },
+  { "id": 16, "name": "Tanqa tanqa", "nombre": "escarabajo" },
+  { "id": 17, "name": "Tixi tixi", "nombre": "saltamontes" },
+  { "id": 18, "name": "Kusikusi", "nombre": "araña " }
+]

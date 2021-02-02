@@ -1,0 +1,23 @@
+[
+  { "id": 1, "name": "Pacha", "nombre": "tiempo, espacio, mundo" },
+  { "id": 2, "name": "Uru", "nombre": "día" },
+  { "id": 3, "name": "phaxsi", "nombre": "mes, luna" },
+  { "id": 4, "name": "Mara", "nombre": "año" },
+  { "id": 5, "name": "jallu pacha", "nombre": "tº de lluvia (nov-feb)" },
+  { "id": 6, "name": "juyphi pacha", "nombre": "tº de helada (mar-jun)" },
+  { "id": 7, "name": "Thaya pacha", "nombre": "tº de frío (jul - sep)" },
+  { "id": 8, "name": "Lupi pacha", "nombre": "tº de calor (jun - oct)" },
+  { "id": 9, "name": "Jach’a uru", "nombre": "gran día" },
+  { "id": 10, "name": "Mayuru", "nombre": "El otro día" },
+  { "id": 11, "name": "Jichhuru", "nombre": "hoy día" },
+  { "id": 12, "name": "Qharuru", "nombre": "mañana" },
+  { "id": 13, "name": "Wasuru, masuru", "nombre": "ayer" },
+  { "id": 14, "name": "Walüru", "nombre": "anteayer" },
+  { "id": 15, "name": "jurpüru", "nombre": "pasado Mañana" },
+  { "id": 16, "name": "arumanthi", "nombre": "temprano" },
+  { "id": 17, "name": "qhantati", "nombre": "amanecer" },
+  { "id": 18, "name": "arama, aruma", "nombre": "la noche" },
+  { "id": 19, "name": "jichha", "nombre": "ahora" },
+  { "id": 20, "name": "jayp’u", "nombre": "en la tarde" },
+  { "id": 21, "name": "sapüru", "nombre": "cada día " }
+]

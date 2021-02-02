@@ -1,0 +1,58 @@
+// Naturaleza
+[
+  { "id": 1, "name": "Pacha", "nombre": "naturaleza" },
+  { "id": 2, "name": "Alax pacha", "nombre": "cielo" },
+  { "id": 3, "name": "Inti, willka", "nombre": "sol" },
+  { "id": 4, "name": "Lupi", "nombre": "calor, luz solar" },
+  { "id": 5, "name": "Phaxsi", "nombre": "luna, mes" },
+  { "id": 6, "name": "Wara – wara", "nombre": "estrella" },
+  { "id": 7, "name": "Chakana", "nombre": "cruz, cruz andina" },
+  { "id": 8, "name": "Urpi, qinaya", "nombre": "nube" },
+  { "id": 9, "name": "Lliju lliju", "nombre": "relámpago" },
+  { "id": 10, "name": "Q’ixu q’ixu", "nombre": "trueno, rayo" },
+  { "id": 11, "name": "Illapa", "nombre": "rayo" },
+  { "id": 12, "name": "Kürmi", "nombre": "arco iris" },
+  { "id": 13, "name": "Jallu", "nombre": "Lluvia" },
+  { "id": 14, "name": "Ch’aqa", "nombre": "gota de lluvia" },
+  { "id": 15, "name": "Khunu", "nombre": "nieve" },
+  { "id": 16, "name": "Chijchi", "nombre": "granizo" },
+  { "id": 17, "name": "Juyphi, ch’isi", "nombre": "helada" },
+  { "id": 18, "name": "Chullunkaya", "nombre": "hielo" },
+  { "id": 19, "name": "Qhantati", "nombre": "amanecer" },
+  { "id": 20, "name": "Qhana", "nombre": "luz, claridad" },
+  { "id": 21, "name": "Ch’iwi", "nombre": "sombra" },
+  { "id": 22, "name": "Ch’amaka", "nombre": "oscuridad" },
+  { "id": 23, "name": "Wayra, thaya", "nombre": "viento, frío" },
+  { "id": 24, "name": "Kamanchaka", "nombre": "niebla, neblina" },
+  { "id": 25, "name": "Nina", "nombre": "fuego" },
+  { "id": 26, "name": "Jiwq’i", "nombre": "humo" },
+  { "id": 27, "name": "Wawsa", "nombre": "vapor" },
+  { "id": 28, "name": "Sank’a", "nombre": "brasa" }
+][
+  // AGUA
+  { "id": 1, "name": "Uma", "nombre": "agua" },
+  { "id": 2, "name": "Uma jalsu", "nombre": "manantial" },
+  { "id": 3, "name": "Jawira", "nombre": "río" },
+  { "id": 4, "name": "Quta", "nombre": "lago" },
+  { "id": 5, "name": "Jach’a quta", "nombre": "mar" },
+  { "id": 6, "name": "Lamara", "nombre": "mar" },
+  { "id": 7, "name": "Uxi", "nombre": "ola" },
+  { "id": 8, "name": "Jupuqu", "nombre": "espuma" },
+  { "id": 9, "name": "Phaxcha", "nombre": "cascada " }
+][
+  // TIERRA
+  { "id": 1, "name": "Pacha Mama", "nombre": "Madre Tierra" },
+  { "id": 2, "name": "Inti jalsu", "nombre": "este" },
+  { "id": 3, "name": "Inti jalanta", "nombre": "oeste" },
+  { "id": 4, "name": "Alaya, alaxa", "nombre": "norte" },
+  { "id": 5, "name": "Aynacha", "nombre": "sur" },
+  { "id": 6, "name": "Mallku", "nombre": "cerro varón, (deidad), protector" },
+  { "id": 7, "name": "T’alla", "nombre": "Cerro hembra, (deidad)" },
+  { "id": 8, "name": "Qullu", "nombre": "cerro" },
+  { "id": 9, "name": "Qala", "nombre": "piedra" },
+  { "id": 10, "name": "Ñiq’i", "nombre": "barro" },
+  { "id": 11, "name": "Laq’a", "nombre": "tierra, polvo" },
+  { "id": 12, "name": "Khula", "nombre": "terrón" },
+  { "id": 13, "name": "P’iya", "nombre": "agujero, hoyo" },
+  { "id": 14, "name": "Q’awa", "nombre": "zanja, quebrada, barranco " }
+]

@@ -1,0 +1,20 @@
+[
+  { "id": 1, "name": "Isi", "nombre": "vestido, ropa" },
+  { "id": 2, "name": "Lip’ichi", "nombre": "cuero" },
+  { "id": 3, "name": "T’awra", "nombre": "lana" },
+  { "id": 4, "name": "Ch’ankha", "nombre": "hilo de lana" },
+  { "id": 5, "name": "Juñi", "nombre": "madeja" },
+  { "id": 6, "name": "Wak’a", "nombre": "faja" },
+  { "id": 7, "name": "P’allqa", "nombre": "pantalón" },
+  { "id": 8, "name": "Ch’ullu, Lluch’u", "nombre": "gorro de lana" },
+  { "id": 9, "name": "Sumiru, p’ullqu", "nombre": "sombrero" },
+  { "id": 10, "name": "Q’aspa", "nombre": "gorro con vicera" },
+  { "id": 11, "name": "Chalina", "nombre": "bufanda" },
+  { "id": 12, "name": "Allmilla", "nombre": "camison de bayeta" },
+  { "id": 13, "name": "Awayu, jawayu", "nombre": "manta" },
+  { "id": 14, "name": "Punchu", "nombre": "poncho" },
+  { "id": 15, "name": "Watu, T’isnu", "nombre": "cordón, de zapato u otro" },
+  { "id": 16, "name": "Phich’i", "nombre": "alfiler, prendedor" },
+  { "id": 17, "name": "Salta", "nombre": "figuras de los tejidos" },
+  { "id": 18, "name": "Wiskhu", "nombre": "ojota, chalas" }
+]
