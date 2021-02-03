@@ -1,0 +1,13 @@
+[
+  { "id": 1, "name": "Ch’alla", "nombre": "arena" },
+  { "id": 2, "name": "Phasa", "nombre": "arcilla comestible" },
+  { "id": 3, "name": "Llink’i, ñiq’i", "nombre": "arcilla alfarero" },
+  { "id": 4, "name": "Pachasa", "nombre": "yeso, tiza" },
+  { "id": 5, "name": "Jayu", "nombre": "sal" },
+  { "id": 6, "name": "Titi", "nombre": "plomo" },
+  { "id": 7, "name": "Chambi", "nombre": "cobre" },
+  { "id": 8, "name": "Chuqi, chuki", "nombre": "oro" },
+  { "id": 9, "name": "Qullqi", "nombre": "plata, dinero" },
+  { "id": 10, "name": "Qala", "nombre": "piedra" },
+  { "id": 11, "name": "Qullpa", "nombre": "tipo de sal" }
+]

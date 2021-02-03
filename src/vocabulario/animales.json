@@ -1,0 +1,21 @@
+// palabras comunes de animales
+[
+  { "id": 1, "name": "Urqu", "nombre": "macho" },
+  { "id": 2, "name": "Qachu", "nombre": "hembra" },
+  { "id": 3, "name": "Qallu", "nombre": "cría" },
+  { "id": 4, "name": "Wallq’i", "nombre": "preñada" },
+  { "id": 5, "name": "Phatanka", "nombre": "guata, panza" },
+  { "id": 6, "name": "Wich’inkha", "nombre": "rabo, cola" },
+  { "id": 7, "name": "Chhunchhulli", "nombre": "pata" },
+  { "id": 8, "name": "Kiwu", "nombre": "canino" },
+  { "id": 9, "name": "Sillu", "nombre": "garra, uña" },
+  { "id": 10, "name": "Tama", "nombre": "rebaño" },
+  { "id": 12, "name": "Uywa", "nombre": "animal doméstico" },
+  { "id": 13, "name": "Ñukhu, ñuk’u", "nombre": "bosal" },
+  { "id": 14, "name": "Lak’uta, Ñak’uta", "nombre": "pelo" },
+  { "id": 15, "name": "T’awra", "nombre": "lana" },
+  { "id": 16, "name": "Kunka", "nombre": "cogote, cuello" },
+  { "id": 17, "name": "Jikhana", "nombre": "lomo, espalda" },
+  { "id": 18, "name": "Wich’inka", "nombre": "cola, rabo" },
+  { "id": 19, "name": "Ñuñu", "nombre": "teta, mamas" }
+]

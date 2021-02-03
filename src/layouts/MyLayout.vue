@@ -125,9 +125,9 @@
       </q-scroll-area>
     </q-drawer>
 
-    <q-page-container >
+    <q-page-container class="q-mx-xl q-my-md">
       
-      <router-view /> 
+      <router-view />
  
     </q-page-container>
     <q-footer elevated class="bg-orange-8 text-white">
@@ -165,11 +165,10 @@ export default {
       storage: 0.26,
       links1: [
        { icon:  'home', text: 'Inicio', url:"/"  },
-
-        { icon: 'g_translate', text: 'Aymara y vocabulario', url:"vocabularios" },
+        { icon: 'g_translate', text: 'Aymara y vocabulario', url:"vocabulario" },
         { icon: 'translate', text: 'Gramatica', url:"gramatica" },
         { icon: 'record_voice_over', text: 'Pronunciación', url:"frases" },
-        { icon: 'videogame_asset', text: 'Juegos', url:"juegos"}
+        { icon: 'videogame_asset', text: 'Juegos', url:"juegos" }
       ],
       links2: [
         { icon: 'color_lens', text: 'Colores',url:"colores" },

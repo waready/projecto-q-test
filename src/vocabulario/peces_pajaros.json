@@ -1,0 +1,38 @@
+// Peces
+[
+  { "id": 1, "name": "Challwa, chawlla", "nombre": "pez, pescado" },
+  { "id": 2, "name": "Such’i", "nombre": "peces, pequeños" },
+  { "id": 3, "name": "Ispi", "nombre": "pez, pescado" }
+][
+  // Pajaros
+  { "id": 1, "name": "Jamach’i", "nombre": "pájaro" },
+  { "id": 2, "name": "Phuyu", "nombre": "pluma" },
+  { "id": 3, "name": "Chhiqha", "nombre": "ala" },
+  { "id": 4, "name": "Chhuru, suru", "nombre": "pico" },
+  { "id": 5, "name": "K’ak’a", "nombre": "cresta" },
+  { "id": 6, "name": "Wich’inkha", "nombre": "cola" },
+  { "id": 7, "name": "Tapa", "nombre": "nido" },
+  { "id": 8, "name": "Luli", "nombre": "picaflor" },
+  { "id": 9, "name": "Chiwanku", "nombre": "tordo" },
+  { "id": 10, "name": "Liqi liqi", "nombre": "ave ( centinela)" },
+  { "id": 11, "name": "Pichi tanka", "nombre": "gorrión" },
+  { "id": 12, "name": "Sillinqa", "nombre": "golondrina" },
+  { "id": 13, "name": "Ch’ayña", "nombre": "jilguero" },
+  { "id": 14, "name": "Puku Puku", "nombre": "codorniz andino" },
+  { "id": 15, "name": "K’alla", "nombre": "loro, perico" },
+  { "id": 16, "name": "Wallpa", "nombre": "gallina" },
+  { "id": 17, "name": "Chhiwchhi", "nombre": "Pollito" },
+  { "id": 18, "name": "K’ank’a", "nombre": "gallo" },
+  { "id": 19, "name": "Urpila", "nombre": "Paloma" },
+  { "id": 20, "name": "Pili, qanqata", "nombre": "pato" },
+  { "id": 21, "name": "Unkhalli", "nombre": "tipo de pato" },
+  { "id": 22, "name": "P’isaqa", "nombre": "perdiz" },
+  { "id": 23, "name": "Parina, pariwana", "nombre": "flamenco rosado" },
+  { "id": 24, "name": "Wallata", "nombre": "ganso andino" },
+  { "id": 25, "name": "Qiwlla", "nombre": "gaviota" },
+  { "id": 26, "name": "Paka", "nombre": "águila" },
+  { "id": 27, "name": "Mamani", "nombre": "halcón" },
+  { "id": 28, "name": "Juku, jukhu", "nombre": "lechuza, buho" },
+  { "id": 29, "name": "Mallku, kunturi", "nombre": "cóndor" },
+  { "id": 30, "name": "Allqamari", "nombre": "buitre, gallinazo " }
+]
