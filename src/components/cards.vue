@@ -117,18 +117,39 @@ export default {
     height: 150px;
   }
 }
-@media (min-width: 1440px){
+@media (min-width: 1300px){
   .q-img{
     object-fit: cover;
     object-position: 50%;
-    height: 196px;
+    height: 175px;
+  }
+}
+@media (min-width: 1500px){
+  .q-img{
+    object-fit: cover;
+    object-position: 50%;
+    height: 206px;
+  }
+}
+@media (min-width: 1700px){
+  .q-img{
+    object-fit: cover;
+    object-position: 50%;
+    height: 240px;
   }
 }
 @media (min-width: 1920px){
   .q-img{
     object-fit: cover;
     object-position: 50%;
-    height: 100%;
+    height: 276px;
+  }
+}
+@media (min-width: 2200px){
+  .q-img{
+    object-fit: cover;
+    object-position: 50%;
+    height: 322px;
   }
 }
 </style>
