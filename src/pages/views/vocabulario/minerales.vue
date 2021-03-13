@@ -2,7 +2,7 @@
     <div>
       <div>
         <div class="row justify-between">
-          <h2 class="q-ma-none q-mb-md">Tiempo</h2>
+          <h2 class="q-ma-none q-mb-md">Minerales</h2>
           <!-- <button @click="buscar()">buscar</button> -->
           <q-input
             outlined
@@ -23,7 +23,7 @@
   <script>
   // import vueFlashcard from "vue-flashcard";
   import cards from "components/cards.vue";
-  import objetos from "../../vocabulario/tiempo.json";
+  import objetos from "../../../vocabulario/minerales.json";
   export default {
     name: "",
     components: { cards },

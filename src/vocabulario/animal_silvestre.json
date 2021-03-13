@@ -20,7 +20,5 @@
   { "id": 19, "name": "Jukumari", "nombre": "oso", "name_folder": "img-animal_silv" },
   { "id": 20, "name": "Uthurunku", "nombre": "puma, tigre", "name_folder": "img-animal_silv" },
   { "id": 21, "name": "Tuju", "nombre": "topo", "name_folder": "img-animal_silv" },
-  { "id": 22, "name": "Achuqalla", "nombre": "comadreja", "name_folder": "img-animal_silv" },
-  { "id": 23, "name": "Wanu", "nombre": "guano", "name_folder": "img-animal_silv" },
-  { "id": 24, "name": "Jama", "nombre": "excremento", "name_folder": "img-animal_silv" }
+  { "id": 22, "name": "Achuqalla", "nombre": "comadreja", "name_folder": "img-animal_silv" }
 ]
