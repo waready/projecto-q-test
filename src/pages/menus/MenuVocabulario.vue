@@ -42,94 +42,87 @@ export default {
       menu: [
         {
           id: 1,
-          name: "Pronombres y Familia",
+          name: "Animales domesticos",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Pronombres y familia en aymara...",
-          url: "/juego_memoria"
+          desc: "Animales domesticos en aymara...",
+          url: "/animales_domesticos"
         },
         {
           id: 2,
-          name: "Comida",
+          name: "Animales silvestres",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Nombres alimentos y verbos en aymara...",
-          url: "/juego_orden_numero"
+          desc: "Animales silvestres en aymara...",
+          url: "/animales_silvestres"
         },
         {
           id: 3,
-          name: "Cuerpo Humano",
+          name: "Insectos",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Nombres de partes de nuestro cuerpo humano en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Palabras de insectos en aymara...",
+          url: "/insectos"
         },
         {
           id: 3,
-          name: "Animales",
+          name: "Palabras sobre animales",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Lista de animales aymara...",
-          url: "/juego_ahorcado"
+          desc: "Nombres de partes de animales en aymara...",
+          url: "/acerca_de_animales"
         },
         {
           id: 3,
-          name: "Naturaleza y Lugares",
+          name: "Arbustos",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Nombres de la naturaleza en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Palabras de arbustos y plantas en aymara...",
+          url: "/arbustos_arboles"
         },
         {
           id: 3,
-          name: "Arbustos y plantas",
+          name: "Cuerpo humano",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Arbustos, plantas o arboles...",
-          url: "/juego_ahorcado"
-        },
-        {
-          id: 3,
-          name: "Chacra",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Abecedario en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Palabras de nuestro cuerpo humano en aymara...",
+          url: "/cuerpo_humano"
         },
         {
           id: 3,
           name: "Familia",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Abecedario en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Palabras de familia en aymara...",
+          url: "/familia"
         },
         {
           id: 3,
           name: "Minerales",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Abecedario en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Palabras de minerales en aymara...",
+          url: "/minerales"
         },
         {
           id: 3,
           name: "Ropa",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Abecedario en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Palabras sobre ropa en aymara...",
+          url: "/ropa"
         },
         {
           id: 3,
           name: "Vegetales",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Abecedario en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Vegetales en aymara...",
+          url: "/vegetales"
         },
         {
           id: 3,
-          name: "Abecedario",
+          name: "Palabras comunes",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Abecedario en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Algunas palabras en aymara...",
+          url: "/palabras_comunes"
         },
         {
           id: 3,
-          name: "Abecedario",
+          name: "Verbo infinitivo",
           img: "https://cdn.quasar.dev/img/mountains.jpg",
-          desc: "Abecedario en aymara...",
-          url: "/juego_ahorcado"
+          desc: "Verbos mas usados en aymara...",
+          url: "/verbos_infinitivos"
         }
       ]
     };

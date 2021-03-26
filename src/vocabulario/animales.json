@@ -1,4 +1,3 @@
-// palabras comunes de animales
 [
   { "id": 1, "name": "Urqu", "nombre": "macho" ,"name_folder": ""},
   { "id": 2, "name": "Qachu", "nombre": "hembra" ,"name_folder": ""},
@@ -17,5 +16,7 @@
   { "id": 16, "name": "Kunka", "nombre": "cogote, cuello" ,"name_folder": ""},
   { "id": 17, "name": "Jikhana", "nombre": "lomo, espalda" ,"name_folder": ""},
   { "id": 18, "name": "Wich’inka", "nombre": "cola, rabo" ,"name_folder": ""},
-  { "id": 19, "name": "Ñuñu", "nombre": "teta, mamas" ,"name_folder": ""}
+  { "id": 19, "name": "Ñuñu", "nombre": "teta, mamas" ,"name_folder": ""},
+  { "id": 20, "name": "Wanu", "nombre": "guano", "name_folder": "" },
+  { "id": 21, "name": "Jama", "nombre": "excremento", "name_folder": "" }
 ]
