@@ -15,6 +15,7 @@
     "aos": "^2.3.4",
     "axios": "^0.18.1",
     "quasar": "^1.0.0",
+    "st2client": "^1.2.5",
     "vivus": "^0.4.5",
     "vue-flashcard": "^1.1.6",
     "vue-games": "^0.2.2",
