@@ -1,6 +1,7 @@
   
 <template>
   <q-layout view="lHh Lpr fFf" class="bg-grey-1">
+
     <q-header elevated class="bg-orange text-grey-8" height-hint="64">
       <q-toolbar class="GPL__toolbar" style="height: 64px">
         <q-btn
@@ -41,9 +42,7 @@
         <q-space />
 
         <div class="q-gutter-sm row items-center no-wrap">
-          <q-btn round dense flat color="text-grey-7" icon="apps">
-            <q-tooltip>Google Apps</q-tooltip>
-          </q-btn>
+          
           <q-btn round dense flat color="grey-8" icon="notifications">
             <q-badge color="red" text-color="white" floating>
               2
@@ -130,6 +129,8 @@
       <router-view />
  
     </q-page-container>
+
+    
     <q-footer elevated class="bg-orange-8 text-white">
       <q-toolbar class="justify-center">  
         <q-tabs

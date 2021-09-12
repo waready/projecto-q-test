@@ -38,10 +38,10 @@
         // var castellano= objeto.nombre.toUpperCase()
         // var aymara= objeto.name.toUpperCase()
         var buscado = this.TextoBuscado.toUpperCase();
-        return this.objetos.filter(objeto => {
+        return this.objetos.Domesticos.filter(objetos => {
           return (
-            objeto.nombre.toUpperCase().includes(buscado) ||
-            objeto.name.toUpperCase().includes(buscado)
+            objetos.nombre.toUpperCase().includes(buscado) ||
+            objetos.name.toUpperCase().includes(buscado)
           );
         });
       }

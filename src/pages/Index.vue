@@ -1,24 +1,6 @@
-<template>
+<template >
   <div>
-    <div>
-      <div class="row justify-between">
-        <h2 class="q-ma-none q-mb-md">Saminaka / Colores</h2>
-        <!-- <button @click="buscar()">buscar</button> -->
-        <q-input
-          outlined
-          v-model="TextoBuscado"
-          label="Buscar palabra"
-          class="q-mb-md col-md-3 col-sm-12 col-xs-12"
-        >
-          <template v-slot:append>
-            <q-icon name="search" />
-          </template>
-        </q-input>
-      </div>
-    </div>
-    <cards :ObjetoFiltrado="TextoFiltrado"></cards>
-    <cards :ObjetoFiltrado="colores"></cards>
-    <cards :ObjetoFiltrado="silvestres"></cards>
+    <q-btn style="background: #FF0080; color: white" label="Fuchsia" />
   </div>
 </template>
 
@@ -38,7 +20,8 @@ export default {
       TextoBuscado: "",
       objetos,
       insectos,
-      silvestres
+      silvestres,
+     
     };
   },
   computed: {

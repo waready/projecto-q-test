@@ -23,7 +23,7 @@
   <script>
   // import vueFlashcard from "vue-flashcard";
   import cards from "components/cards.vue";
-  import objetos from "../../../vocabulario/animal_insectos.json";
+    import objetos from "../../../vocabulario/animal_domestico.json";
   export default {
     name: "AnimalDomestico",
     components: { cards },
@@ -38,7 +38,7 @@
         // var castellano= objeto.nombre.toUpperCase()
         // var aymara= objeto.name.toUpperCase()
         var buscado = this.TextoBuscado.toUpperCase();
-        return this.objetos.filter(objeto => {
+        return this.objetos.insectos.filter(objeto => {
           return (
             objeto.nombre.toUpperCase().includes(buscado) ||
             objeto.name.toUpperCase().includes(buscado)
