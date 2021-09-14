@@ -17,6 +17,7 @@
         </div>
       </div>
       <cards :ObjetoFiltrado="TextoFiltrado"></cards>
+      
     </div>
   </template>
   

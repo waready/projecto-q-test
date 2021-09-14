@@ -72,7 +72,7 @@
           </div>
           lore
         </div>
-        <div class="col-12 bg-secondary border text-center text-white q-pa-md">estas</div>
+        <div class="col-12 bg-secondary border text-center text-white q-pa-md">estas asa asas asas asa asas as asa as</div>
       </div>
 
       <cards :ObjetoFiltrado="TextoFiltrado"></cards>
@@ -124,7 +124,7 @@
     .position_btn{
       position: absolute;
       margin: 0;
-      top: 30px;
+      top: 25%;
       /* left: 98%; */
     }
   </style>

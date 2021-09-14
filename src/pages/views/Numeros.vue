@@ -120,6 +120,7 @@ export default {
     top:45%;
     padding: 0 5px 0 10px;
   }
+  /* ------contenedor padre-------- */
   .contenedor{
     display: grid;
     /* border: solid black 10px; */
@@ -128,7 +129,7 @@ export default {
     /* line-height: 50px; */
     /* text-align: center; */
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    /* grid-template-rows: repeat(3, auto); */
     grid-gap: 20px;
     /* grid-auto-flow: dense; */
     grid-template-areas: ". titulo titulo .";
