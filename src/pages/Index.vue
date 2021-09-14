@@ -112,13 +112,8 @@ export default {
       domesticos,
       silvestres,
       insectos,
-<<<<<<< HEAD
-      silvestres,
-     
-=======
       pecesAves,
       palabrasAnimal
->>>>>>> e299aef0790c7d31d79b527e8860dfb9d22f4edb
     };
   },
   computed: {
