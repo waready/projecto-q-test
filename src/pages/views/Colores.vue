@@ -76,10 +76,10 @@ export default {
         { id: 10, name: "Janq’u wila", nombre: "rosado" },
         { id: 11, name: "Ch’ara, ch’iyara", nombre: "negro" },
         { id: 12, name: "Uqi", nombre: "plomo" },
-        { id: 13, name: "Paqu", nombre: "dorado, rubio" },
+        { id: 13, name: "Churi", nombre: "dorado, rubio" },
         { id: 14, name: "Larama", nombre: "azul" },
         { id: 15, name: "Q’illu", nombre: "amarillo" },
-        { id: 16, name: "Sajuma, juli", nombre: "violeta" },
+        { id: 16, name: "Sajuma, Kulli", nombre: "violeta" },
         { id: 17, name: "Janq’u ch’uxña", nombre: "verde claro" },
         { id: 18, name: "Ch’ara ch’uxña", nombre: "verde oscuro " }
       ]

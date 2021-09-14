@@ -1,8 +1,9 @@
 {"Peces":
 [
-  { "id": 1, "name": "Challwa, chawlla", "nombre": "pez, pescado" ,"name_folder":"img-peces-pajaros/peces"},
-  { "id": 2, "name": "Such’i", "nombre": "peces, pequeños" ,"name_folder":"img-peces-pajaros/peces"},
-  { "id": 3, "name": "Ispi", "nombre": "pez, pescado" ,"name_folder":"img-peces-pajaros/peces"}
+  { "id": 1, "name": "Challwa, trucha", "nombre": "pez, trucha" ,"name_folder":"img-peces-pajaros/peces"},
+  { "id": 2, "name": "Such’i", "nombre": "suche" ,"name_folder":"img-peces-pajaros/peces"},
+  { "id": 3, "name": "Ispi", "nombre": "peces, ispi" ,"name_folder":"img-peces-pajaros/peces"},
+  { "id": 4, "name": "Karachi", "nombre": "carachi" ,"name_folder":"img-peces-pajaros/peces"}
 ],
 "Aves":[
   { "id": 1, "name": "Jamach’i", "nombre": "pájaro" ,"name_folder":"img-peces-pajaros/pajaros"},
@@ -32,8 +33,9 @@
   { "id": 25, "name": "Qiwlla", "nombre": "gaviota" ,"name_folder":"img-peces-pajaros/pajaros"},
   { "id": 26, "name": "Paka", "nombre": "águila" ,"name_folder":"img-peces-pajaros/pajaros"},
   { "id": 27, "name": "Mamani", "nombre": "halcón" ,"name_folder":"img-peces-pajaros/pajaros"},
-  { "id": 28, "name": "Juku, jukhu", "nombre": "lechuza, buho" ,"name_folder":"img-peces-pajaros/pajaros"},
+  { "id": 28, "name": "jukhu, Juku", "nombre": "buho, lechuza" ,"name_folder":"img-peces-pajaros/pajaros"},
   { "id": 29, "name": "Mallku, kunturi", "nombre": "cóndor" ,"name_folder":"img-peces-pajaros/pajaros"},
-  { "id": 30, "name": "Allqamari", "nombre": "buitre, gallinazo " ,"name_folder":"img-peces-pajaros/pajaros"}
+  { "id": 30, "name": "Siwiq'ara", "nombre": "buitre, gallinazo " ,"name_folder":"img-peces-pajaros/pajaros"},
+  { "id": 31, "name": "Allqamari", "nombre": "Ave mariano" ,"name_folder":"img-peces-pajaros/pajaros"}
 ]
 }
