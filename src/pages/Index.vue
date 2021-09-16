@@ -27,17 +27,7 @@
           <q-tab-panels v-model="tab" animated>
             <q-tab-panel name="domesticos">
               <div class="text-h6">Animales domesticos</div>
-              <q-input
-                outlined
-                v-model="TextoBuscado"
-                label="Buscar palabra"
-                class="q-mb-md col-md-3 col-sm-12 col-xs-12"
-              >
-                <template v-slot:append>
-                  <q-icon name="search" />
-                </template>
-              </q-input>
-              <cards :ObjetoFiltrado="TextoFiltrado"></cards>
+              <cards :ObjetoFiltrado="domesticos"></cards>
             </q-tab-panel>
   
             <q-tab-panel name="silvestres">
@@ -115,19 +105,7 @@ export default {
       palabrasAnimal
     };
   },
-  computed: {
-    TextoFiltrado() {
-      // var castellano= objeto.nombre.toUpperCase()
-      // var aymara= objeto.name.toUpperCase()
-      var buscado = this.TextoBuscado.toUpperCase();
-      return this.domesticos.filter(objeto => {
-        return (
-          objeto.nombre.toUpperCase().includes(buscado) ||
-          objeto.name.toUpperCase().includes(buscado)
-        );
-      });
-    }
-  }
+  
 };
 </script>
 <style>

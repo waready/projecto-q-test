@@ -2,11 +2,20 @@
   
     <div class="items-start q-gutter-md">
       <div>
-
+        <q-input
+                outlined
+                v-model="TextoBuscado"
+                label="Buscar palabra"
+                class="q-mb-md col-md-3 col-sm-12 col-xs-12"
+              >
+                <template v-slot:append>
+                  <q-icon name="search" />
+                </template>
+        </q-input>
         <div class="row q-gutter-lg justify-center">
           <q-card
             class="my-card back inset-shadow-1 text-white col-md-2 col-sm-5 col-xs-11"
-            v-for="objeto in ObjetoFiltrado"
+            v-for="objeto in datoFiltrado"
             :key="objeto.id"
           >
             <q-card-section>
@@ -33,30 +42,36 @@
 <script>
 export default {
   name: "PageIndex",
-  props: ["ObjetoFiltrado"],
+  props:{
+    ObjetoFiltrado:{
+      type: Array,
+    },
+  },
   data() {
     return {
       tam: 5,
-      TextoBuscado: ""
+      TextoBuscado: "",
+      datos: this.ObjetoFiltrado
     };
   },
-  // computed: {
-  //   ObjetoFiltrado() {
-  //     // var castellano= objeto.nombre.toUpperCase()
-  //     // var aymara= objeto.name.toUpperCase()
-  //     var buscado = this.TextoBuscado.toUpperCase();
 
-  //     var hola = hola && this.objetos.filter(objeto => {
-  //       return (
-  //         objeto.nombre.toUpperCase().includes(buscado) ||
-  //         objeto.name.toUpperCase().includes(buscado)
-  //       );
-  //     });
-  //     this.$emit('buscar', hola);
-  //     return hola;
-  //   }
-  // },
+  computed: {
+    datoFiltrado() {
+      // var castellano= objeto.nombre.toUpperCase()
+      // var aymara= objeto.name.toUpperCase()
+      var buscado = this.TextoBuscado.toUpperCase();
+
+      return this.datos.filter(objeto => {
+        return (
+          objeto.nombre.toUpperCase().includes(buscado) ||
+          objeto.name.toUpperCase().includes(buscado)
+        );
+      });
+    }
+  },
+  
 };
+
 </script>
 <style>
 .back {
