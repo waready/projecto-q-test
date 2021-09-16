@@ -1,40 +1,56 @@
 <template>
-    <div class="contenedor">
-        <div class="row" v-for="objeto in ObjetoFiltrado">
-          <div class="col-md-12 col-sm-12 col-xs-12 bg-orange-1 text-orange text-center q-pa-sm border-naranja">
-            <q-btn round color="orange" icon="volume_up" />
+    <div>
+      <q-input
+                outlined
+                v-model="TextoBuscado"
+                label="Buscar palabra"
+                class="q-mb-md col-md-3 col-sm-12 col-xs-12"
+              >
+                <template v-slot:append>
+                  <q-icon name="search" />
+                </template>
+      </q-input>
+      <div class="contenedor">
+          <div class="row" v-for="objeto in datoFiltrado">
+            <div class="col-md-12 col-sm-12 col-xs-12 bg-orange-1 text-orange text-center q-pa-sm border-naranja">
+              <q-btn round color="orange" icon="volume_up" />
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 bg-indigo-1 text-center border q-pa-md">{{objeto.nombre}}</div>
+            <div class="col-md-6 col-sm-6 col-xs-12 bg-blue-1 border text-center q-pa-md">{{objeto.name}}</div>
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-12 bg-indigo-1 text-center border q-pa-md">{{objeto.nombre}}</div>
-          <div class="col-md-6 col-sm-6 col-xs-12 bg-blue-1 border text-center q-pa-md">{{objeto.name}}</div>
-        </div>
       </div>
+    </div>
 </template>
 <script>
     export default {
       name: "PageIndex",
-      props: ["ObjetoFiltrado"],
+      props:{
+      ObjetoFiltrado:{
+          type: Array,
+        },
+      },
       data() {
         return {
           tam: 5,
-          TextoBuscado: ""
+          TextoBuscado: "",
+          datos: this.ObjetoFiltrado
         };
       },
-      // computed: {
-      //   ObjetoFiltrado() {
-      //     // var castellano= objeto.nombre.toUpperCase()
-      //     // var aymara= objeto.name.toUpperCase()
-      //     var buscado = this.TextoBuscado.toUpperCase();
-    
-      //     var hola = hola && this.objetos.filter(objeto => {
-      //       return (
-      //         objeto.nombre.toUpperCase().includes(buscado) ||
-      //         objeto.name.toUpperCase().includes(buscado)
-      //       );
-      //     });
-      //     this.$emit('buscar', hola);
-      //     return hola;
-      //   }
-      // },
+      
+      computed: {
+        datoFiltrado() {
+          // var castellano= objeto.nombre.toUpperCase()
+          // var aymara= objeto.name.toUpperCase()
+          var buscado = this.TextoBuscado.toUpperCase();
+
+          return this.datos.filter(objeto => {
+            return (
+              objeto.nombre.toUpperCase().includes(buscado) ||
+              objeto.name.toUpperCase().includes(buscado)
+            );
+          });
+        }
+      },
     };
 </script>
 <style>
