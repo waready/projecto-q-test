@@ -1,13 +1,13 @@
 [
-  { "id": 1, "name": "Ch’alla", "nombre": "arena", "name_folder":""},
-  { "id": 2, "name": "Phasa", "nombre": "arcilla comestible", "name_folder":""},
-  { "id": 3, "name": "Llink’i, ñiq’i", "nombre": "arcilla alfarero", "name_folder":""},
-  { "id": 4, "name": "Pachasa", "nombre": "yeso, tiza", "name_folder":""},
-  { "id": 5, "name": "Jayu", "nombre": "sal", "name_folder":""},
-  { "id": 6, "name": "Titi", "nombre": "plomo", "name_folder":""},
-  { "id": 7, "name": "Chambi", "nombre": "cobre", "name_folder":""},
-  { "id": 8, "name": "Chuqi, chuki", "nombre": "oro", "name_folder":""},
-  { "id": 9, "name": "Qullqi", "nombre": "plata, dinero", "name_folder":""},
-  { "id": 10, "name": "Qala", "nombre": "piedra", "name_folder":""},
-  { "id": 11, "name": "Qullpa", "nombre": "tipo de sal", "name_folder":""}
+  { "id": 1, "name": "Ch’alla", "nombre": "arena", "name_folder":"img-mineral"},
+  { "id": 2, "name": "Phasa", "nombre": "arcilla comestible", "name_folder":"img-mineral"},
+  { "id": 3, "name": "Llink’i, ñiq’i", "nombre": "arcilla alfarero", "name_folder":"img-mineral"},
+  { "id": 4, "name": "Pachasa", "nombre": "yeso, tiza", "name_folder":"img-mineral"},
+  { "id": 5, "name": "Jayu", "nombre": "sal", "name_folder":"img-mineral"},
+  { "id": 6, "name": "Titi", "nombre": "plomo", "name_folder":"img-mineral"},
+  { "id": 7, "name": "Chambi", "nombre": "cobre", "name_folder":"img-mineral"},
+  { "id": 8, "name": "Chuqi, chuki", "nombre": "oro", "name_folder":"img-mineral"},
+  { "id": 9, "name": "Qullqi", "nombre": "plata, dinero", "name_folder":"img-mineral"},
+  { "id": 10, "name": "Qala", "nombre": "piedra", "name_folder":"img-mineral"},
+  { "id": 11, "name": "Qullpa", "nombre": "tipo de sal", "name_folder":"img-mineral"}
 ]

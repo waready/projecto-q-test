@@ -1,51 +1,44 @@
 <template>
     <div>
       <div>
-        <div class="row justify-between">
-          <h2 class="q-ma-none q-mb-md">Palabras comunes</h2>
-          <!-- <button @click="buscar()">buscar</button> -->
-          <q-input
-            outlined
-            v-model="TextoBuscado"
-            label="Buscar palabra"
-            class="q-mb-md col-md-3 col-sm-12 col-xs-12"
-          >
-            <template v-slot:append>
-              <q-icon name="search" />
-            </template>
-          </q-input>
+        <div class="row justify-center ">
+          <q-card >
+            <q-tabs
+              v-model="tab"
+              dense 
+              inline-label
+              outside-arrows
+              mobile-arrows
+              class="text-grey "
+              active-color="primary"
+              indicator-color="primary"
+              align="justify"
+              narrow-indicator
+            >
+              <q-tab name="palabras" label="Palabras Comunes" />
+            </q-tabs>
+          </q-card >
         </div>
       </div>
-      <cards :ObjetoFiltrado="TextoFiltrado"></cards>
+      <lista class="q-mt-md" :ObjetoFiltrado="objetos"></lista>
     </div>
   </template>
   
   <script>
-  // import vueFlashcard from "vue-flashcard";
-  import cards from "components/cards.vue";
+
+  import lista from "components/lista_sound.vue";
   import objetos from "../../../vocabulario/palabras_comunes.json";
   export default {
     name: "",
-    components: { cards },
+    components: { lista },
     data() {
       return {
         TextoBuscado: "",
+        tab:"palabras",
         objetos
       };
     },
-    computed: {
-      TextoFiltrado() {
-        // var castellano= objeto.nombre.toUpperCase()
-        // var aymara= objeto.name.toUpperCase()
-        var buscado = this.TextoBuscado.toUpperCase();
-        return this.objetos.filter(objeto => {
-          return (
-            objeto.nombre.toUpperCase().includes(buscado) ||
-            objeto.name.toUpperCase().includes(buscado)
-          );
-        });
-      }
-    }
+  
   };
   </script>
   <style></style>

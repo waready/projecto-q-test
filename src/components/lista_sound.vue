@@ -11,7 +11,7 @@
                 </template>
       </q-input>
       <div class="contenedor">
-          <div class="row" v-for="objeto in datoFiltrado">
+          <div class="row" v-for="(objeto,index) in datoFiltrado" :key="index">
             <div class="col-md-12 col-sm-12 col-xs-12 bg-orange-1 text-orange text-center q-pa-sm border-naranja">
               <q-btn round color="orange" icon="volume_up" />
             </div>
