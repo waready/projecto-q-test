@@ -1,42 +1,44 @@
-[
-  { "id": 1, "name": "Yapu", "nombre": "chacra" },
-  { "id": 2, "name": "Pampa", "nombre": "llanura" },
-  { "id": 3, "name": "Ch’uqi", "nombre": "papa" },
-  { "id": 4, "name": "Apilla", "nombre": "oca" },
-  { "id": 5, "name": "Ulluku", "nombre": "papa" },
-  { "id": 6, "name": "lisa Yuka", "nombre": "yuca" },
-  { "id": 7, "name": "Chuqupa", "nombre": "tipo de poroto" },
-  { "id": 8, "name": "Ajusa", "nombre": "ajos" },
-  { "id": 9, "name": "Wayk’a", "nombre": "ají" },
-  { "id": 10, "name": "Luqutu", "nombre": "locoto, rocoto" },
-  { "id": 11, "name": "Qañawa", "nombre": "cañahua (quinoa silvestre)" },
-  { "id": 12, "name": "Juyra, jupha", "nombre": "quinoa" },
-  { "id": 13, "name": "Siwara", "nombre": "cebada" },
-  { "id": 14, "name": "Jawasa", "nombre": "habas" },
-  { "id": 15, "name": "Apichu", "nombre": "camote" },
-  { "id": 16, "name": "Uwasa", "nombre": "uva" },
-  { "id": 17, "name": "Tunqu", "nombre": "maíz" },
-  { "id": 18, "name": "Chhuxllu", "nombre": "choclo" }
-][
-  // SILVESTRE
-  { "id": 1, "name": "Juqhu", "nombre": "bofedal" },
-  { "id": 2, "name": "Ichu, wichhu", "nombre": "paja brava" },
-  { "id": 3, "name": "Waylla", "nombre": "paja amarilla" },
-  { "id": 4, "name": "Siwinqa", "nombre": "cortadera" },
-  { "id": 5, "name": "Llapa", "nombre": "grama" },
-  { "id": 6, "name": "Qura", "nombre": "yerba" },
-  { "id": 7, "name": "Chhuxlla", "nombre": "pasto, yerba" },
-  { "id": 8, "name": "Ch’iji", "nombre": "chépica silvestre" },
-  { "id": 9, "name": "Ayawi", "nombre": "totora" },
-  { "id": 10, "name": "Saq’arara", "nombre": "llantén" },
-  { "id": 11, "name": "Q’uwa", "nombre": "planta ceremonial" },
-  { "id": 12, "name": "Sillik’aya", "nombre": "romero" },
-  { "id": 13, "name": "Sayri", "nombre": "tabaco" }
-][
-  // Flores
-  { "id": 1, "name": "Phanqara, phaqalli", "nombre": "flor" },
-  { "id": 2, "name": "Qantuta", "nombre": "cantuta" },
-  { "id": 3, "name": "Inka phaqara", "nombre": "flor del Inca" },
-  { "id": 4, "name": "Panti", "nombre": "dalia" },
-  { "id": 5, "name": "Amankaya", "nombre": "azucena" }
+{"Chacra":
+  [
+  { "id": 1, "name": "Yapu", "nombre": "chacra" ,"name_folder":"img-chacra/chacra"},
+  { "id": 2, "name": "Pampa", "nombre": "llanura" ,"name_folder":"img-chacra/chacra"},
+  { "id": 3, "name": "Ch’uqi", "nombre": "papa" ,"name_folder":"img-chacra/chacra"},
+  { "id": 4, "name": "Apilla", "nombre": "oca" ,"name_folder":"img-chacra/chacra"},
+  { "id": 5, "name": "Ulluku", "nombre": "papa" ,"name_folder":"img-chacra/chacra"},
+  { "id": 6, "name": "lisa Yuka", "nombre": "yuca" ,"name_folder":"img-chacra/chacra"},
+  { "id": 7, "name": "Chuqupa", "nombre": "tipo de poroto" ,"name_folder":"img-chacra/chacra"},
+  { "id": 8, "name": "Ajusa", "nombre": "ajos" ,"name_folder":"img-chacra/chacra"},
+  { "id": 9, "name": "Wayk’a", "nombre": "ají" ,"name_folder":"img-chacra/chacra"},
+  { "id": 10, "name": "Luqutu", "nombre": "locoto, rocoto" ,"name_folder":"img-chacra/chacra"},
+  { "id": 11, "name": "Qañawa", "nombre": "cañahua (quinoa silvestre)" ,"name_folder":"img-chacra/chacra"},
+  { "id": 12, "name": "Juyra, jupha", "nombre": "quinoa" ,"name_folder":"img-chacra/chacra"},
+  { "id": 13, "name": "Siwara", "nombre": "cebada" ,"name_folder":"img-chacra/chacra"},
+  { "id": 14, "name": "Jawasa", "nombre": "habas" ,"name_folder":"img-chacra/chacra"},
+  { "id": 15, "name": "Apichu", "nombre": "camote" ,"name_folder":"img-chacra/chacra"},
+  { "id": 16, "name": "Uwasa", "nombre": "uva" ,"name_folder":"img-chacra/chacra"},
+  { "id": 17, "name": "Tunqu", "nombre": "maíz" ,"name_folder":"img-chacra/chacra"},
+  { "id": 18, "name": "Chhuxllu", "nombre": "choclo" ,"name_folder":"img-chacra/chacra"}
+],
+"Campo_silvestre":[
+  { "id": 1, "name": "Juqhu", "nombre": "bofedal" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 2, "name": "Ichu, wichhu", "nombre": "paja brava" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 3, "name": "Waylla", "nombre": "paja amarilla" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 4, "name": "Siwinqa", "nombre": "cortadera" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 5, "name": "Llapa", "nombre": "grama" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 6, "name": "Qura", "nombre": "yerba" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 7, "name": "Chhuxlla", "nombre": "pasto, yerba" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 8, "name": "Ch’iji", "nombre": "chépica silvestre" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 9, "name": "Ayawi", "nombre": "totora" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 10, "name": "Saq’arara", "nombre": "llantén" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 11, "name": "Q’uwa", "nombre": "planta ceremonial" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 12, "name": "Sillik’aya", "nombre": "romero" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 13, "name": "Sayri", "nombre": "tabaco" ,"name_folder":"img-chacra/silvestre"}
+],
+"Flores":[
+  { "id": 1, "name": "Phanqara, phaqalli", "nombre": "flor" ,"name_folder":"img-chacra/flores"},
+  { "id": 2, "name": "Qantuta", "nombre": "cantuta" ,"name_folder":"img-chacra/flores"},
+  { "id": 3, "name": "Inka phaqara", "nombre": "flor del Inca" ,"name_folder":"img-chacra/flores"},
+  { "id": 4, "name": "Panti", "nombre": "dalia" ,"name_folder":"img-chacra/flores"},
+  { "id": 5, "name": "Amankaya", "nombre": "azucena" ,"name_folder":"img-chacra/flores"}
 ]
+}

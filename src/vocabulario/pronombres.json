@@ -1,4 +1,4 @@
-// personales
+{"Personales":
 [
   { "id": 1, "name": "Naya", "nombre": "Yo" ,"name_folder":""},
   { "id": 2, "name": "Juma", "nombre": "Tú" ,"name_folder":""},
@@ -9,16 +9,18 @@
   { "id": 7, "name": "Nänaka", "nombre": "Nosotros" ,"name_folder":""},
   { "id": 8, "name": "Jumanaka", "nombre": "Ustedes" ,"name_folder":""},
   { "id": 9, "name": "Jupanaka", "nombre": "Ellos" ,"name_folder":""}
-][
-  // demostrativos
+],
+"Demostrativos":
+[
   { "id": 1, "name": "Aka", "nombre": "esto, esta, este" ,"name_folder":""},
   { "id": 2, "name": "Uka", "nombre": "eso, esa, ese" ,"name_folder":""},
   { "id": 3, "name": "Khaya", "nombre": "aquel, aquella, aquello" ,"name_folder":""},
   { "id": 4, "name": "Akanaka", "nombre": "Estos (as)" ,"name_folder":""},
   { "id": 5, "name": "Ukanaka", "nombre": "Esos (as)" ,"name_folder":""},
   { "id": 6, "name": "Khayanaka", "nombre": "Aquellos (as)" ,"name_folder":""}
-][
-  // interrogativos
+],
+"Interrogativos":
+[
   { "id": 1, "name": "¿Kuna?", "nombre": "¿Qué?" ,"name_folder":""},
   { "id": 2, "name": "¿Kawki?", "nombre": "¿Dónde?" ,"name_folder":""},
   { "id": 3, "name": "¿Khithi?", "nombre": "¿Quién?" ,"name_folder":""},
@@ -27,3 +29,4 @@
   { "id": 6, "name": "¿Kuna pacha? ¿Kunärsa?", "nombre": "¿Cuándo?" ,"name_folder":""},
   { "id": 7, "name": "¿Kawkïri? ¿Kawknïri?", "nombre": "¿Cuál?" ,"name_folder":""}
 ]
+}

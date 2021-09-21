@@ -15,12 +15,12 @@
               align="justify"
               narrow-indicator
             >
-              <q-tab name="plantas" label="Plantas" />
+              <q-tab name="plantas" label="Arboles y arbustos" />
             </q-tabs>
           </q-card >
         </div>
       </div>
-      <cards class="q-mt-md" :ObjetoFiltrado="TextoFiltrado"></cards>
+      <cards class="q-mt-md" :ObjetoFiltrado="objetos"></cards>
     </div>
   </template>
   
@@ -29,7 +29,7 @@
   import cards from "components/cards.vue";
   import objetos from "../../../vocabulario/arbustos_arboles.json";
   export default {
-    name: "AnimalDomestico",
+    name: "",
     components: { cards },
     data() {
       return {
@@ -38,19 +38,6 @@
         objetos
       };
     },
-    computed: {
-      TextoFiltrado() {
-        // var castellano= objeto.nombre.toUpperCase()
-        // var aymara= objeto.name.toUpperCase()
-        var buscado = this.TextoBuscado.toUpperCase();
-        return this.objetos.filter(objeto => {
-          return (
-            objeto.nombre.toUpperCase().includes(buscado) ||
-            objeto.name.toUpperCase().includes(buscado)
-          );
-        });
-      }
-    }
   };
   </script>
   <style></style>

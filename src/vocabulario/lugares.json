@@ -1,31 +1,32 @@
-// lugares de la naturaleza
+{"Lugares_naturaleza":
 [
-  { "id": 1, "name": "Araxpacha", "nombre": "cielo (supra mundo)" , "name_folder":""},
-  { "id": 2, "name": "Aka pacha", "nombre": "tierra (esta tierra)" , "name_folder":""},
-  { "id": 3, "name": "Manqha pacha", "nombre": "Interior de la tierra (infra mundo)", "name_folder":""},
-  { "id": 4, "name": "Uraqi", "nombre": "tierra, terruño" , "name_folder":""},
-  { "id": 5, "name": "Q’asa", "nombre": "campo vacío" , "name_folder":""},
-  { "id": 6, "name": "Apachita", "nombre": "montículo de piedra, sitio ceremonial", "name_folder":""},
-  { "id": 7, "name": "Qhirwa", "nombre": "valle" , "name_folder":""},
-  { "id": 8, "name": "Qullu", "nombre": "cerro" , "name_folder":""},
-  { "id": 9, "name": "Thiya", "nombre": "orilla" , "name_folder":""},
-  { "id": 10, "name": "Thaki", "nombre": "camino" , "name_folder":""},
-  { "id": 11, "name": "T’uxu", "nombre": "hueco, cavidad" , "name_folder":""},
-  { "id": 12, "name": "P’iya", "nombre": "agujero, hoyada" , "name_folder":""},
-  { "id": 13, "name": "K’uchu", "nombre": "rincón" , "name_folder":""},
-  { "id": 14, "name": "Wasara", "nombre": "desierto" , "name_folder":""}
-][
-  // lugares creados
-  { "id": 1, "name": "Marka", "nombre": "pueblo, ciudad, nación" , "name_folder":""},
-  { "id": 2, "name": "Amay pampa", "nombre": "cementerio" , "name_folder":""},
-  { "id": 3, "name": "Qhatu", "nombre": "mercado, feria" , "name_folder":""},
-  { "id": 4, "name": "Chaka", "nombre": "puente" , "name_folder":""},
-  { "id": 5, "name": "Uta", "nombre": "casa" , "name_folder":""},
-  { "id": 6, "name": "Uta pillu", "nombre": "techo" , "name_folder":""},
-  { "id": 7, "name": "Pukara", "nombre": "fortaleza, castillo" , "name_folder":""},
-  { "id": 8, "name": "Phuju", "nombre": "pozo de agua, vertiente" , "name_folder":""},
-  { "id": 9, "name": "Uyu", "nombre": "corral" , "name_folder":""},
-  { "id": 10, "name": "Qutaña", "nombre": "represa, estanque" , "name_folder":""},
-  { "id": 11, "name": "Yapu", "nombre": "hacra" , "name_folder":""},
-  { "id": 12, "name": "Qhuya", "nombre": "mina " , "name_folder":""}
+  { "id": 1, "name": "Araxpacha", "nombre": "cielo (supra mundo)" , "name_folder":"img-lugares/natural"},
+  { "id": 2, "name": "Aka pacha", "nombre": "tierra (esta tierra)" , "name_folder":"img-lugares/natural"},
+  { "id": 3, "name": "Manqha pacha", "nombre": "Interior de la tierra (infra mundo)", "name_folder":"img-lugares/natural"},
+  { "id": 4, "name": "Uraqi", "nombre": "tierra, terruño" , "name_folder":"img-lugares/natural"},
+  { "id": 5, "name": "Q’asa", "nombre": "campo vacío" , "name_folder":"img-lugares/natural"},
+  { "id": 6, "name": "Apachita", "nombre": "montículo de piedra, sitio ceremonial", "name_folder":"img-lugares/natural"},
+  { "id": 7, "name": "Qhirwa", "nombre": "valle" , "name_folder":"img-lugares/natural"},
+  { "id": 8, "name": "Qullu", "nombre": "cerro" , "name_folder":"img-lugares/natural"},
+  { "id": 9, "name": "Thiya", "nombre": "orilla" , "name_folder":"img-lugares/natural"},
+  { "id": 10, "name": "Thaki", "nombre": "camino" , "name_folder":"img-lugares/natural"},
+  { "id": 11, "name": "T’uxu", "nombre": "hueco, cavidad" , "name_folder":"img-lugares/natural"},
+  { "id": 12, "name": "P’iya", "nombre": "agujero, hoyada" , "name_folder":"img-lugares/natural"},
+  { "id": 13, "name": "K’uchu", "nombre": "rincón" , "name_folder":"img-lugares/natural"},
+  { "id": 14, "name": "Wasara", "nombre": "desierto" , "name_folder":"img-lugares/natural"}
+],
+"Lugares_creados":[
+  { "id": 1, "name": "Marka", "nombre": "pueblo, ciudad, nación" , "name_folder":"img-lugares/creados"},
+  { "id": 2, "name": "Amay pampa", "nombre": "cementerio" , "name_folder":"img-lugares/creados"},
+  { "id": 3, "name": "Qhatu", "nombre": "mercado, feria" , "name_folder":"img-lugares/creados"},
+  { "id": 4, "name": "Chaka", "nombre": "puente" , "name_folder":"img-lugares/creados"},
+  { "id": 5, "name": "Uta", "nombre": "casa" , "name_folder":"img-lugares/creados"},
+  { "id": 6, "name": "Uta pillu", "nombre": "techo" , "name_folder":"img-lugares/creados"},
+  { "id": 7, "name": "Pukara", "nombre": "fortaleza, castillo" , "name_folder":"img-lugares/creados"},
+  { "id": 8, "name": "Phuju", "nombre": "pozo de agua, vertiente" , "name_folder":"img-lugares/creados"},
+  { "id": 9, "name": "Uyu", "nombre": "corral" , "name_folder":"img-lugares/creados"},
+  { "id": 10, "name": "Qutaña", "nombre": "represa, estanque" , "name_folder":"img-lugares/creados"},
+  { "id": 11, "name": "Yapu", "nombre": "hacra" , "name_folder":"img-lugares/creados"},
+  { "id": 12, "name": "Qhuya", "nombre": "mina " , "name_folder":"img-lugares/creados"}
 ]
+}
