@@ -30,9 +30,9 @@ export default {
       menu:[
         {id:1,name:"Palabras y Sufijos", img:"https://cdn.quasar.dev/img/mountains.jpg", desc:"Introducciona a las palabras y sufijos", url:"/palabras" },
         {id:2,name:"Sistemas de Sufijos", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"Sistema de uso de sufijos", url:"/sufijos" },
-        {id:3,name:"Los Verbos", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"Los verbos aymaras", url:"/verbos" },
+        
         {id:3,name:"Adjetivos", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"El uso del adjetivo aymara", url:"/adjetivos" },
-        {id:3,name:"El Adverbio", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"El advervio aymara", url:"/adverbio" },
+        {id:4,name:"El Adverbio", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"El advervio aymara", url:"/adverbio" },
       ]
     }
   },

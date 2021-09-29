@@ -28,7 +28,8 @@ const routes = [
       { path:'juego_orden_numero', component: () => import('pages/juegos/OrdenNumero.vue')},
       { path:'juego_ahorcado', component: () => import('pages/juegos/Ahorcado.vue')},
 
-      
+      { path:'gramar', component: () => import('pages/views/Gramatica.vue')},
+      { path:'chat', component: () => import('pages/views/Pronunciacion.vue')},
       // vocabulario
       { path:'animales', component: () => import('pages/views/vocabulario/Animales.vue')},
       { path:'insectos', component: () => import('pages/views/vocabulario/insectos.vue')},
