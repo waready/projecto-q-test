@@ -43,91 +43,91 @@ export default {
         {
           id: 1,
           name: "Animales",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_animal.jpg",
           desc: "Animales domesticos en aymara...",
           url: "/animales"
         },
         {
           id: 2,
           name: "Arbustos",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_arbustos.jpg",
           desc: "Palabras de arbustos y plantas en aymara...",
           url: "/arbustos_arboles"
         },
         {
           id: 3,
           name: "Chacra y campo",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_chacra.jpg",
           desc: "Palabras de la chacra y el campo en aymara...",
           url: "/chacra_campo"
         },
         {
           id: 4,
           name: "Cuerpo humano",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_cuerpo.jpg",
           desc: "Palabras de nuestro cuerpo humano en aymara...",
           url: "/cuerpo_humano"
         },
         {
           id: 5,
           name: "Familia",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_familia.jpg",
           desc: "Palabras de familia y personas en aymara...",
           url: "/familia"
         },
         {
           id: 6,
           name: "Lugares",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_lugares.jpg",
           desc: "Palabras de lugares o espacios de la naturaleza creados por el hombre en aymara...",
           url: "/lugares"
         },
         {
           id: 7,
           name: "Naturaleza",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_naturaleza.jpg",
           desc: "Palabras que hay en la naturaleaza en aymara...",
           url: "/naturaleza"
         },
         {
           id: 8,
           name: "Minerales",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_minerales.jpg",
           desc: "Palabras de minerales en aymara...",
           url: "/minerales"
         },
         {
           id: 9,
           name: "Ropa",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_ropa.jpg",
           desc: "Palabras sobre ropa en aymara...",
           url: "/ropa"
         },
         {
           id: 10,
           name: "Vegetales",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_vegetal.jpg",
           desc: "Vegetales en aymara...",
           url: "/vegetales"
         },
         {
           id: 11,
           name: "Palabras comunes",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_palabras.jpg",
           desc: "Algunas palabras en aymara...",
           url: "/palabras_comunes"
         },
         {
           id: 12,
           name: "Pronombres",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_pronombres.jpg",
           desc: "Pronombres personales, demostrativos e interrogativos en aymara...",
           url: "/pronombres"
         },
         {
           id: 13,
           name: "Verbo infinitivo",
-          img: "https://cdn.quasar.dev/img/mountains.jpg",
+          img: "statics/menu/menu_verbos.jpg",
           desc: "Verbos mas usados en aymara...",
           url: "/verbos_infinitivos"
         }

@@ -28,11 +28,11 @@ export default {
       scrollInfo: {},
       prop:"juegos",
       menu:[
-        {id:1,name:"Palabras y Sufijos", img:"https://cdn.quasar.dev/img/mountains.jpg", desc:"Introducciona a las palabras y sufijos", url:"/palabras" },
-        {id:2,name:"Sistemas de Sufijos", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"Sistema de uso de sufijos", url:"/sufijos" },
+        {id:1,name:"Palabras y Sufijos", img:"statics/menu/menu_sufijos.jpg", desc:"Introducciona a las palabras y sufijos", url:"/palabras" },
+        {id:2,name:"Sistema de Sufijos", img:"statics/menu/menu_sistema_sufijos.jpg",desc:"Sistema de uso de sufijos", url:"/sufijos" },
         
-        {id:3,name:"Adjetivos", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"El uso del adjetivo aymara", url:"/adjetivos" },
-        {id:4,name:"El Adverbio", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"El advervio aymara", url:"/adverbio" },
+        {id:3,name:"Adjetivos", img:"statics/menu/menu_adjetivos.jpg",desc:"El uso del adjetivo aymara", url:"/adjetivos" },
+        {id:4,name:"El Adverbio", img:"statics/menu/menu_adverbio.jpg",desc:"El advervio aymara", url:"/adverbio" },
       ]
     }
   },
