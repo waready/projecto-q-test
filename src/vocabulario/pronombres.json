@@ -3,7 +3,7 @@
   { "id": 1, "name": "Naya", "nombre": "Yo" ,"name_folder":""},
   { "id": 2, "name": "Juma", "nombre": "Tú" ,"name_folder":""},
   { "id": 3, "name": "Jupa", "nombre": "Él" ,"name_folder":""},
-  { "id": 4, "name": "", "nombre": "Ella" ,"name_folder":""},
+  { "id": 4, "name": "Jupa", "nombre": "Ella" ,"name_folder":""},
   { "id": 5, "name": "Jiwasa", "nombre": "Nosotros" ,"name_folder":""},
   { "id": 6, "name": "Jiwasanaka", "nombre": "Nosotros" ,"name_folder":""},
   { "id": 7, "name": "Nänaka", "nombre": "Nosotros" ,"name_folder":""},
