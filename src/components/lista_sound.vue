@@ -22,7 +22,7 @@
       <!--reproductor></reproductor-->
       <q-dialog v-model="dialog" :position="position">
       <q-card style="width: 350px">
-        <q-linear-progress :value="valor" max="1" color="pink" id="segundo"/>
+        <q-linear-progress :value="valor" max="1" color="pink" id="segundo" class="q-pb-sm"/>
       <!--span id="seekObjContainer">
 			  <progress id="seekObj" value="0" ></progress>
 			</span-->
