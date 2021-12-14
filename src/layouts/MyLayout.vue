@@ -124,7 +124,7 @@
       </q-scroll-area>
     </q-drawer>
 
-    <q-page-container class="q-mx-xl q-my-md">
+    <q-page-container class="q-mx-md q-my-md">
       
       <router-view />
  

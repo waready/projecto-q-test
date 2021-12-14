@@ -28,22 +28,23 @@ const routes = [
       { path:'juego_orden_numero', component: () => import('pages/juegos/OrdenNumero.vue')},
       { path:'juego_ahorcado', component: () => import('pages/juegos/Ahorcado.vue')},
 
-      
+      { path:'gramar', component: () => import('pages/views/Gramatica.vue')},
+      { path:'chat', component: () => import('pages/views/Pronunciacion.vue')},
       // vocabulario
-      { path:'animales_domesticos', component: () => import('pages/views/vocabulario/animal_domestico.vue')},
+      { path:'animales', component: () => import('pages/views/vocabulario/Animales.vue')},
       { path:'insectos', component: () => import('pages/views/vocabulario/insectos.vue')},
-      { path:'animales_silvestres', component: () => import('pages/views/vocabulario/animal_silvestre.vue')},
-      { path:'acerca_de_animales', component: () => import('pages/views/vocabulario/about_animales.vue')},
+      
+     
       { path:'arbustos_arboles', component: () => import('pages/views/vocabulario/arbustos_arboles.vue')},
-      // { path:'chacra_campo', component: () => import('pages/views/vocabulario/chacra_campo.vue')},
+      { path:'chacra_campo', component: () => import('pages/views/vocabulario/Chacra_campo.vue')},
       { path:'cuerpo_humano', component: () => import('pages/views/vocabulario/cuerpo_humano.vue')},
       { path:'familia', component: () => import('pages/views/vocabulario/familia.vue')},
-      // { path:'lugares', component: () => import('pages/views/vocabulario/lugares.vue')},
+      { path:'lugares', component: () => import('pages/views/vocabulario/Lugares.vue')},
       { path:'minerales', component: () => import('pages/views/vocabulario/minerales.vue')},
-      // { path:'naturaleza', component: () => import('pages/views/vocabulario/naturaleza.vue')},
+      { path:'naturaleza', component: () => import('pages/views/vocabulario/Naturaleza.vue')},
       { path:'palabras_comunes', component: () => import('pages/views/vocabulario/palabras_comunes.vue')},
       // { path:'peces_pajaros', component: () => import('pages/views/vocabulario/peces_pajaros.vue')},
-      // { path:'pronombres', component: () => import('pages/views/vocabulario/pronombres.vue')},
+      { path:'pronombres', component: () => import('pages/views/vocabulario/Pronombres.vue')},
       { path:'ropa', component: () => import('pages/views/vocabulario/ropa.vue')},
       { path:'vegetales', component: () => import('pages/views/vocabulario/vegetales.vue')},
       { path:'verbos_infinitivos', component: () => import('pages/views/vocabulario/verbos_infinitivos.vue')},
