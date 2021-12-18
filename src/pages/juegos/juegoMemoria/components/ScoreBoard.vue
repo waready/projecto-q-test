@@ -2,7 +2,7 @@
   <div class="">
     <div class="">
      
-      <span class="text">{{ turnCount }}</span>
+      <span class="text">Intentos: {{ turnCount }}</span>
       <div>
         <span v-for="turn in score" :key="turn.id" :class="`turn turn--${turn}`" />
       </div>
@@ -75,11 +75,11 @@ export default {
 }
 
 .turn--miss {
-  border: 2px solid #000;
+  border: 1px solid rgb(100, 18, 18);
   background-color: white;
 }
 
 .turn--match {
-  background: rgb(30,255,255);
+  background: rgb(250, 154, 29);
 }
 </style>

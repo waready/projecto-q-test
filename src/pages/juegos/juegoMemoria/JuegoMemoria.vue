@@ -1,12 +1,14 @@
 <template>
   <div id="app" class="">
     <div class="bg-color-blue">
-      <button @click="askMotionPermission" class="btn">
+      <!-- <button @click="askMotionPermission" class="btn">
         Enable motion
-      </button>
-      <button @click="reset" class="btn">
-        Reset game
-      </button>
+      </button> -->
+     <div class="row">
+       <div class="center">
+          <q-btn label="Jugar de Nuevo"   size="md" color="purple" @click="reset"  />
+       </div>
+     </div>
     </div>
 
     <ScoreBoard
@@ -235,17 +237,7 @@ body {
   z-index: 3;
 }
 
-.btn {
-  appearance: none;
-  background: transparent;
-  border: 2px solid white;
-  color: red;
-  font: 11px / 1 arial;
-  letter-spacing: 0.3px;
-  padding: 4px 12px;
-  height: 24px;
-  border-radius: 12px;
-}
+
 
 .btn:active {
   color: black;
@@ -278,6 +270,13 @@ body {
   width: 100%;
   height: 100%;
 }
-
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
 
 </style>

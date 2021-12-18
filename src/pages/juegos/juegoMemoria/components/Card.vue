@@ -108,9 +108,9 @@ export default {
   transform: rotateY(180deg);
 }
 
-.card--matched .card__inner {
-  opacity: 0.2;
-}
+// .card--matched .card__inner {
+//   opacity: 0.2;
+// }
 
 .card__inner,
 .card__front,

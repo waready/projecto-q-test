@@ -26,7 +26,9 @@ const routes = [
 
       { path:'juego_memoria', component: () => import('pages/juegos/juegoMemoria/JuegoMemoria.vue')},
       { path:'juego_orden_numero', component: () => import('pages/juegos/OrdenNumero.vue')},
-      { path:'juego_ahorcado', component: () => import('pages/juegos/Ahorcado.vue')},
+      { path:'juego_ahorcado_1', component: () => import('pages/juegos/Ahorcado.vue')},
+
+      { path:'juego_ahorcado', component: () => import('pages/juegos/AhorcadoFinal.vue')},
 
       { path:'gramar', component: () => import('pages/views/Gramatica.vue')},
       { path:'chat', component: () => import('pages/views/Pronunciacion.vue')},

@@ -1,7 +1,39 @@
 <template>
     <q-page id="app" class="app container">
             <!-- <button @click="random_element(items)">saf</button>  -->
-        <h3 class="q-ma-xs">Juego para ordenar numeros</h3>
+        <!-- <h3 class="q-ma-xs">Juego para ordenar numeros</h3> -->
+
+        <div class="q-pa-md q-gutter-sm">
+            <div id="hangman">
+                 <q-btn  label="PISTA" color="primary" @click="bar2 = true" />
+            </div>   
+       
+            <q-dialog v-model="bar2" persistent transition-show="flip-down" transition-hide="flip-up">
+                <q-card class="bg-deep-orange-6 text-white">
+                    <q-bar>
+                <!-- <q-icon name="network_wifi" />
+                <q-icon name="network_cell" />
+                <q-icon name="battery_full" />
+                <div>9:34</div> -->
+
+                <q-space />
+
+                    <q-btn dense flat icon="close" v-close-popup>
+                        <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+                    </q-btn>
+                    </q-bar>
+
+                    <q-card-section>
+                    <div class="text-h6">Pista</div>
+                    </q-card-section>
+
+                    <q-card-section>
+                        Arrastra los cuadros ordenando de número menor al mayor                     
+                    </q-card-section>
+                </q-card>
+            </q-dialog>
+
+        </div>
         <div class="">
             <div class="q-gutter-y-md">
                 <q-card>
@@ -196,10 +228,10 @@
         <!-- ============================================================== -->
         </div>
 
-        <hr>
+        <!-- <hr>
         <pre>
         {{$data}}
-        </pre>
+        </pre> -->
     </q-page>
 </template>
 
@@ -215,9 +247,11 @@ export default{
 mounted() {
     this.random_element(this.items1)
     this.random_element(this.items2)
+    this.bar2=true
 },
 data () {
     return {
+        bar2:false,
         tab:"numeros1",
         items1:[
             {name:"Ch’usa", id:0, color:"bg-purple",check:null},
@@ -367,7 +401,14 @@ methods: {
 .texto-borde {
   -webkit-text-stroke: 1.5px white;
 }
-
+#hangman {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
 
 </style>
 
