@@ -1,15 +1,24 @@
 <template>
-  
+  <q-page>
   <div class="crossword-container" ref="crossword-container">
-    <div v-if="showPlayAgain" align-h="center">
-      <q-btn
-        size="sm"
-        class="m-3"
-        @click="playAgain"
-      >
-        Jugar de nuevo
-      </q-btn>
-    </div>
+    
+ 
+    <div class="center q-mb-md">
+        <div v-if="showPlayAgain" >
+          <q-btn
+            size="sm"
+            color="purple"
+            @click="playAgain"
+          >
+            Jugar de nuevo
+          </q-btn>
+      </div>
+
+
+
+  </div>
+    
+  
     <div
       v-if="grid"
       class="crossword-board-container"
@@ -20,7 +29,7 @@
             <template
               v-for="(row, index1) in grid"
             >
-              <!-- ROW -->
+             
               <template
                 v-for="(item, index2) in row"
               >
@@ -44,7 +53,7 @@
                   class="crossword-board__item--blank"
                 />
               </template>
-              <!-- /ROW -->
+             
             </template>
           </div>
         </div>
@@ -81,6 +90,7 @@
       </div>
     </div>
   </div>
+  </q-page>
 </template>
 
 <script>
@@ -575,11 +585,11 @@ export default {
         case 'ES':
           acrossWord = 'Horizontales'
           break
-        // case 'FR':
-        //   acrossWord = 'Horizontal'
-        //   break
+        case 'AY':
+          acrossWord = 'Horizontal'
+          break
         default:
-          acrossWord = 'Across'
+          acrossWord = 'Horizontales'
           break
       }
       return acrossWord
@@ -591,11 +601,11 @@ export default {
         case 'ES':
           downWord = 'Verticales'
           break
-        // case 'FR':
-        //   across = 'Vertical'
-        //   break
+        case 'AY':
+          across = 'Vertical'
+          break
         default:
-          downWord = 'Down'
+          downWord = 'Verticales'
           break
       }
       return downWord
@@ -723,8 +733,18 @@ export default {
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
+  
 }
+@media screen and (max-width:650px) {
+  .crossword-board {
 
+ 
+  width: 100%;
+  height: 70%;
+
+  
+}
+}
 .crossword-board__item {
   border: 1px solid #000;
   position: relative;
@@ -775,5 +795,9 @@ export default {
 .crossword-clues__list-item {
   margin: 0;
   padding: 4px;
+}
+.center{
+  display: flex;
+  justify-content: center;
 }
 </style>
