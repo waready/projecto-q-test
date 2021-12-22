@@ -31,6 +31,7 @@ export default {
         {id:1,name:"Cartas", img:"https://cdn.quasar.dev/img/mountains.jpg", desc:"juego de comparacion de tarjetas", url:"/juego_memoria" },
         {id:2,name:"Numeros", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"juego para ordenar (numeros)", url:"/juego_orden_numero" },
         {id:3,name:"Adivina", img:"https://cdn.quasar.dev/img/mountains.jpg",desc:"juego para adivinar la palabra correcta", url:"/juego_ahorcado" },
+        {id:4,name:"Crusigrama", img:"https://cdn.quasar.dev/img/mountains.jpg", desc:"juego de crusigrama", url:"/juego_ahorcado_1" },
       ]
     }
   },
