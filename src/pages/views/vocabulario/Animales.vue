@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="">
+  
       <div class="q-gutter-y-md">
         <q-card>
           <q-tabs
@@ -27,32 +28,32 @@
           <q-tab-panels v-model="tab" animated>
             <q-tab-panel name="domesticos">
               <div class="text-h6">Animales domesticos</div>
-              <cards :ObjetoFiltrado="domesticos"></cards>
+              <cards :ObjetoFiltrado="domesticos.Domesticos"></cards>
             </q-tab-panel>
   
             <q-tab-panel name="silvestres">
               <div class="text-h6">Animales Silvestres</div>
-              <cards :ObjetoFiltrado="silvestres"></cards>
+              <cards :ObjetoFiltrado="domesticos.silvestres"></cards>
             </q-tab-panel>
   
             <q-tab-panel name="insectos">
               <div class="text-h6">Insectos</div>
-              <cards :ObjetoFiltrado="insectos"></cards>
+              <cards :ObjetoFiltrado="domesticos.insectos"></cards>
             </q-tab-panel>
 
             <q-tab-panel name="pez-aves">
               <div class="text-h6">Peces</div>
-              <cards :ObjetoFiltrado="pecesAves.Peces"></cards>
+              <cards :ObjetoFiltrado="domesticos.Peces"></cards>
               <q-separator color="deep-orange" inset class="q-ma-md"/>
 
               <div class="text-h6">Aves</div>
-              <cards :ObjetoFiltrado="pecesAves.Aves"></cards>
+              <cards :ObjetoFiltrado="domesticos.Aves"></cards>
             </q-tab-panel>
             
             <q-tab-panel name="palabras">
               <div class="text-h6">Palabras acerca de animales</div>
               <!-- <cards :ObjetoFiltrado="palabrasAnimal"></cards> -->
-              <lista :ObjetoFiltrado="palabrasAnimal"></lista>
+              <lista :ObjetoFiltrado="domesticos.animales"></lista>
             </q-tab-panel>
           </q-tab-panels>
         </q-card>
@@ -84,12 +85,8 @@
 import cards from "components/cards.vue";
 import lista from "components/lista_sound.vue";
 import domesticos from "../../../vocabulario/animal_domestico.json";
-// import domesticos from "../vocabulario/arbustos_arboles.json";
-import colores from "../../../vocabulario/colores.json";
-import insectos from "../../../vocabulario/animal_insectos.json";
-import silvestres from "../../../vocabulario/animal_silvestre.json";
-import pecesAves from "../../../vocabulario/peces_pajaros.json";
-import palabrasAnimal from "../../../vocabulario/animales.json";
+
+
 
 export default {
   name: "PageIndex",
@@ -99,10 +96,7 @@ export default {
       tab: 'domesticos',
       TextoBuscado: "",
       domesticos,
-      silvestres,
-      insectos,
-      pecesAves,
-      palabrasAnimal
+    
     };
   },
   

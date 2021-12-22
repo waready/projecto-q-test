@@ -2,7 +2,7 @@
     <div>
       <div>
         <div class="row justify-between">
-          <h2 class="q-ma-none q-mb-md">Animales Domesticos</h2>
+          <h2 class="q-ma-none q-mb-md">Animales Domesticasdsadasosss</h2>
           <!-- <button @click="buscar()">buscar</button> -->
           <q-input
             outlined
