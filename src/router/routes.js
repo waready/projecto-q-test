@@ -36,7 +36,10 @@ const routes = [
       { path:'animales', component: () => import('pages/views/vocabulario/Animales.vue')},
       { path:'insectos', component: () => import('pages/views/vocabulario/insectos.vue')},
       
-     
+      //semanas 
+      { path:'semana1', component: () => import('pages/semanas/Semana1.vue')},
+
+
       { path:'arbustos_arboles', component: () => import('pages/views/vocabulario/arbustos_arboles.vue')},
       { path:'chacra_campo', component: () => import('pages/views/vocabulario/Chacra_campo.vue')},
       { path:'cuerpo_humano', component: () => import('pages/views/vocabulario/cuerpo_humano.vue')},
