@@ -12,7 +12,7 @@
                 </q-card-section>
       
                 <q-card-section class="text-center">
-                  <q-btn color="secondary" rounded class="full-width" label="Iniciar"  :to="item.url"/>
+                  <q-btn color="primary" rounded class="full-width" label="Iniciar"  :to="item.url"/>
                 </q-card-section>
               </q-card>
         </div>

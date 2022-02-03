@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-lg flex justify-center full-height" :class="heightSize">
+  <div class="q-pa-lg flex justify-center full-height bg-accent" :class="heightSize">
     <!-- <div class="row gt-sm">
       <div class="row">
         <div class="list">
@@ -43,20 +43,20 @@
                 <label>Email</label>
                 </div> -->
 
-                <q-input class="q-ma-md" color="orange" outlined v-model="email" label="e-mail">
+                <q-input class="q-ma-md" color="grey-8" outlined v-model="email" label="e-mail">
                   <template v-slot:append>
-                      <q-icon color="blue-9" name="account_box" style="font-size: 2em;" />
+                      <q-icon color="primary" name="account_box" style="font-size: 1em;" />
                   </template>
                 </q-input>
               
-                <q-input class="q-ma-md" color="orange" outlined :type="isPwd ? 'password' : 'text'" v-model="email" label="password">
+                <q-input class="q-ma-md" color="grey-8" outlined :type="isPwd ? 'password' : 'text'" v-model="email" label="password">
                   <template v-slot:append>
                       <q-icon
                       :name="isPwd ? 'visibility_off' : 'visibility'"
                       class="cursor-pointer"
                       @click="isPwd = !isPwd"
-                      style="font-size: 1.7em;"
-                      color="blue-9"
+                      style="font-size: 1em;"
+                      color="primary"
                       />
                   </template>
                 </q-input>
@@ -66,9 +66,9 @@
                 <label>Password</label>
                 </div> -->
             </div>
-            <button class="teal raised full-width " @click="startAnimation()">Animate !</button>
-            <div class="card-actions inline-block vertical-middle">
-                <q-btn class="bg-teal fit"  icon-right="send" :class="buttonClass" @click="login()">Login</q-btn >
+            <!-- <button class="teal raised full-width " @click="startAnimation()">Animate !</button> -->
+            <div class="card-actions inline-block vertical-middle q-px-md">
+                <q-btn class="bg-primary fit q-px-md"  icon-right="send" :class="buttonClass" @click="login()">Login</q-btn >
                 <q-btn class="bg-red-7 fit"   :class="buttonClass" @click="login()">Login Google  &nbsp;<img alt="Quasar logo" src="~assets/icon/google.png" width="20"></q-btn >
                 <q-btn class="bg-blue-10 fit"  :class="buttonClass" @click="login()"> Login Facebook  &nbsp;   <img alt="Quasar logo" src="~assets/icon/facebook.png" width="20"></q-btn>
             </div>
@@ -127,7 +127,8 @@
         return ''
       },
       finalBgColor () {
-        return `bg-${this.bgColor}-${this.toneColor}`
+        // return `bg-${this.bgColor}-${this.toneColor}`
+        return `bg-primary`
       },
       logoMethod () {
         return logoData[this.logo]

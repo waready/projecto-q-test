@@ -1,5 +1,4 @@
 <template>
-  
     <div class="items-start q-gutter-md">
       <div>
         <q-input
@@ -75,13 +74,14 @@ export default {
 </script>
 <style>
 .back {
-  background: rgb(2, 0, 36);
+  /* background: rgb(2, 0, 36);
   background: linear-gradient(
     120deg,
     rgba(2, 0, 36, 1) 15%,
     rgba(52, 167, 121, 1) 55%,
     rgba(0, 246, 255, 1) 100%
-  );
+  ); */
+  background: linear-gradient(to bottom, #ff5131, white);
 }
 @media (min-width: 360px){
   .q-img{

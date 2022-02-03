@@ -19,7 +19,7 @@
 
           <q-card-section class="text-center">
             <q-btn
-              color="secondary"
+              color="primary"
               rounded
               class="sull-width"
               label="Ver mas"

@@ -2,7 +2,7 @@
 <template>
   <q-layout view="lHh Lpr fFf" class="bg-grey-1">
 
-    <q-header elevated class="bg-orange text-grey-8" height-hint="64">
+    <q-header elevated class="primary" height-hint="64">
       <q-toolbar class="GPL__toolbar" style="height: 64px">
         <q-btn
           flat
@@ -21,7 +21,7 @@
         <q-space />
 
         <!-- boton para drowdow para saber que subir -->
-        <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="primary" icon="add" no-caps label="Create" class="q-ml-sm q-px-md">
+        <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="white" icon="add" no-caps label="Create" class="q-ml-sm q-px-md">
           <q-menu anchor="top right" self="top right">
             <q-list class="text-grey-8" style="min-width: 100px">
               <q-item aria-hidden="true">
@@ -37,13 +37,13 @@
           </q-menu>
         </q-btn>
 
-        <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="primary" icon="cloud_upload" no-caps label="Upload" class="q-ml-sm q-px-md" />
+        <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="white" icon="cloud_upload" no-caps label="Upload" class="q-ml-sm q-px-md" />
 
         <q-space />
 
         <div class="q-gutter-sm row items-center no-wrap">
           
-          <q-btn round dense flat color="grey-8" icon="notifications">
+          <q-btn round dense flat color="white" icon="notifications">
             <q-badge color="red" text-color="white" floating>
               2
             </q-badge>
@@ -65,16 +65,16 @@
       behavior="mobile"
       @click="leftDrawerOpen = false"
     >
-      <q-scroll-area class="fit bg-light-blue-10">
-        <q-toolbar class="GPL__toolbar">
-          <q-toolbar-title class="row items-center text-white">
+      <q-scroll-area class="fit">
+        <q-toolbar class="GPL__toolbar bg-primary">
+          <q-toolbar-title class="row items-center text-white ">
             <span class="q-ml-sm" to="/juegos">Aprender Aymara</span>
           </q-toolbar-title>
         </q-toolbar>
 
-         <q-separator class="q-my-md" />
+         <q-separator class="q-my-xs" />
 
-        <q-list padding >
+        <q-list padding class="bg-grey-3">
           <q-item v-for="link in links1" :key="link.text" clickable class="GPL__drawer-item" :to="link.url">
             <q-item-section avatar>
               <q-icon :name="link.icon" />
@@ -124,19 +124,19 @@
       </q-scroll-area>
     </q-drawer>
 
-    <q-page-container class="q-mx-md q-my-md">
+    <q-page-container class="">
       
       <router-view />
  
     </q-page-container>
 
     
-    <q-footer elevated class="bg-orange-8 text-white">
+    <q-footer elevated class="bg-positive text-white">
       <q-toolbar class="justify-center">  
         <q-tabs
-          indicator-color="blue-9"
+          indicator-color="white"
           switch-indicator
-          active-bg-color="blue-9"
+          active-bg-color="primary"
           class=""
         >
           <q-route-tab
@@ -203,23 +203,30 @@ export default {
       width: 35%
     &__drawer-item
       line-height: 24px
-      border-radius: 0 24px 24px 0
       margin-right: 12px
       .q-item__section--avatar
         padding-left: 12px
         .q-icon
-          color: #fff
+          color: #000
       .q-item__label:not(.q-item__label--caption)
-        color: #fff
+        color: #000
         letter-spacing: .01785714em
         font-size: .875rem
         font-weight: 500
-        line-height: 1.25rem
+        line-height: 1.25rem        
       &--storage
         border-radius: 0
         margin-right: 0
         padding-top: 24px
         padding-bottom: 24px
+    &__drawer-item:hover
+      background-color:#9c0000
+      transition: background .5s
+      .q-item__section--avatar
+        .q-icon
+          color: white
+      .q-item__label:not(.q-item__label--caption)
+        color: white
     &__side-btn
       &__label
         font-size: 12px
