@@ -1,16 +1,18 @@
 <template>
-    <div>
-      <q-input
-                outlined
-                v-model="TextoBuscado"
-                label="Buscar palabra"
-                class="q-mb-md col-md-3 col-sm-12 col-xs-12"
-              >
-                <template v-slot:append>
-                  <q-icon name="search" />
-                </template>
-      </q-input>
-      <div class="contenedor">
+    <div >
+      <div class="contenedor_input row justify-center">
+        <q-input
+                  outlined
+                  v-model="TextoBuscado"
+                  label="Buscar palabra"
+                  class="q-mb-md col-md-12  col-sm-12 col-xs-12 " style="max-width:1440px "
+        >
+                  <template v-slot:append>
+                    <q-icon name="search" />
+                  </template>
+        </q-input>
+      </div>
+      <!-- <div class="contenedor">
           <div class="row" v-for="(objeto,index) in datoFiltrado" :key="index">
             <div class="col-md-12 col-sm-12 col-xs-12 bg-orange-1 text-orange text-center q-pa-sm border-naranja">
               <q-btn round color="orange" icon="volume_up" @click="open('bottom',objeto)" />
@@ -18,7 +20,44 @@
             <div class="col-md-6 col-sm-6 col-xs-12 bg-indigo-1 text-center border q-pa-md">{{objeto.nombre}}</div>
             <div class="col-md-6 col-sm-6 col-xs-12 bg-blue-1 border text-center q-pa-md">{{objeto.name}}</div>
           </div>
+      </div> -->
+      <!-- ---------------------------tajeta--------------------------------- -->
+      <div class="contenedor">
+          <div class="tarjeta" v-for="(objeto,index) in datoFiltrado" :key="index">
+            <section class="tarjeta-texto-a">
+              <div class="tarjeta-icon" @click="open('bottom',objeto)">
+                <q-icon name="volume_up" />
+              </div>
+              <p>{{objeto.nombre}}</p>
+            </section>
+            <section class="tarjeta-texto-e">
+              <p>{{objeto.name}}</p>
+            </section>
+          </div>
       </div>
+      <div class="row justify-center">
+        <div v-if="!datoFiltrado.length" class="bg-red "  style="max-width:1440px">
+            <q-banner inline-actions class="text-white bg-red">
+              No se han encontrado resultados para tu búsqueda
+              <template v-slot:action>
+                
+                <q-btn flat color="white" icon="close" @click="close_mensaje"/>
+              </template>
+            </q-banner>
+        </div>
+      </div>
+       <!-- ------------------------------------card color naranja----------------------- -->
+      <!-- <div class="tarjeta" v-for="(objeto,index) in datoFiltrado" :key="index">
+        <section class="tarjeta-texto-a">
+          <div class="tarjeta-icon" @click="hola">
+            <q-icon name="volume_up" />
+          </div>
+          <p>{{objeto.nombre}}</p>
+        </section>
+        <section class="tarjeta-texto-e">
+          <p>{{objeto.name}}</p>
+        </section>
+      </div> -->
       <!--reproductor></reproductor-->
       <q-dialog v-model="dialog" :position="position">
       <q-card style="width: 350px">
@@ -90,7 +129,10 @@
         },
         
       },
-      methods: {
+    methods: {
+      close_mensaje(){
+        this.TextoBuscado="";
+      },
       open (position,index) {
       this.position = position
       this.dialog = true
@@ -194,6 +236,7 @@
     
     display: grid;
     /* border: solid black 10px; */
+    max-width: 1440px;
     margin: auto;
     /* font-size: 50px; */
     /* line-height: 50px; */
@@ -265,5 +308,57 @@
     .contenedor>div:last-child{
       grid-column: 1/2;
     }
+  }
+
+  .tarjeta{
+    width:100%;
+    border: 4px white solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    /* overflow: hidden;  */
+  }
+  .tarjeta-texto-a{
+    background: #dc3546;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tarjeta-icon{
+    text-align: center;
+    content: "";
+    background: #dc3546;
+    border: 4px white solid;
+    border-radius: 5px;
+    position: absolute;
+    top:-18px;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .tarjeta-icon:hover{
+    background: #ff1d34;
+  }
+  .tarjeta-texto-a p{
+    margin: 0;
+  }
+  .tarjeta-texto-e{
+    background: gray;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tarjeta-texto-e p{
+    margin: 0;
   }
 </style>

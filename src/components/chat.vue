@@ -111,12 +111,28 @@
       </q-timeline-entry>
     </q-timeline>
   </div>
+  <!-- <div class="tarjeta">
+    <section class="tarjeta-texto-a">
+      <div class="tarjeta-icon" @click="hola">
+        <q-icon name="volume_up" />
+      </div>
+      <p>sd</p>
+    </section>
+    <section class="tarjeta-texto-e">
+      <p>sd</p>
+    </section>
+  </div> -->
 </template>
   </div>
 </template>
 
 <script>
 export default {
+  methods: {
+    hola(){
+      console.log("hola")
+    }
+  },
   computed: {
     layout () {
       return this.$q.screen.lt.sm ? 'dense' : (this.$q.screen.lt.md ? 'comfortable' : 'loose')
@@ -124,4 +140,56 @@ export default {
   }
 }
 </script>
+<style scoped>
+  /* .tarjeta{
+    width:100%;
+    border: 4px white solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+  }
+  .tarjeta-texto-a{
+    background: #dc3546;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tarjeta-icon{
+    text-align: center;
+    content: "";
+    background: #dc3546;
+    border: 4px white solid;
+    border-radius: 5px;
+    position: absolute;
+    top:-18px;
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .tarjeta-icon:hover{
+    background: #ff1d34;
+  }
+  .tarjeta-texto-a p{
+    margin: 0;
+  }
+  .tarjeta-texto-e{
+    background: gray;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tarjeta-texto-e p{
+    margin: 0;
+  } */
+</style>
 
