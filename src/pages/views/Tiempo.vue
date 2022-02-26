@@ -4,29 +4,19 @@
         <div class="row justify-between">
           <h2 class="q-ma-none q-mb-md">Tiempo</h2>
           <!-- <button @click="buscar()">buscar</button> -->
-          <q-input
-            outlined
-            v-model="TextoBuscado"
-            label="Buscar palabra"
-            class="q-mb-md col-md-3 col-sm-12 col-xs-12"
-          >
-            <template v-slot:append>
-              <q-icon name="search" />
-            </template>
-          </q-input>
         </div>
       </div>
-      <cards :ObjetoFiltrado="TextoFiltrado"></cards>
+      <lista :ObjetoFiltrado="TextoFiltrado"></lista>
     </div>
   </template>
-  
+
   <script>
   // import vueFlashcard from "vue-flashcard";
-  import cards from "components/cards.vue";
+  import lista from "components/lista_sound.vue";
   import objetos from "../../vocabulario/tiempo.json";
   export default {
     name: "",
-    components: { cards },
+    components: { lista },
     data() {
       return {
         TextoBuscado: "",
@@ -49,4 +39,3 @@
   };
   </script>
   <style></style>
-  
