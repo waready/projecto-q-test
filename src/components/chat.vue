@@ -13,7 +13,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Aski arumakipanay jilaku']"
+        :text="['Aski arumakipanay jilaku','Jurpurkamay']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
@@ -38,6 +38,15 @@
         text-color="white"
         bg-color="primary"
       />
+      <q-chat-message
+        name="Rosa"
+        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        :text="[`Jikisiñkama Juan`]"
+        stamp="7 minutes ago"
+        sent
+        bg-color="amber-7"
+      />
+
       <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
       </div>
 
@@ -58,6 +67,15 @@
         text-color="white"
         bg-color="primary"
       />
+      <q-chat-message
+        name=""
+        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        :text="[`Jayp'ukamay`]"
+        stamp="7 minutes ago"
+        sent
+        bg-color="amber-7"
+      />
+
       <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
       </div>
 

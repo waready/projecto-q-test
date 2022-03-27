@@ -74,7 +74,7 @@ export default {
   //components: { cards, lista },
   data() {
     return {
-       tab: "domesticos",
+       tab: "grammar",
       // TextoBuscado: "",
       // domesticos
       saludos:[
