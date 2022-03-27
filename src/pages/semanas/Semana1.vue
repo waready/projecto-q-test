@@ -113,7 +113,6 @@ export default {
             "Buenas tardes hermana Rosa",
 "------",
             "Aski urukipan Jilata Juan:",
-            "Buenas dias hermano Juan",
             "Aski urukipanay Rosa:",
             "Buenas dias Rosita",
 

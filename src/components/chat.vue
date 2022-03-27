@@ -53,7 +53,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['AAski urukipanay Rosa']"
+        :text="['Aski urukipanay Rosa']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
