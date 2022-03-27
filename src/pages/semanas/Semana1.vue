@@ -14,36 +14,48 @@
           align="justify"
           narrow-indicator
         >
-          <q-tab name="domesticos" label="Gramatica" />
-          <q-tab name="silvestres" label="Vocabulario" />
-          <q-tab name="insectos" label="Pronunciacion" />
-          <q-tab name="pez-aves" label="Ejercicios" />
+
+          <q-tab name="grammar" label="Gramatica y Vocabulario" />
+          <q-tab name="pronunciacion" label="Pronunciacion" />
+          <q-tab name="ejercicios" label="Ejercicios" />
 
         </q-tabs>
 
         <q-separator />
 
         <q-tab-panels v-model="tab" animated>
-          <q-tab-panel name="domesticos">
-            <div class="text-h6">Animales domesticos</div>
+          <q-tab-panel name="grammar">
+            <q-card flat bordered class="my-card">
+              <q-card-section>
+                <div class="text-h6">LOS SALUDOS: ARUNTASIÑA</div>
+              </q-card-section>
+              <q-card-section>
+                <li v-for="(item,index) in saludos" :key="index" style="list-style:none">{{item}}</li>
+              </q-card-section>
+
+              <q-separator inset />
+
+              <q-card-section>
+                <div class="text-h6">DESPEDIDAS: Sarxañ Arunaka</div>
+              </q-card-section>
+              <q-card-section>
+                <li v-for="(item,index) in despedidas" :key="index" style="list-style:none">{{item}}</li>
+              </q-card-section>
+            </q-card>
           </q-tab-panel>
 
-          <q-tab-panel name="silvestres">
-            <div class="text-h6">Animales Silvestres</div>
+          <q-tab-panel name="pronunciacion">
+            <chat></chat>
           </q-tab-panel>
 
-          <q-tab-panel name="insectos">
-            <div class="text-h6">Insectos</div>
-          </q-tab-panel>
-
-          <q-tab-panel name="pez-aves">
+          <q-tab-panel name="ejercicios">
             <div class="text-h6">Peces</div>
 
             <q-separator color="deep-orange" inset class="q-ma-md" />
 
             <div class="text-h6">Aves</div>
           </q-tab-panel>
-          
+
         </q-tab-panels>
       </q-card>
     </div>
@@ -55,7 +67,9 @@
 // import cards from "components/cards.vue";
 // import lista from "components/lista_sound.vue";
 
+import chat from "components/chat.vue";
 export default {
+    components: { chat },
   name: "PageIndex",
   //components: { cards, lista },
   data() {
@@ -63,6 +77,87 @@ export default {
        tab: "domesticos",
       // TextoBuscado: "",
       // domesticos
+      saludos:[
+            "Kamisaki: Hola",
+            "Aski: Bien - Bueno",
+            "Uru:  dia",
+            "Jayp'u: Tarde",
+            "Aruma:  Noche",
+            "Chiqa Aruma: Medianoche",
+            "Alwa: Temprano",
+            "Willjta: Alva",
+            "Qhantati: Madrugada",
+            "Jilata: Hermano",
+            "Jilaku: Vocativo de tratamiento cortés a los varones",
+            ,"------",
+            "Aski urupan,...",
+            "Aski urukipan,...",
+            "Aski urukipanay,...",
+            "Son las frases que interpretando se traduce como BUENOS DÍAS en los libros de aymara, literalmente vienen a ser:",
+            "Aski urupan,... = QUE SEA BUEN DÍA,...",
+            "Aski urukipan,... = QUE SEA BUEN DÍA NO MÁS,...",
+            "Aski urukipanay,... = QUE SEA BUEN DÍA NO MÁS PUES,...",
+            "------",
+            "La respuesta para estos saludos es la misma frase que le dicen a uno.",
+            "------",
+            "Ejemplos:",
+            "Traducimos",
+            "Aski arumakipan jilata:",
+            "Buenas noches Hermano",
+            "Aski arumakipanay jilaku:",
+            "Buenas noches hermanito",
+"------",
+            "Aski jayp'ukipan Jilata Juan:",
+            "Buenas tardes hermano Juan",
+            "Aski jayp'ukipanay Kullaka Rosa:",
+            "Buenas tardes hermana Rosa",
+"------",
+            "Aski urukipan Jilata Juan:",
+            "Buenas dias hermano Juan",
+            "Aski urukipanay Rosa:",
+            "Buenas dias Rosita",
+
+
+      ],
+      despedidas:[
+            "DESPEDIDAS: Sarxañ Arunaka",
+            "Jichhuru: Hoy",
+            "Qharuru: Mañana",
+            "Wasuru: Ayer",
+            "Jurpuru: Pasado Mañana",
+            "Jikisiña: Encontrarse",
+            "Jayp'u: Tarde",
+"------",
+            "A Continuacion algunos ejemplos",
+            "Qharurkama wawanaka:  Hasta mañana niños",
+            "Qharuru: mañana",
+            "Kama: Hasta",
+            "Wawa: niño",
+            "Naka: pluralizador",
+"------",
+            "Jayp'ukama Jila:  Hasta la tarde hermano",
+            "Jayp'u: tarde",
+            "Kama: Hasta",
+            "Jila: Hermano",
+"------",
+            "Jurpurkama awicha: Hasta pasado mañana abuela",
+            "Jurpuru: Pasado Mañana",
+            "Kama: Hasta",
+            "Awicha: Abuela, anciana",
+"------",
+            "-Jikisiñkama Pedro:  Hasta pronto Pedro",
+            "-Jikisiñkamay: Hasta pronto",
+            "Jikisiña: Encuentro no especificado",
+            "Kama: Hasta",
+"------",
+            "Marakama: Hasta el año",
+            "Mara: año",
+            "Kama: hasta",
+"------",
+            "Sarxä: Me voy",
+            "Sarxañani: Vámonos",
+            "Sarxapxam: Váyanse",
+      ]
     };
   }
 };
