@@ -38,6 +38,7 @@ const routes = [
       
       //semanas 
       { path:'semana1', component: () => import('pages/semanas/Semana1.vue')},
+      { path:'semana2', component: () => import('pages/semanas/Semana2.vue')},
 
 
       { path:'arbustos_arboles', component: () => import('pages/views/vocabulario/arbustos_arboles.vue')},
