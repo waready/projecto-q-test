@@ -82,7 +82,7 @@
     </div>
   </template>
 <script>
-  import objetos from "../../vocabulario/numeros.json"
+  import objetos from "../vocabulario/numeros.json"
 export default {
     data(){
         return{

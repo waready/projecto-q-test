@@ -88,29 +88,29 @@ export default {
       step: 1,
       separator: 'vertical',
       columns: [
-   
+
         { name: 'ESCRITURA AYMARA',  label: 'ESCRITURA AYMARA', field: 'calories' },
         { name: 'TRADUCCIÓN LITERAL', label: 'TRADUCCIÓN LITERAL', field: 'fat' },
         { name: 'ESCRITURA CASTELLANO', label: 'ESCRITURA CASTELLANO', field: 'carbs' },
-  
+
       ],
        data: [
         {
-   
+
           calories: 'JANQ`U UTA',
           fat: 'BLANCA CASA',
-          carbs: 'BLANCA CASA',
+          carbs: 'CASA BLANCA',
 
         },
         {
-         
+
           calories: 'JISK`A IMILLA',
           fat: 'CHICA NIÑA',
           carbs: 'NIÑA CHICA',
 
         },
         {
-        
+
           calories: 'JAYRA YUQALLA',
           fat: 'FLOJO NIÑO',
           carbs: 'NIÑO FLOJO',
@@ -121,7 +121,7 @@ export default {
   },
   methods:{
     obten(){
-    
+
      this.$emit("obtener");
     }
   }

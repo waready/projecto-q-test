@@ -64,7 +64,7 @@ p {
   .timeline-container {
     position: relative;
     margin-bottom: 2.5rem;
-
+    cursor: pointer;
     .timeline-icon {
       position: absolute;
       left: -88px;
@@ -75,7 +75,7 @@ p {
       text-align: center;
       font-size: 2rem;
       background: $secondary;
-
+      cursor: default;
       i {
         position: absolute;
         left: 50%;
