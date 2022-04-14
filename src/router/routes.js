@@ -40,6 +40,8 @@ const routes = [
       { path:'semana1', component: () => import('pages/semanas/Semana1.vue')},
       { path:'semana2', component: () => import('pages/semanas/Semana2.vue')},
 
+      { path:'semana5', component: () => import('pages/semanas/Semana5.vue')},
+
 
       { path:'arbustos_arboles', component: () => import('pages/views/vocabulario/arbustos_arboles.vue')},
       { path:'chacra_campo', component: () => import('pages/views/vocabulario/Chacra_campo.vue')},

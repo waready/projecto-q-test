@@ -27,7 +27,7 @@
           <q-tab-panel name="grammar">
             <q-card flat bordered class="my-card">
               <q-card-section>
-                <div class="text-h6">LOS SALUDOS: ARUNTASIÑA</div>
+                <div class="text-h6">Sistema Silabico</div>
               </q-card-section>
               <q-card-section>
                 <li v-for="(item,index) in saludos" :key="index" style="list-style:none">{{item}}</li>
@@ -36,10 +36,26 @@
               <q-separator inset />
 
               <q-card-section>
-                <div class="text-h6">DESPEDIDAS: Sarxañ Arunaka</div>
+                <div class="text-h6">Familia</div>
               </q-card-section>
               <q-card-section>
-                <li v-for="(item,index) in despedidas" :key="index" style="list-style:none">{{item}}</li>
+                <familia/>
+              </q-card-section>
+              <q-separator inset />
+
+              <q-card-section>
+                <div class="text-h6">Alimentos</div>
+              </q-card-section>
+              <q-card-section>
+                <alimentos/>
+              </q-card-section>
+              <q-separator inset />
+
+              <q-card-section>
+                <div class="text-h6">Vestido</div>
+              </q-card-section>
+              <q-card-section>
+                <ropa/>
               </q-card-section>
             </q-card>
           </q-tab-panel>
@@ -49,7 +65,11 @@
           </q-tab-panel>
 
           <q-tab-panel name="ejercicios">
-            
+            <div class="text-h6">Peces</div>
+
+            <q-separator color="deep-orange" inset class="q-ma-md" />
+
+            <div class="text-h6">Aves</div>
           </q-tab-panel>
 
         </q-tab-panels>
@@ -59,13 +79,13 @@
 </template>
 
 <script>
-// import vueFlashcard from "vue-flashcard";
-// import cards from "components/cards.vue";
-// import lista from "components/lista_sound.vue";
+import familia from "../views/vocabulario/familia.vue";
+import alimentos from "../views/vocabulario/vegetales.vue";
+import ropa from "../views/vocabulario/ropa.vue";
 
-import chat from "components/chat.vue";
+import chat from "components/semana5.vue";
 export default {
-    components: { chat },
+    components: { chat, familia, alimentos,ropa },
   name: "PageIndex",
   //components: { cards, lista },
   data() {
@@ -74,85 +94,23 @@ export default {
       // TextoBuscado: "",
       // domesticos
       saludos:[
-            "Kamisaki: Hola",
-            "Aski: Bien - Bueno",
-            "Uru:  dia",
-            "Jayp'u: Tarde",
-            "Aruma:  Noche",
-            "Chiqa Aruma: Medianoche",
-            "Alwa: Temprano",
-            "Willjta: Alva",
-            "Qhantati: Madrugada",
-            "Jilata: Hermano",
-            "Jilaku: Vocativo de tratamiento cortés a los varones",
-            ,"------",
-            "Aski urupan,...",
-            "Aski urukipan,...",
-            "Aski urukipanay,...",
-            "Son las frases que interpretando se traduce como BUENOS DÍAS en los libros de aymara, literalmente vienen a ser:",
-            "Aski urupan,... = QUE SEA BUEN DÍA,...",
-            "Aski urukipan,... = QUE SEA BUEN DÍA NO MÁS,...",
-            "Aski urukipanay,... = QUE SEA BUEN DÍA NO MÁS PUES,...",
-            "------",
-            "La respuesta para estos saludos es la misma frase que le dicen a uno.",
-            "------",
-            "Ejemplos:",
-            "Traducimos",
-            "Aski arumakipan jilata:",
-            "Buenas noches Hermano",
-            "Aski arumakipanay jilaku:",
-            "Buenas noches hermanito",
-"------",
-            "Aski jayp'ukipan Jilata Juan:",
-            "Buenas tardes hermano Juan",
-            "Aski jayp'ukipanay Kullaka Rosa:",
-            "Buenas tardes hermana Rosa",
-"------",
-            "Aski urukipan Jilata Juan:",
-            "Aski urukipanay Rosa:",
-            "Buenas dias Rosita",
-
-
+      "La sílaba aimara es una unidad sonora constituida por un núcleo con o sin márgenes. El núcleo o cresta silábica, por definición, es siempre una vocal; los márgenes, a su turno, los constituyen las consonantes. Se habla de sílaba libre cuando el núcleo no tiene margen postnuclear; y, en cambio, se habla de una sílaba cerrada o trabada, cuando registra margen postnuclear. Las siguientes configuraciones forman sílabas típicas del aimara (nótese que en los ejemplos, V simboliza al núcleo, C al margen, y el punto a la linde silábica):",
+      "V [u.ma] ‘agua’",
+      "VC [ir.pa] ‘canal’",
+      "CV [qa.λu] ‘cría’",
+      "CVC [mar.ka] ‘pueblo’",
+      "Teniendo en cuenta los tipos de sílabas registrados, la fórmula general de la estructura silábica de la lengua sería la siguiente (donde los números superescritos señalan el máximo y los infrascritos el mínimo deocurrencias):",
+      "C10VC10",
+      "------",
+      "Ejemplos",
+      "[mar] en /mar.ka/ => la primera sílaba de la palabra",
+      "[qo.q.ri], o sea /qunquri/ ‘rodilla’ => Como puede apreciarse, la segunda fórmula exige que toda raíz aimara termine en sílaba libre",
+      "------",
+      "RESTRICCIONES",
+      "los márgenes pre o postnucleares contienen una y nada más que una consonante. No existen, pues, sílabas del tipo *CCV ni *VCC.",
+      "entre un núcleo silábico y otro debe mediar por lo menos una consonante; o sea que no se toleran secuencias de vocales: queda descartada una estructura del tipo *V.V"
+      
       ],
-      despedidas:[
-            "DESPEDIDAS: Sarxañ Arunaka",
-            "Jichhuru: Hoy",
-            "Qharuru: Mañana",
-            "Wasuru: Ayer",
-            "Jurpuru: Pasado Mañana",
-            "Jikisiña: Encontrarse",
-            "Jayp'u: Tarde",
-"------",
-            "A Continuacion algunos ejemplos",
-            "Qharurkama wawanaka:  Hasta mañana niños",
-            "Qharuru: mañana",
-            "Kama: Hasta",
-            "Wawa: niño",
-            "Naka: pluralizador",
-"------",
-            "Jayp'ukama Jila:  Hasta la tarde hermano",
-            "Jayp'u: tarde",
-            "Kama: Hasta",
-            "Jila: Hermano",
-"------",
-            "Jurpurkama awicha: Hasta pasado mañana abuela",
-            "Jurpuru: Pasado Mañana",
-            "Kama: Hasta",
-            "Awicha: Abuela, anciana",
-"------",
-            "-Jikisiñkama Pedro:  Hasta pronto Pedro",
-            "-Jikisiñkamay: Hasta pronto",
-            "Jikisiña: Encuentro no especificado",
-            "Kama: Hasta",
-"------",
-            "Marakama: Hasta el año",
-            "Mara: año",
-            "Kama: hasta",
-"------",
-            "Sarxä: Me voy",
-            "Sarxañani: Vámonos",
-            "Sarxapxam: Váyanse",
-      ]
     };
   }
 };
