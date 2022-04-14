@@ -16,7 +16,7 @@ const routes = [
         { path:'verbos', component: () => import('pages/views/gramatica/Verbos.vue')},
         { path:'adjetivos', component: () => import('pages/views/gramatica/Adjetivos.vue')},
         { path:'adverbio', component: () => import('pages/views/gramatica/Adverbio.vue')},
-      
+
 
 
       { path:'login', component: () => import('pages/views/Login.vue')},
@@ -35,9 +35,11 @@ const routes = [
       // vocabulario
       { path:'animales', component: () => import('pages/views/vocabulario/Animales.vue')},
       { path:'insectos', component: () => import('pages/views/vocabulario/insectos.vue')},
-      
-      //semanas 
+
+      //semanas
       { path:'semana1', component: () => import('pages/semanas/Semana1.vue')},
+      { path:'semana3', component: () => import('pages/semanas/Semana3.vue')},
+      { path:'semana4', component: () => import('pages/semanas/Semana4.vue')},
 
 
       { path:'arbustos_arboles', component: () => import('pages/views/vocabulario/arbustos_arboles.vue')},

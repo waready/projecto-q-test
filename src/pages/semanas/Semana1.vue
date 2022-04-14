@@ -59,7 +59,10 @@
         </q-tab-panels>
       </q-card>
     </div>
+
   </div>
+
+
 </template>
 
 <script>
@@ -68,12 +71,14 @@
 // import lista from "components/lista_sound.vue";
 
 import chat from "components/chat.vue";
+
 export default {
     components: { chat },
   name: "PageIndex",
   //components: { cards, lista },
   data() {
     return {
+
        tab: "grammar",
       // TextoBuscado: "",
       // domesticos
@@ -236,4 +241,21 @@ export default {
     grid-column: 1/2;
   }
 }
+:root{
+	--white-text:#fff;
+	--background:#c8e8f1;
+	--black-text:rgb(68, 66, 66);
+	--prueba: (180deg,#21c8f6,#637bff);
+}
+
+.background1-left-column{
+	background: linear-gradient(180deg,#21c8f6,#637bff);
+}
+
+
+.background2-left-column{
+	background: linear-gradient(to top ,#64ffda,#637bff);
+}
+
+
 </style>
