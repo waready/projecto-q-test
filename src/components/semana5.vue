@@ -5,7 +5,7 @@
         <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['¿Kunasa sutimaxa?']"
+        :text="['¿Jupaxa mamapati?']"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -13,18 +13,18 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Sutijaxa Maria Satawa...','¿Jumansti?']"
+        :text="['Jisa','Jisa, mamapawa']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['Nayaxa Antonio satawa...']"
+        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        :text="['Jisa','jupaxa jupana mamapawa']"
         stamp="7 minutes ago"
-        sent
-        bg-color="amber-7"
+       text-color="white"
+        bg-color="primary"
       />
       <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
       </div>
@@ -33,7 +33,7 @@
         <q-chat-message
         name="Rosa"
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="[`¿Sutipaxa Junäpachati?`]"
+        :text="[`Jupaxa mamapati tiyapacha`]"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -41,7 +41,7 @@
       <q-chat-message
         name="Juan"
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="[`Jisa juanäpachawa`]"
+        :text="[`Janiwa, mamapákisa tiyapákisa`]"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
@@ -53,7 +53,7 @@
         <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['¿Jumaxa kawkhansa utjta?']"
+        :text="['¿Jupaxa kunapápachasa?']"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -61,7 +61,23 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Nayaxa Punona utjtha']"
+        :text="['Jupaxa warmipápachawa']"
+        stamp="4 minutes ago"
+        text-color="white"
+        bg-color="primary"
+      />
+      <q-chat-message
+        name=""
+        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        :text="['¿Jupaxa warmipápachati?']"
+        stamp="7 minutes ago"
+        sent
+        bg-color="amber-7"
+      />
+      <q-chat-message
+        name=""
+        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        :text="['Janiwa jupaxa warmipakpachati, mamapápachawa']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"

@@ -27,7 +27,7 @@
           <q-tab-panel name="grammar">
             <q-card flat bordered class="my-card">
               <q-card-section>
-                <div class="text-h6">PREGUNTAS DE INTERROGACION FRECUENTES</div>
+                <div class="text-h6">LOS SALUDOS: ARUNTASIÑA</div>
               </q-card-section>
               <q-card-section>
                 <li v-for="(item,index) in saludos" :key="index" style="list-style:none">{{item}}</li>
@@ -36,10 +36,9 @@
               <q-separator inset />
 
               <q-card-section>
-                <div class="text-h6">Sistema de sufijos</div>
+                <div class="text-h6">DESPEDIDAS: Sarxañ Arunaka</div>
               </q-card-section>
               <q-card-section>
-                <div class="text-h7">Se agrega el sufijo "-SA" al final de los Pronombres interrogativos</div>
                 <li v-for="(item,index) in despedidas" :key="index" style="list-style:none">{{item}}</li>
               </q-card-section>
             </q-card>
@@ -56,7 +55,10 @@
         </q-tab-panels>
       </q-card>
     </div>
+
   </div>
+
+
 </template>
 
 <script>
@@ -64,35 +66,98 @@
 // import cards from "components/cards.vue";
 // import lista from "components/lista_sound.vue";
 
-import chat from "components/questionchat.vue";
+import chat from "components/chat.vue";
+
 export default {
     components: { chat },
   name: "PageIndex",
   //components: { cards, lista },
   data() {
     return {
+
        tab: "grammar",
       // TextoBuscado: "",
       // domesticos
       saludos:[
-       "¿Cual es tu nombre?: ¿Kuna Sutinïtasa?",
-       "¿Que es tu nombre?: ¿Kunasa sutinïtasa?",
-       "¿Que es eso? : ¿Akaxa Kunasa?",
-       "¿Tu quien eres?: ¿jumaxa khiïtasa?",
-       "¿Que es esto? : ¿ukaxa Kunasa?",
-       "¿Que es aquello?: ¿Khayaxa kunasa?",
-       "¿Tu donde vives? :¿Jumaxa kawkhansa utjta?",
-       "¿De donde eres? : ¿kawkinkirïtasa?",
-      
+            "Kamisaki: Hola",
+            "Aski: Bien - Bueno",
+            "Uru:  dia",
+            "Jayp'u: Tarde",
+            "Aruma:  Noche",
+            "Chiqa Aruma: Medianoche",
+            "Alwa: Temprano",
+            "Willjta: Alva",
+            "Qhantati: Madrugada",
+            "Jilata: Hermano",
+            "Jilaku: Vocativo de tratamiento cortés a los varones",
+            ,"------",
+            "Aski urupan,...",
+            "Aski urukipan,...",
+            "Aski urukipanay,...",
+            "Son las frases que interpretando se traduce como BUENOS DÍAS en los libros de aymara, literalmente vienen a ser:",
+            "Aski urupan,... = QUE SEA BUEN DÍA,...",
+            "Aski urukipan,... = QUE SEA BUEN DÍA NO MÁS,...",
+            "Aski urukipanay,... = QUE SEA BUEN DÍA NO MÁS PUES,...",
+            "------",
+            "La respuesta para estos saludos es la misma frase que le dicen a uno.",
+            "------",
+            "Ejemplos:",
+            "Traducimos",
+            "Aski arumakipan jilata:",
+            "Buenas noches Hermano",
+            "Aski arumakipanay jilaku:",
+            "Buenas noches hermanito",
+"------",
+            "Aski jayp'ukipan Jilata Juan:",
+            "Buenas tardes hermano Juan",
+            "Aski jayp'ukipanay Kullaka Rosa:",
+            "Buenas tardes hermana Rosa",
+"------",
+            "Aski urukipan Jilata Juan:",
+            "Aski urukipanay Rosa:",
+            "Buenas dias Rosita",
+
+
       ],
       despedidas:[
-       "kuna : Que (sa)",
-       "kawki: Donde (sa)",
-       "Khithi: Quien (sa)",
-       "Kunjama: Como (sa)",
-       "Qawqha: Cuanto (sa)",
-       "Kunapacha: Cuándo (sa)",
-      ],
+            "DESPEDIDAS: Sarxañ Arunaka",
+            "Jichhuru: Hoy",
+            "Qharuru: Mañana",
+            "Wasuru: Ayer",
+            "Jurpuru: Pasado Mañana",
+            "Jikisiña: Encontrarse",
+            "Jayp'u: Tarde",
+"------",
+            "A Continuacion algunos ejemplos",
+            "Qharurkama wawanaka:  Hasta mañana niños",
+            "Qharuru: mañana",
+            "Kama: Hasta",
+            "Wawa: niño",
+            "Naka: pluralizador",
+"------",
+            "Jayp'ukama Jila:  Hasta la tarde hermano",
+            "Jayp'u: tarde",
+            "Kama: Hasta",
+            "Jila: Hermano",
+"------",
+            "Jurpurkama awicha: Hasta pasado mañana abuela",
+            "Jurpuru: Pasado Mañana",
+            "Kama: Hasta",
+            "Awicha: Abuela, anciana",
+"------",
+            "-Jikisiñkama Pedro:  Hasta pronto Pedro",
+            "-Jikisiñkamay: Hasta pronto",
+            "Jikisiña: Encuentro no especificado",
+            "Kama: Hasta",
+"------",
+            "Marakama: Hasta el año",
+            "Mara: año",
+            "Kama: hasta",
+"------",
+            "Sarxä: Me voy",
+            "Sarxañani: Vámonos",
+            "Sarxapxam: Váyanse",
+      ]
     };
   }
 };
@@ -172,4 +237,21 @@ export default {
     grid-column: 1/2;
   }
 }
+:root{
+	--white-text:#fff;
+	--background:#c8e8f1;
+	--black-text:rgb(68, 66, 66);
+	--prueba: (180deg,#21c8f6,#637bff);
+}
+
+.background1-left-column{
+	background: linear-gradient(180deg,#21c8f6,#637bff);
+}
+
+
+.background2-left-column{
+	background: linear-gradient(to top ,#64ffda,#637bff);
+}
+
+
 </style>

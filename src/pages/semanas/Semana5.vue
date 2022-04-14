@@ -65,11 +65,7 @@
           </q-tab-panel>
 
           <q-tab-panel name="ejercicios">
-            <div class="text-h6">Peces</div>
-
-            <q-separator color="deep-orange" inset class="q-ma-md" />
-
-            <div class="text-h6">Aves</div>
+      
           </q-tab-panel>
 
         </q-tab-panels>

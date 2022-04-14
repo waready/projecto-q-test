@@ -1,7 +1,7 @@
 <template>
   <q-page>
-    <div id="hangman">
-      <q-btn label="PISTA" color="primary" @click="bar2 = true" />
+    <div id="hangman" class="q-pt-sm">
+      <q-btn  label="PISTA" color="primary" @click="bar2 = true" />
     </div>
 
     <q-dialog
@@ -35,7 +35,7 @@
     </q-dialog>
 
     <div class="crossword-container" ref="crossword-container">
-      <div class="center q-mb-md">
+      <div class="center q-my-sm">
         <div v-if="showPlayAgain">
           <q-btn size="sm" color="purple" @click="playAgain">
             Jugar de nuevo
@@ -824,6 +824,14 @@ export default {
 </script>
 
 <style>
+#hangman {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
 .crossword-board__item--valid {
   background: #9aff67;
 }
