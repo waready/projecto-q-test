@@ -1,13 +1,53 @@
 <template>
   <div id="app" class="">
+
+    <!-- <input type="text" v-model="bar2"> -->
     <div class="bg-color-blue">
       <!-- <button @click="askMotionPermission" class="btn">
         Enable motion
       </button> -->
+      
+      <pre>
+      {{ $data.theCards }}
+      </pre>
+    <div id="hangman" class="q-py-sm">
+      <q-btn  label="PISTA" color="primary" @click="bar2 = true"/>
+    </div>
+
+    <q-dialog
+      v-model="bar2"
+      persistent
+      transition-show="flip-down"
+      transition-hide="flip-up"
+    >
+      <q-card class="bg-deep-orange-6 text-white">
+        <q-bar>
+
+
+          <q-space />
+
+          <q-btn dense flat icon="close" v-close-popup>
+            <q-tooltip content-class="bg-white text-primary">Close</q-tooltip>
+          </q-btn>
+        </q-bar>
+
+        <q-card-section>
+          <div class="text-h6">Pista</div>
+        </q-card-section>
+
+        <q-card-section>
+          Une los pares correspondientes
+        </q-card-section>
+      </q-card>
+    </q-dialog>
+
+
      <div class="row">
        <div class="center">
           <q-btn label="Jugar de Nuevo"   size="md" color="purple" @click="reset"  />
        </div>
+
+       
      </div>
     </div>
 
@@ -33,37 +73,51 @@
 import Card from './components/Card.vue';
 import ScoreBoard from './components/ScoreBoard.vue';
 
-// const animals = ['elephant', 'lion', 'fox', 'tiger', 'rabbit', 'owl'];
-
 const shapes = [
-  'triangle',
-  'star',
-  'rhombus',
-  'square',
-  'pentagon',
-  'hexagon',
-  'oval',
-  'circle'];
+  'elephant', 
+  'lion', 
+  'fox', 
+  //'tiger', 
+  //'rabbit', 
+  //'owl'
+];
+
+// const shapes = [
+//   'triangle',
+//   'star',
+//   'rhombus',
+//   'square',
+//   'pentagon',
+//   'hexagon',
+//   'oval',
+//   'circle'];
 
 const cards = [];
 
 shapes.forEach(item => {
-
-
   const card = {
     matchKey: item,
     flipped: false,
     id: `${item}-a`,
+    imgUrl: `statics/images/animals/${item}.png`,
+    matched: false,
+  };
+  const card1 = {
+    matchKey: item,
+    flipped: false,
+    id: `${item}-b`,
     imgUrl: `statics/images/shapes/${item}.png`,
     matched: false,
   };
-
   // first copy
   const cardA = card;
   cards.push(cardA);
   // second copy
-  const cardB = { ...card };
-  cardB.id = `${item}-b`;
+
+
+  // const cardB = { ...card };
+  // cardB.id = `${item}-b`;
+  const cardB = card1;
   cards.push(cardB);
 
 });
@@ -80,8 +134,8 @@ function shuffle(a) {
 function initState() {
 
   shuffle(cards);
-
   return {
+    bar2:true,
     totalFlips: 0,
     // theCards: this.shuffle(cards),
     theCards: cards,
@@ -103,6 +157,7 @@ export default {
 
   data() {
     return initState();
+    
   },
 
   computed: {
@@ -221,6 +276,14 @@ export default {
 
 <style lang="scss" >
 
+#hangman {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
 body {
   background: #222222;
  

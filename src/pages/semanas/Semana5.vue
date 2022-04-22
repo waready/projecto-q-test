@@ -27,7 +27,7 @@
           <q-tab-panel name="grammar">
             <q-card flat bordered class="my-card">
               <q-card-section>
-                <div class="text-h6">PREGUNTAS DE INTERROGACION FRECUENTES</div>
+                <div class="text-h6">Sistema Silabico</div>
               </q-card-section>
               <q-card-section>
                 <li v-for="(item,index) in saludos" :key="index" style="list-style:none">{{item}}</li>
@@ -36,11 +36,26 @@
               <q-separator inset />
 
               <q-card-section>
-                <div class="text-h6">Sistema de sufijos</div>
+                <div class="text-h6">Familia</div>
               </q-card-section>
               <q-card-section>
-                <div class="text-h7">Se agrega el sufijo "-SA" al final de los Pronombres interrogativos</div>
-                <li v-for="(item,index) in despedidas" :key="index" style="list-style:none">{{item}}</li>
+                <familia/>
+              </q-card-section>
+              <q-separator inset />
+
+              <q-card-section>
+                <div class="text-h6">Alimentos</div>
+              </q-card-section>
+              <q-card-section>
+                <alimentos/>
+              </q-card-section>
+              <q-separator inset />
+
+              <q-card-section>
+                <div class="text-h6">Vestido</div>
+              </q-card-section>
+              <q-card-section>
+                <ropa/>
               </q-card-section>
             </q-card>
           </q-tab-panel>
@@ -50,7 +65,7 @@
           </q-tab-panel>
 
           <q-tab-panel name="ejercicios">
-            
+      
           </q-tab-panel>
 
         </q-tab-panels>
@@ -60,13 +75,13 @@
 </template>
 
 <script>
-// import vueFlashcard from "vue-flashcard";
-// import cards from "components/cards.vue";
-// import lista from "components/lista_sound.vue";
+import familia from "../views/vocabulario/familia.vue";
+import alimentos from "../views/vocabulario/vegetales.vue";
+import ropa from "../views/vocabulario/ropa.vue";
 
-import chat from "components/questionchat.vue";
+import chat from "components/semana5.vue";
 export default {
-    components: { chat },
+    components: { chat, familia, alimentos,ropa },
   name: "PageIndex",
   //components: { cards, lista },
   data() {
@@ -75,23 +90,22 @@ export default {
       // TextoBuscado: "",
       // domesticos
       saludos:[
-       "¿Cual es tu nombre?: ¿Kuna Sutinïtasa?",
-       "¿Que es tu nombre?: ¿Kunasa sutinïtasa?",
-       "¿Que es eso? : ¿Akaxa Kunasa?",
-       "¿Tu quien eres?: ¿jumaxa khiïtasa?",
-       "¿Que es esto? : ¿ukaxa Kunasa?",
-       "¿Que es aquello?: ¿Khayaxa kunasa?",
-       "¿Tu donde vives? :¿Jumaxa kawkhansa utjta?",
-       "¿De donde eres? : ¿kawkinkirïtasa?",
+      "La sílaba aimara es una unidad sonora constituida por un núcleo con o sin márgenes. El núcleo o cresta silábica, por definición, es siempre una vocal; los márgenes, a su turno, los constituyen las consonantes. Se habla de sílaba libre cuando el núcleo no tiene margen postnuclear; y, en cambio, se habla de una sílaba cerrada o trabada, cuando registra margen postnuclear. Las siguientes configuraciones forman sílabas típicas del aimara (nótese que en los ejemplos, V simboliza al núcleo, C al margen, y el punto a la linde silábica):",
+      "V [u.ma] ‘agua’",
+      "VC [ir.pa] ‘canal’",
+      "CV [qa.λu] ‘cría’",
+      "CVC [mar.ka] ‘pueblo’",
+      "Teniendo en cuenta los tipos de sílabas registrados, la fórmula general de la estructura silábica de la lengua sería la siguiente (donde los números superescritos señalan el máximo y los infrascritos el mínimo deocurrencias):",
+      "C10VC10",
+      "------",
+      "Ejemplos",
+      "[mar] en /mar.ka/ => la primera sílaba de la palabra",
+      "[qo.q.ri], o sea /qunquri/ ‘rodilla’ => Como puede apreciarse, la segunda fórmula exige que toda raíz aimara termine en sílaba libre",
+      "------",
+      "RESTRICCIONES",
+      "los márgenes pre o postnucleares contienen una y nada más que una consonante. No existen, pues, sílabas del tipo *CCV ni *VCC.",
+      "entre un núcleo silábico y otro debe mediar por lo menos una consonante; o sea que no se toleran secuencias de vocales: queda descartada una estructura del tipo *V.V"
       
-      ],
-      despedidas:[
-       "kuna : Que (sa)",
-       "kawki: Donde (sa)",
-       "Khithi: Quien (sa)",
-       "Kunjama: Como (sa)",
-       "Qawqha: Cuanto (sa)",
-       "Kunapacha: Cuándo (sa)",
       ],
     };
   }

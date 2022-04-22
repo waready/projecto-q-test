@@ -38,9 +38,14 @@ const routes = [
 
       //semanas
       { path:'semana1', component: () => import('pages/semanas/Semana1.vue')},
+      { path:'semana2', component: () => import('pages/semanas/Semana2.vue')},
       { path:'semana3', component: () => import('pages/semanas/Semana3.vue')},
       { path:'semana4', component: () => import('pages/semanas/Semana4.vue')},
-      { path:'semana2', component: () => import('pages/semanas/Semana2.vue')},
+      { path:'semana6', component: () => import('pages/semanas/Semana3.vue')},
+      { path:'semana7', component: () => import('pages/semanas/Semana4.vue')},
+
+
+      { path:'semana5', component: () => import('pages/semanas/Semana5.vue')},
 
 
       { path:'arbustos_arboles', component: () => import('pages/views/vocabulario/arbustos_arboles.vue')},
