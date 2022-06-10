@@ -6,10 +6,6 @@
       <!-- <button @click="askMotionPermission" class="btn">
         Enable motion
       </button> -->
-      
-      <pre>
-      {{ $data.theCards }}
-      </pre>
     <div id="hangman" class="q-py-sm">
       <q-btn  label="PISTA" color="primary" @click="bar2 = true"/>
     </div>
@@ -74,10 +70,10 @@ import Card from './components/Card.vue';
 import ScoreBoard from './components/ScoreBoard.vue';
 
 const shapes = [
-  'elephant', 
-  'lion', 
-  'fox', 
-  //'tiger', 
+  'Aski arumakipan', 
+  'Aski jaypukipan', 
+  'Aski urukipan', 
+  'sarxañani', 
   //'rabbit', 
   //'owl'
 ];
