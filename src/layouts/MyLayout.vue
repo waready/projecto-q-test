@@ -21,7 +21,7 @@
         <q-space />
 
         <!-- boton para drowdow para saber que subir -->
-        <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="white" icon="add" no-caps label="Create" class="q-ml-sm q-px-md">
+        <!-- <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="white" icon="add" no-caps label="Create" class="q-ml-sm q-px-md">
           <q-menu anchor="top right" self="top right">
             <q-list class="text-grey-8" style="min-width: 100px">
               <q-item aria-hidden="true">
@@ -35,9 +35,9 @@
               </q-item>
             </q-list>
           </q-menu>
-        </q-btn>
+        </q-btn> -->
 
-        <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="white" icon="cloud_upload" no-caps label="Upload" class="q-ml-sm q-px-md" />
+        <!-- <q-btn v-if="$q.screen.gt.xs" flat dense no-wrap color="white" icon="cloud_upload" no-caps label="Upload" class="q-ml-sm q-px-md" /> -->
 
         <q-space />
 
@@ -110,7 +110,7 @@
 
           <q-separator class="q-my-md" />
 
-          <q-item clickable class="GPL__drawer-item GPL__drawer-item--storage">
+          <!-- <q-item clickable class="GPL__drawer-item GPL__drawer-item--storage">
             <q-item-section avatar>
               <q-icon name="cloud" />
             </q-item-section>
@@ -119,7 +119,7 @@
               <q-linear-progress :value="storage" class="q-my-sm" />
               <q-item-label caption>2.6 GB of 15 GB</q-item-label>
             </q-item-section>
-          </q-item>
+          </q-item> -->
         </q-list>
       </q-scroll-area>
     </q-drawer>
@@ -168,7 +168,7 @@ export default {
        { icon:  'home', text: 'Inicio', url:"/"  },
         { icon: 'g_translate', text: 'Aymara y vocabulario', url:"vocabulario" },
         { icon: 'translate', text: 'Gramatica', url:"gramatica" },
-        { icon: 'record_voice_over', text: 'Pronunciación', url:"frases" },
+        // { icon: 'record_voice_over', text: 'Pronunciación', url:"frases" },
         { icon: 'videogame_asset', text: 'Juegos', url:"juegos" }
       ],
       links2: [

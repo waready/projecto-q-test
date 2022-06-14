@@ -117,6 +117,7 @@
       LetterButton
     },
     props: {
+      semana2:true,
       words: {
         type: Array,
         default: () => [
@@ -153,6 +154,8 @@
         if (this.newArray == 1)
           return colores.map(word => word.toUpperCase())
         else if (this.newArray == 2)
+          return familia.map(word => word.toUpperCase())
+        else if (this.newArray == 3)
           return familia.map(word => word.toUpperCase())
         else 
           return this.words.map(word => word.toUpperCase())
@@ -408,7 +411,18 @@
         this.currentWord = this.getPalabra()
         this.restart()
         this.twoPlayers = false
+      },
+       simulateSemana(){
+        this.bar2 = true,
+        this.Enunciado = "Es un familiar de primer grado"
+        this.newArray = 2
+        this.currentWord = this.getPalabra()
+        this.restart()
+        this.twoPlayers = false
+        alert(this.semana2)
       }
+
+
     },
     // identify the canvas element and initialize it, draw the gallows, choose a word, and draw the blanks.
     mounted: function() {
@@ -420,6 +434,9 @@
       this.drawGallows(this.ctx)
       this.currentWord = this.getRandomWord()
       this.makeBlanks()
+      if(this.semana2){
+       this.simulateSemana(2); 
+      }
     }
     
   }
