@@ -37,9 +37,25 @@
     <div class="crossword-container" ref="crossword-container">
       <div class="center q-my-sm">
         <div v-if="showPlayAgain">
-          <q-btn size="sm" color="purple" @click="playAgain">
-            Jugar de nuevo
+          <!-- <q-btn size="sm" color="purple" @click="playAgain">
+            Otros
           </q-btn>
+
+          <q-btn size="sm" color="purple" @click="animales()">
+            Animales
+          </q-btn> -->
+          <q-btn class="q-mx-sm"  color="secondary" @click="playAgain" label="Otros" />
+
+          <q-btn       
+            color="purple"  
+            @click="playAgain"
+            label="nuevo juego"
+          />
+        
+          <q-btn class="q-mx-sm" color="secondary" @click="animales()" label="Animales" />
+
+
+
         </div>
       </div>
 
@@ -610,6 +626,41 @@ var CrosswordUtils = {
   }
 };
 
+var animales = [
+    {
+      word: "anuqara",
+      description: "perro"
+    },
+    {
+      word: "khuchi",
+      description: "chancho"
+    },
+    {
+      word: "Waka",
+      description: "vaca"
+    },
+    {
+      word: "Wallpa",
+      description: "gallina"
+    },
+    {
+      word: "Iwija",
+      description: "oveja"
+    },
+    {
+      word: "phisi",
+      description: "gato"
+    },
+    {
+      word: "Wari",
+      description: "vicuña"
+    },
+    {
+      word: "Amaru",
+      description: "serpiente"
+    }
+]
+
 export default {
   props: {
     wordsWithReflexions: {
@@ -672,7 +723,8 @@ export default {
       matrix: null,
       grid: null,
       form: null,
-      smallContainer: false
+      smallContainer: false,
+      cosas:false,
     };
   },
 
@@ -723,6 +775,11 @@ export default {
   },
 
   methods: {
+
+    animales(){
+      this.cosas=true;
+      this.generateGrid();
+    },
     index: function(index1, index2) {
       let id = `item${index1 + 1}-${index2 + 1}`;
       return id;
@@ -746,9 +803,13 @@ export default {
     setRandomWords: function() {
       let eightWords = [];
       while (eightWords.length < 8) {
-        let word = this.wordsWithReflexions[
-          Math.floor(Math.random() * this.wordsWithReflexions.length)
-        ];
+          if(!this.cosas){
+            var word = this.wordsWithReflexions[
+            Math.floor(Math.random() * this.wordsWithReflexions.length)];
+          }else{
+            var word = animales[
+            Math.floor(Math.random() * animales.length)];
+          }
         if (eightWords.indexOf(word) < 0) {
           eightWords.push(word);
         }

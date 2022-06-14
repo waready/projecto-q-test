@@ -65,7 +65,7 @@
           </q-tab-panel>
 
           <q-tab-panel name="ejercicios">
-      
+           <ejercicio></ejercicio>
           </q-tab-panel>
 
         </q-tab-panels>
@@ -79,9 +79,11 @@ import familia from "../views/vocabulario/familia.vue";
 import alimentos from "../views/vocabulario/vegetales.vue";
 import ropa from "../views/vocabulario/ropa.vue";
 
+import ejercicio from "pages/juegos/AhorcadoFinal.vue";
+
 import chat from "components/semana5.vue";
 export default {
-    components: { chat, familia, alimentos,ropa },
+    components: { chat, familia, alimentos,ropa,ejercicio },
   name: "PageIndex",
   //components: { cards, lista },
   data() {

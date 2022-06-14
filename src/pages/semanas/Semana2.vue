@@ -50,7 +50,7 @@
           </q-tab-panel>
 
           <q-tab-panel name="ejercicios">
-            
+            <ejercicio></ejercicio>
           </q-tab-panel>
 
         </q-tab-panels>
@@ -63,10 +63,11 @@
 // import vueFlashcard from "vue-flashcard";
 // import cards from "components/cards.vue";
 // import lista from "components/lista_sound.vue";
-
+import ejercicio from "pages/juegos/EjercicioSemana2.vue";
 import chat from "components/questionchat.vue";
+
 export default {
-    components: { chat },
+    components: { chat,ejercicio },
   name: "PageIndex",
   //components: { cards, lista },
   data() {

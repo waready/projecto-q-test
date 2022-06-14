@@ -37,7 +37,7 @@
               <q-separator inset />
 
               <q-card-section>
-                <li v-for="(item,index) in despedidas" :key="index" style="list-style:none">{{item}}</li>
+                <!-- <li v-for="(item,index) in despedidas" :key="index" style="list-style:none">{{item}}</li> -->
               </q-card-section>
             </q-card>
           </q-tab-panel>

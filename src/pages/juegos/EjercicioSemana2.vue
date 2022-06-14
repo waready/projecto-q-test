@@ -30,20 +30,15 @@
       </q-dialog>
 
     </div>
-
     <div align-h="center">
-      <q-btn class="q-mx-sm"  color="secondary" @click="simulateColores(1)" label="colores" />
 
       <q-btn       
         color="purple"  
         @click="playAgain"
         label="nuevo juego"
       />
-     
-      <q-btn class="q-mx-sm" color="secondary" @click="simulateFamilia(2)" label="familia" />
 
     </div>
-      
     
     <!-- canvas where hangman is drawn -->
     <div id="board">
@@ -97,19 +92,7 @@
 </template>
 
 <script>
-  var familia = [
-    "Jach'atata", 
-    "Jach'amama", 
-    "Awki", 
-    "Tayka", 
-    "Yuqalla", 
-    "Imilla",
-  ];
-  var colores = [
-    "Wila",
-    "Q'illu", 
-    "Larama",
-  ];
+  
   
   import LetterButton from 'components/LetterButton.vue'
   export default {
@@ -121,15 +104,13 @@
       words: {
         type: Array,
         default: () => [
-          "Maya",
-          "Paya",
-          "Kimsa",
-          "Pusi",
-          "Phisqa",
+          "kuna",
+          "kawki",
+          "Khithi",
+          "Kunjama",
+          "Qawqha",
           "Suxta",
-          "Paqallqu",
-          "Kimsaqallqu",
-          "Llätunka",
+          "Kunapacha",
           ]
        // default:numeros
       },
@@ -151,13 +132,7 @@
         return this.words.map(word => word.toUpperCase())
       },
       mayusculas(){
-        if (this.newArray == 1)
-          return colores.map(word => word.toUpperCase())
-        else if (this.newArray == 2)
-          return familia.map(word => word.toUpperCase())
-        else if (this.newArray == 3)
-          return familia.map(word => word.toUpperCase())
-        else 
+        
           return this.words.map(word => word.toUpperCase())
       },
       winMessage: function () {
@@ -199,7 +174,7 @@
     data () {
       return {
         bar2: true,
-        Enunciado:"La palabra pueden ser numeros del 1 al 10.",
+        Enunciado:"La palabra pueden ser uno de los Pronombres interrogativos (Puede revisar la gramtica)",
         newArray:null,
         // keyboard letters
         letters: [
@@ -385,7 +360,7 @@
 
       // chooses a new word and resets the game when 'play again' is clicked
       playAgain: function() {
-        this.Enunciado = "La palabra pueden ser numeros del 1 al 10."
+        this.Enunciado = "La palabra pueden ser uno de los Pronombres interrogativos (Puede revisar la gramtica)"
         this.currentWord = this.getRandomWord()
         this.restart()
         this.twoPlayers = false
@@ -396,31 +371,6 @@
       getRandomWord: function () {
         return this.wordsUpperCased[this.randomInteger(0, this.wordsUpperCased.length - 1)]
       },
-      simulateColores(){
-        this.bar2 = true,
-        this.Enunciado = "Es un color primario"
-        this.newArray = 1
-        this.currentWord = this.getPalabra()
-        this.restart()
-        this.twoPlayers = false
-      },
-      simulateFamilia(){
-        this.bar2 = true,
-        this.Enunciado = "Es un familiar de primer grado"
-        this.newArray = 2
-        this.currentWord = this.getPalabra()
-        this.restart()
-        this.twoPlayers = false
-      },
-       simulateSemana(){
-        this.bar2 = true,
-        this.Enunciado = "Es un familiar de primer grado"
-        this.newArray = 2
-        this.currentWord = this.getPalabra()
-        this.restart()
-        this.twoPlayers = false
-      }
-
 
     },
     // identify the canvas element and initialize it, draw the gallows, choose a word, and draw the blanks.
