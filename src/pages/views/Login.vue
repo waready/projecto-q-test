@@ -1,63 +1,80 @@
 <template>
-  <div class="q-pa-lg flex justify-center full-height bg-accent" :class="heightSize">
-    <!-- <div class="row gt-sm">
-      <div class="row">
-        <div class="list">
-          <label class="item" v-for="color in colors">
-            <div class="item-primary">
-              <q-radio v-model="bgColor" :val="color"></q-radio>
-            </div>
-            <div class="item-content capitalize">
-              {{color}}
-            </div>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="list fit">
-          <label class="item" v-for="tone in colorTones">
-            <div class="item-primary">
-              <q-radio v-model="toneColor" :val="tone"></q-radio>
-            </div>
-            <div class="item-content capitalize">
-              {{tone}}
-            </div>
-          </label>
-        </div>
-      </div>
-    </div> -->
-    <q-card class="my-card shadow-10 vertical-middle">
-        <div class="text-white text-center" >
-            <div class="card-title" :class="finalBgColor">
-                <br>
-                <svg id="logo" viewBox="0 0 483 483"
-                    style="enable-background:new 0 0 460 460;"
-                    xml:space="preserve" width="128px" height="128px"
-                    v-html="logoMethod">
-                </svg>
+  <div>
+    <q-tabs
+      v-model="tab"
+      dense
+      inline-label
+      outside-arrows
+      mobile-arrows
+      class="text-grey"
+      active-color="primary"
+      indicator-color="primary"
+      align="justify"
+      narrow-indicator
+    >
+      <q-tab name="login" label="Iniciar Secion" />
+      <q-tab name="registro" label="Registro" />
+    </q-tabs>
+    
+    <div
+      class=""
+      :class="heightSize"
+    >
+      <q-tab-panels v-model="tab" animated>
+        <q-tab-panel name="login">
+          <q-card class="my-card shadow-10 vertical-middle">
+            <div class="text-white text-center">
+              <div class="card-title" :class="finalBgColor">
+                <br />
+                <svg
+                  id="logo"
+                  viewBox="0 0 483 483"
+                  style="enable-background:new 0 0 460 460;"
+                  xml:space="preserve"
+                  width="128px"
+                  height="128px"
+                  v-html="logoMethod"
+                ></svg>
                 <h5>App_mara</h5>
-            </div>
-            <div class=" bg-white ">
+              </div>
+              <div class=" bg-white ">
                 <!-- <div class="stacked-label">
                 <input required class="full-width" type="email" v-model="email">
                 <label>Email</label>
                 </div> -->
 
-                <q-input class="q-ma-md" color="grey-8" outlined v-model="email" label="e-mail">
+                <q-input
+                  class="q-ma-md"
+                  color="grey-8"
+                  outlined
+                  v-model="form.email"
+                  label="e-mail"
+                >
                   <template v-slot:append>
-                      <q-icon color="primary" name="account_box" style="font-size: 1em;" />
+                    <q-icon
+                      color="primary"
+                      name="account_box"
+                      style="font-size: 1em;"
+                    />
                   </template>
                 </q-input>
-              
-                <q-input class="q-ma-md" color="grey-8" outlined :type="isPwd ? 'password' : 'text'" v-model="email" label="password">
+
+                <q-input
+                  class="q-ma-md"
+                  color="grey-8"
+                  outlined
+                  :type="isPwd ? 'password' : 'text'"
+                  v-model="form.password"
+                  label="password"
+                >
                   <template v-slot:append>
-                      <q-icon
+                    <q-icon
                       :name="isPwd ? 'visibility_off' : 'visibility'"
                       class="cursor-pointer"
                       @click="isPwd = !isPwd"
                       style="font-size: 1em;"
                       color="primary"
-                      />
+                    />
                   </template>
                 </q-input>
 
@@ -65,120 +82,116 @@
                 <input required class="full-width" type="password" v-model="password">
                 <label>Password</label>
                 </div> -->
+              </div>
+              <!-- <button class="teal raised full-width " @click="startAnimation()">Animate !</button> -->
+              <div class="card-actions inline-block vertical-middle q-px-md">
+                <q-btn
+                  class="bg-primary fit q-px-md"
+                  icon-right="send"
+                  :class="buttonClass"
+                  @click="login()"
+                  >Login</q-btn
+                >
+                <!-- <q-btn class="bg-red-7 fit"   :class="buttonClass" @click="login()">Login Google  &nbsp;<img alt="Quasar logo" src="~assets/icon/google.png" width="20"></q-btn >
+                <q-btn class="bg-blue-10 fit"  :class="buttonClass" @click="login()"> Login Facebook  &nbsp;   <img alt="Quasar logo" src="~assets/icon/facebook.png" width="20"></q-btn> -->
+              </div>
             </div>
-            <!-- <button class="teal raised full-width " @click="startAnimation()">Animate !</button> -->
-            <div class="card-actions inline-block vertical-middle q-px-md">
-                <q-btn class="bg-primary fit q-px-md"  icon-right="send" :class="buttonClass" @click="login()">Login</q-btn >
-                <q-btn class="bg-red-7 fit"   :class="buttonClass" @click="login()">Login Google  &nbsp;<img alt="Quasar logo" src="~assets/icon/google.png" width="20"></q-btn >
-                <q-btn class="bg-blue-10 fit"  :class="buttonClass" @click="login()"> Login Facebook  &nbsp;   <img alt="Quasar logo" src="~assets/icon/facebook.png" width="20"></q-btn>
-            </div>
-        </div>
-    </q-card>
-  
+          </q-card>
+        </q-tab-panel>
 
-    <!-- <div class="row gt-sm">
-      <div class="row ">
-        <div class="list fit">
-          <label class="item" v-for="bClass in buttonClasses">
-            <div class="item-primary">
-              <q-radio v-model="buttonClass" :val="bClass"></q-radio>
-            </div>
-            <div class="item-content capitalize">
-              {{bClass}}
-            </div>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="list">
-          <label class="item" v-for="logoName in logos">
-            <div class="item-primary">
-              <q-radio v-model="logo" :val="logoName"></q-radio>
-            </div>
-            <div class="item-content capitalize">
-              {{logoName}}
-            </div>
-          </label>
-          <button class="teal raised full-width " @click="startAnimation()">Animate !</button>
-        </div>
-      </div>
-    </div> -->
+        <q-tab-panel name="registro"> 
+          <registro></registro>
+        </q-tab-panel>
+      </q-tab-panels>
+    </div>
   </div>
 </template>
 
-<script >
-  /* eslint-disable */
-  import Vivus from 'vivus'
-  import logoData from './logoData'
-  import { Platform } from 'quasar'
-  export default {
-    mounted () {
+<script>
+/* eslint-disable */
+import { mapActions } from "vuex";
+import Vivus from "vivus";
+import logoData from "./logoData";
+import registro from "./Register.vue"
+import { Platform } from "quasar";
+export default {
 
-      this.startAnimation()
+  components: { registro },
+  mounted() {
+    this.startAnimation();
+  },
+  beforeDestroy() {},
+  computed: {
+    heightSize() {
+      if (Platform.is.desktop) {
+        return "items-center";
+      }
+      return "";
     },
-    beforeDestroy () {
+    finalBgColor() {
+      // return `bg-${this.bgColor}-${this.toneColor}`
+      return `bg-primary`;
+    },
+    logoMethod() {
+      return logoData[this.logo];
+    }
+  },
+  data() {
+    return {
+      logos: Object.keys(logoData),
+      logo: "Digitalizer",
 
-    },
-    computed: {
-      heightSize (){
-        if (Platform.is.desktop) {
-          return 'items-center'
-        }
-        return ''
+      isPwd: true,
+      form: {
+        email: "quasar@admin.com",
+        password: "123456"
       },
-      finalBgColor () {
-        // return `bg-${this.bgColor}-${this.toneColor}`
-        return `bg-primary`
-      },
-      logoMethod () {
-        return logoData[this.logo]
-      }
+      tab: "login",
+      bgColor: "amber",
+      toneColor: 10,
+      colors: ["purple", "blue", "red", "green", "amber"],
+      colorTones: ["2", "4", "6", "8", "10"],
+      buttonClasses: [
+        "normal",
+        "outline",
+        "clear",
+        "push",
+        "bordered",
+        "round"
+      ],
+      buttonClass: "normal",
+      vivus: ""
+    };
+  },
+  methods: {
+    ...mapActions("store", ["loginUser"]),
+    login() {
+      this.loginUser(this.form);
     },
-    data () {
-      return {
-        logos: Object.keys(logoData),
-        logo: 'Digitalizer',
-        email: 'quasar@admin.com',
-        isPwd: true,
-        password: '123456',
-        bgColor: 'amber',
-        toneColor: 10,
-        colors: ['purple', 'blue', 'red', 'green', 'amber'],
-        colorTones: ['2', '4', '6', '8', '10'],
-        buttonClasses: ['normal','outline', 'clear', 'push', 'bordered', 'round'],
-        buttonClass: 'normal',
-        vivus: ''
-      }
-    },
-    methods: {
-      login () {
-        this.setLayoutNeeded(true)
-        this.setIsLoginPage(false)
-        this.$router.push('/')
-      },
-      startAnimation () {
-        this.vivus = new Vivus('logo', {
-            duration: 400,
+    startAnimation() {
+      this.vivus = new Vivus(
+        "logo",
+        {
+          duration: 400,
           forceRender: false
-          }, function(element) {
-           
-          }
-        )
-      }
+        },
+        function(element) {}
+      );
     }
   }
+};
 </script>
 <style scoped>
-  .card {
-    margin-bottom: 0px;
-  }
-  .card-content {
-    min-height: 160px;
-  }
-  button {
-    margin-bottom: 4%;
-  }
-  h4 {
-    font-weight: 300;
-  }
+.card {
+  margin-bottom: 0px;
+}
+.card-content {
+  min-height: 160px;
+}
+button {
+  margin-bottom: 4%;
+}
+h4 {
+  font-weight: 300;
+}
 </style>
