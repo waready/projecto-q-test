@@ -20,6 +20,8 @@ const routes = [
 
 
       { path:'login', component: () => import('pages/views/Login.vue')},
+      { path:'register', component: () => import('pages/views/Register.vue')},
+
       { path:'colores', component: () => import('pages/views/Colores.vue')},
       { path:'numeros', component: () => import('pages/views/Numeros.vue')},
       { path:'tiempo', component: () => import('pages/views/Tiempo.vue')},

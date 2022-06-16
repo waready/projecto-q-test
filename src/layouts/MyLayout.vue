@@ -43,18 +43,44 @@
 
         <div class="q-gutter-sm row items-center no-wrap">
           
-          <q-btn round dense flat color="white" icon="notifications">
+          <!-- <q-btn round dense flat color="white" icon="notifications">
             <q-badge color="red" text-color="white" floating>
               2
             </q-badge>
             <q-tooltip>Notifications</q-tooltip>
-          </q-btn>
-          <q-btn round flat>
+          </q-btn> -->
+
+           <q-btn
+             v-if="!userDetails.email" 
+             to="/login"
+             class="absolute-right q-pr-sm"
+             icon="account_circle"
+             no-caps
+             flat
+             dense
+             label="Ingresar">
+
+             </q-btn>
+
+
+          <q-btn v-else round flat>
             <q-avatar size="26px">
               <img src="https://cdn.quasar.dev/img/boy-avatar.png">
             </q-avatar>
-            <q-tooltip>Account</q-tooltip>
+             <!-- <q-toolbar-title>{{userDetails.email}}</q-toolbar-title>  -->
+
+            
+             <q-btn-dropdown color="primary" :label="userDetails.email">
+                <q-list>
+                  <q-item clickable v-close-popup >
+                    <q-item-section>
+                      <q-item-label @click="logoutUser">Salir</q-item-label>
+                    </q-item-section>
+                  </q-item>
+                </q-list>
+              </q-btn-dropdown>          
           </q-btn>
+         
         </div>
       </q-toolbar>
     </q-header>
@@ -156,6 +182,8 @@
 </template>
 
 <script>
+
+import{mapState,mapActions} from 'vuex'
 export default {
   name: 'GooglePhotosLayout',
   data () {
@@ -191,6 +219,13 @@ export default {
         { icon: 'book', text: 'Photo book' }
       ]
     }
+  },
+  computed:{
+    ...mapState('store',['userDetails']),
+
+  },
+  methods:{
+    ...mapActions('store',['logoutUser']),
   }
 }
 </script>
