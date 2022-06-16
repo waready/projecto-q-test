@@ -32,19 +32,20 @@
     </div>
 
     <div align-h="center">
-      <q-btn class="q-mx-sm"  color="secondary" @click="simulateColores(1)" label="colores" />
+      <q-btn class="q-mx-sm"  color="purple" @click="simulateColores(1)" label="colores" />
 
-      <q-btn       
-        color="purple"  
+      <q-btn
+        color="purple"
         @click="playAgain"
         label="nuevo juego"
       />
-     
-      <q-btn class="q-mx-sm" color="secondary" @click="simulateFamilia(2)" label="familia" />
+
+      <q-btn class="q-mx-sm" color="purple" @click="simulateFamilia(2)" label="familia" />
+      <q-btn class="q-mx-sm" color="purple" to="/juego_ahorcado_1" label="Juego crucigrama" />
 
     </div>
-      
-    
+
+
     <!-- canvas where hangman is drawn -->
     <div id="board">
       <canvas id="board-canvas"></canvas>
@@ -77,12 +78,12 @@
           @check="check(letter)"
           v-cloak />
       </div>
-      
+
     </div>
-    
+
   </div>
   <div class="q-mt-md row">
-    
+
     <div class="col">
       <q-btn class="glossy" rounded color="deep-orange" @click="onePlayer">1 Jugador</q-btn>
     </div>
@@ -92,25 +93,25 @@
       </div>
     </div>
   </div>
-  
+
 </div>
 </template>
 
 <script>
   var familia = [
-    "Jach'atata", 
-    "Jach'amama", 
-    "Awki", 
-    "Tayka", 
-    "Yuqalla", 
+    "Jach'atata",
+    "Jach'amama",
+    "Awki",
+    "Tayka",
+    "Yuqalla",
     "Imilla",
   ];
   var colores = [
     "Wila",
-    "Q'illu", 
+    "Q'illu",
     "Larama",
   ];
-  
+
   import LetterButton from 'components/LetterButton.vue'
   export default {
     components: {
@@ -157,7 +158,7 @@
           return familia.map(word => word.toUpperCase())
         else if (this.newArray == 3)
           return familia.map(word => word.toUpperCase())
-        else 
+        else
           return this.words.map(word => word.toUpperCase())
       },
       winMessage: function () {
@@ -260,7 +261,7 @@
           ctx.arc(this.canvas.width * 0.4, (this.canvas.height / 5) + 20, 20, 0, 2 * Math.PI)
           ctx.stroke()
           ctx.closePath()
-        } 
+        }
         // draw the torso
         else if (this.guesses === 1) {
           ctx.beginPath()
@@ -292,7 +293,7 @@
           ctx.lineTo((this.canvas.width * 0.4) + 35, (this.canvas.height / 2) + 10)
           ctx.stroke()
           ctx.closePath()
-        } 
+        }
         // draw the left arm and handle game over
         else if (this.guesses === 5) {
           ctx.beginPath()
@@ -434,7 +435,7 @@
       this.currentWord = this.getRandomWord()
       this.makeBlanks()
     }
-    
+
   }
 </script>
 

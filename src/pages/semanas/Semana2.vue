@@ -76,22 +76,23 @@ export default {
       // TextoBuscado: "",
       // domesticos
       saludos:[
-       "¿Cual es tu nombre?: ¿Kuna Sutinïtasa?",
-       "¿Que es tu nombre?: ¿Kunasa sutinïtasa?",
-       "¿Que es eso? : ¿Akaxa Kunasa?",
-       "¿Tu quien eres?: ¿jumaxa khiïtasa?",
-       "¿Que es esto? : ¿ukaxa Kunasa?",
-       "¿Que es aquello?: ¿Khayaxa kunasa?",
-       "¿Tu donde vives? :¿Jumaxa kawkhansa utjta?",
-       "¿De donde eres? : ¿kawkinkirïtasa?",
-      
+       "¿Cuál es tu nombre?: ¿Kuna sutinïtasa?",
+       "¿Cuál es tu nombre?: ¿Kunas sutimaxa?",
+      //  "¿Que es tu nombre?: ¿Kunasa sutinïtasa?",
+       "¿Qué es eso? : ¿Akaxa kunasa?",
+       "¿Tú quién eres?: ¿jumaxa khiïtasa?",
+       "¿Qué es esto? : ¿ukaxa kunasa?",
+       "¿Qué es aquello?: ¿Khayaxa kunasa?",
+       "¿Tú dónde vives? :¿Jumaxa kawkhansa utjta?",
+       "¿De dónde eres? : ¿kawkinkirïtasa?",
+
       ],
       despedidas:[
-       "kuna : Que (sa)",
-       "kawki: Donde (sa)",
-       "Khithi: Quien (sa)",
-       "Kunjama: Como (sa)",
-       "Qawqha: Cuanto (sa)",
+       "kuna : Qué (sa)",
+       "kawki: Dónde (sa)",
+       "Khithi: Quién (sa)",
+       "Kunjama: Cómo (sa)",
+       "Qawqha: Cuánto (sa)",
        "Kunapacha: Cuándo (sa)",
       ],
     };

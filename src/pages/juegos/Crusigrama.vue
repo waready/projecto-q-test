@@ -46,12 +46,12 @@
           </q-btn> -->
           <q-btn class="q-mx-sm"  color="secondary" @click="playAgain" label="Otros" />
 
-          <q-btn       
-            color="purple"  
+          <q-btn
+            color="purple"
             @click="playAgain"
             label="nuevo juego"
           />
-        
+
           <q-btn class="q-mx-sm" color="secondary" @click="animales()" label="Animales" />
 
 
@@ -679,7 +679,7 @@ export default {
           description: "lo usamos en la cabeza"
         },
         {
-          word: "Ojota",
+          word: "Jiskhu",
           description: "lo usamos en los pies"
         },
         {

@@ -5,7 +5,7 @@
         <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['¿Jupaxa mamapati?']"
+        :text="['¿Kunjamasa utamaxa?']"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -13,7 +13,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Jisa, mamapawa']"
+        :text="['Utajax janq’u larama ukat jach’akiwa	']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
@@ -21,7 +21,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['¿Kitisa awkipaxa?']"
+        :text="['Ukat, ¿kuna samisa uka punkuxa?']"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -29,27 +29,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Khayawa']"
-        stamp="4 minutes ago"
-        text-color="white"
-        bg-color="primary"
-      />
-      <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
-      </div>
-
-      <div style="text-align:center" >
-        <q-chat-message
-        name="Rosa"
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="[`¿Jupaxa mamapati kullakapacha?`]"
-        stamp="7 minutes ago"
-        sent
-        bg-color="amber-7"
-      />
-      <q-chat-message
-        name="Juan"
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="[`Janiwa, mamapakisa kullakapakisa`]"
+        :text="['Punkux ch’umpi ukat machaqäxiwa']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
@@ -61,7 +41,7 @@
         <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="[`¿Jupaxa kunapäpachasa?`]"
+        :text="[`Mama, ¿kunas ukax?	`]"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -69,7 +49,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Jupaxa warmipawa']"
+        :text="[`ukax mä wakawa`]"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
@@ -77,7 +57,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['¿Jupaxa chachapäpachati?']"
+        :text="[`¿Ukat ukax?`]"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -85,13 +65,47 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Janiwa jupaxa chachapakpachati, tatapäpachawa']"
+        :text="[`ukax mä qawra`]"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
       />
+      <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
+      </div>
 
-
+      <div style="text-align:center" >
+        <q-chat-message
+        name=""
+        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        :text="['¿Jumajj nayan asnujjar uñjtati?']"
+        stamp="7 minutes ago"
+        sent
+        bg-color="amber-7"
+      />
+      <q-chat-message
+        name=""
+        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        :text="['¿Ukanakat kawchapsa?']"
+        stamp="4 minutes ago"
+        text-color="white"
+        bg-color="primary"
+      />
+      <q-chat-message
+        name=""
+        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        :text="[`Ch’iyara asnujaxa`]"
+        stamp="7 minutes ago"
+        sent
+        bg-color="amber-7"
+      />
+      <q-chat-message
+        name=""
+        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        :text="['Nayax juparux waña yapu uñjta ']"
+        stamp="4 minutes ago"
+        text-color="white"
+        bg-color="primary"
+      />
       <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
       </div>
 

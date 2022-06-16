@@ -27,7 +27,7 @@
           <q-tab-panel name="grammar">
             <q-card flat bordered class="my-card">
               <q-card-section>
-                <div class="text-h6">Sistema Silabico</div>
+                <div class="text-h6">Sistema Silábico</div>
               </q-card-section>
               <q-card-section>
                 <li v-for="(item,index) in saludos" :key="index" style="list-style:none">{{item}}</li>
@@ -107,7 +107,7 @@ export default {
       "RESTRICCIONES",
       "los márgenes pre o postnucleares contienen una y nada más que una consonante. No existen, pues, sílabas del tipo *CCV ni *VCC.",
       "entre un núcleo silábico y otro debe mediar por lo menos una consonante; o sea que no se toleran secuencias de vocales: queda descartada una estructura del tipo *V.V"
-      
+
       ],
     };
   }

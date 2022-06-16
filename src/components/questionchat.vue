@@ -5,7 +5,7 @@
         <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['¿Kunasa sutimaxa?']"
+        :text="['¿Kunas sutimaxa?']"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -13,15 +13,15 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Sutijaxa Maria Satawa...','¿Jumansti?']"
+        :text="['Sutijaxa Maria satawa...','¿Jumansti?']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
-        name=""
+        name="otra opcion para responder nombres, es remplazar y juntar el sufijo 'satawa' por 'wa'"
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['Nayaxa Antonio satawa...']"
+        :text="['Nayax(a) Antoniowa...']"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -31,15 +31,15 @@
 
       <div style="text-align:center" >
         <q-chat-message
-        name="Rosa"
+        name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="[`¿Sutipaxa Junäpachati?`]"
+        :text="[`¿Sutipax(a) Juanäpachati?`]"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
       />
       <q-chat-message
-        name="Juan"
+        name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
         :text="[`Jisa juanäpachawa`]"
         stamp="4 minutes ago"
@@ -53,7 +53,7 @@
         <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="['¿Jumaxa kawkhansa utjta?']"
+        :text="['¿Jumax(a) kawkhansa utjta?']"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -61,12 +61,12 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Nayaxa Punona utjtha']"
+        :text="['Nayax(a) Puno(na) utjtha']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
       />
-   
+
 
       <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
       </div>

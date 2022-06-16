@@ -244,7 +244,7 @@
 
           <q-tab-panel name="ejercicios">
               Pronuncie las siguientes palabras
-              <div class="row">
+              <div class="row q-gutter-md">
                 <div class="col"><q-card class="my-card">
                 <q-card-section>
                  <li v-for="item in primer">{{item}}</li>

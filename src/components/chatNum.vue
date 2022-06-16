@@ -110,7 +110,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Nayax pä tunka maranitwa, jumasti?']"
+        :text="['Nayax pä tunka maranitwa']"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
@@ -118,7 +118,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="[`Nayax tunka kimsaqallqun maranitwa.`]"
+        :text="[`¿Kunas ustamja?`]"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
@@ -126,7 +126,7 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar5.jpg"
-        :text="['Janit pä tunka mayan maranikta?']"
+        :text="[`Usutuwa p'iqixa, puraka ukamaraki q'unqurixa`]"
         stamp="4 minutes ago"
         text-color="white"
         bg-color="primary"
@@ -134,10 +134,18 @@
       <q-chat-message
         name=""
         avatar="https://cdn.quasar.dev/img/avatar1.jpg"
-        :text="[`Janiwa`]"
+        :text="[`¿kunurutsa usutajtaxa? `]"
         stamp="7 minutes ago"
         sent
         bg-color="amber-7"
+      />
+      <q-chat-message
+        name=""
+        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        :text="[`walürutwa`]"
+        stamp="4 minutes ago"
+        text-color="white"
+        bg-color="primary"
       />
 
       <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />

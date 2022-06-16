@@ -14,7 +14,7 @@
           </p>
           <p class="timeline-subtitle">{{item.semana}}</p>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
 </div>
@@ -27,7 +27,7 @@ export default {
     temas:[
       {color:"primary",title:"Aprendiendo Nuestras Primeras Palabras en Aimara.",semana:"1° Semana",url:"/semana1"},
       {color:"danger", title:"Preguntas de Interrogacion Frecuente.",semana:"2° Semana",url:"/semana2"},
-      {color:"success",title:"Los numero naturales y partes del cuerpo Humano.",semana:"3° Semana",url:"/semana3"},
+      {color:"success",title:"Los números naturales y partes del cuerpo humano.",semana:"3° Semana",url:"/semana3"},
       {color:"warning",title:"Sistema de escritura, cuadro Consonantico y Vocalico.",semana:"4° Semana",url:"/semana4"},
       {color:"secondary",title:"Sistema Silábico, la familia, alimentos, vestido, y hogar.",semana:"5° Semana",url:"/semana5"},
       {color:"info",title:"Los adjetivo, descripcion de cosas y Animales.",semana:"6° Semana",url:"/semana6"},

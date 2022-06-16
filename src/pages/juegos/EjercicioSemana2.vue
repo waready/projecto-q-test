@@ -32,14 +32,14 @@
     </div>
     <div align-h="center">
 
-      <q-btn       
-        color="purple"  
+      <q-btn
+        color="purple"
         @click="playAgain"
         label="nuevo juego"
       />
 
     </div>
-    
+
     <!-- canvas where hangman is drawn -->
     <div id="board">
       <canvas id="board-canvas"></canvas>
@@ -72,12 +72,12 @@
           @check="check(letter)"
           v-cloak />
       </div>
-      
+
     </div>
-    
+
   </div>
   <div class="q-mt-md row">
-    
+
     <div class="col">
       <q-btn class="glossy" rounded color="deep-orange" @click="onePlayer">1 Jugador</q-btn>
     </div>
@@ -87,13 +87,13 @@
       </div>
     </div>
   </div>
-  
+
 </div>
 </template>
 
 <script>
-  
-  
+
+
   import LetterButton from 'components/LetterButton.vue'
   export default {
     components: {
@@ -132,7 +132,7 @@
         return this.words.map(word => word.toUpperCase())
       },
       mayusculas(){
-        
+
           return this.words.map(word => word.toUpperCase())
       },
       winMessage: function () {
@@ -174,7 +174,7 @@
     data () {
       return {
         bar2: true,
-        Enunciado:"La palabra pueden ser uno de los Pronombres interrogativos (Puede revisar la gramtica)",
+        Enunciado:"La palabra pueden ser uno de los Pronombres interrogativos (Puede revisar la gramática)",
         newArray:null,
         // keyboard letters
         letters: [
@@ -235,7 +235,7 @@
           ctx.arc(this.canvas.width * 0.4, (this.canvas.height / 5) + 20, 20, 0, 2 * Math.PI)
           ctx.stroke()
           ctx.closePath()
-        } 
+        }
         // draw the torso
         else if (this.guesses === 1) {
           ctx.beginPath()
@@ -267,7 +267,7 @@
           ctx.lineTo((this.canvas.width * 0.4) + 35, (this.canvas.height / 2) + 10)
           ctx.stroke()
           ctx.closePath()
-        } 
+        }
         // draw the left arm and handle game over
         else if (this.guesses === 5) {
           ctx.beginPath()
@@ -384,7 +384,7 @@
       this.currentWord = this.getRandomWord()
       this.makeBlanks()
     }
-    
+
   }
 </script>
 

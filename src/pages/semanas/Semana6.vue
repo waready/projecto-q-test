@@ -25,23 +25,7 @@
 
         <q-tab-panels v-model="tab" animated>
           <q-tab-panel name="grammar">
-            <q-card flat bordered class="my-card">
-              <q-card-section>
-                <div class="text-h6">LOS SALUDOS: ARUNTASIÑA</div>
-              </q-card-section>
-              <q-card-section>
-                <li v-for="(item,index) in saludos" :key="index" style="list-style:none">{{item}}</li>
-              </q-card-section>
-
-              <q-separator inset />
-
-              <q-card-section>
-                <div class="text-h6">DESPEDIDAS: Sarxañ Arunaka</div>
-              </q-card-section>
-              <q-card-section>
-                <li v-for="(item,index) in despedidas" :key="index" style="list-style:none">{{item}}</li>
-              </q-card-section>
-            </q-card>
+            <adjetivos></adjetivos>
           </q-tab-panel>
 
           <q-tab-panel name="pronunciacion">
@@ -66,10 +50,11 @@
 // import cards from "components/cards.vue";
 // import lista from "components/lista_sound.vue";
 import ejercicio from "pages/juegos/Crusigrama.vue";
-import chat from "components/chat.vue";
+import chat from "components/chat_adjetivos.vue";
+import adjetivos from "../views/gramatica/Adjetivos.vue";
 
 export default {
-    components: { chat,ejercicio },
+    components: { chat,ejercicio,adjetivos },
   name: "PageIndex",
   //components: { cards, lista },
   data() {
@@ -78,86 +63,7 @@ export default {
        tab: "grammar",
       // TextoBuscado: "",
       // domesticos
-      saludos:[
-            "Kamisaki: Hola",
-            "Aski: Bien - Bueno",
-            "Uru:  dia",
-            "Jayp'u: Tarde",
-            "Aruma:  Noche",
-            "Chiqa Aruma: Medianoche",
-            "Alwa: Temprano",
-            "Willjta: Alva",
-            "Qhantati: Madrugada",
-            "Jilata: Hermano",
-            "Jilaku: Vocativo de tratamiento cortés a los varones",
-            ,"------",
-            "Aski urupan,...",
-            "Aski urukipan,...",
-            "Aski urukipanay,...",
-            "Son las frases que interpretando se traduce como BUENOS DÍAS en los libros de aymara, literalmente vienen a ser:",
-            "Aski urupan,... = QUE SEA BUEN DÍA,...",
-            "Aski urukipan,... = QUE SEA BUEN DÍA NO MÁS,...",
-            "Aski urukipanay,... = QUE SEA BUEN DÍA NO MÁS PUES,...",
-            "------",
-            "La respuesta para estos saludos es la misma frase que le dicen a uno.",
-            "------",
-            "Ejemplos:",
-            "Traducimos",
-            "Aski arumakipan jilata:",
-            "Buenas noches Hermano",
-            "Aski arumakipanay jilaku:",
-            "Buenas noches hermanito",
-"------",
-            "Aski jayp'ukipan Jilata Juan:",
-            "Buenas tardes hermano Juan",
-            "Aski jayp'ukipanay Kullaka Rosa:",
-            "Buenas tardes hermana Rosa",
-"------",
-            "Aski urukipan Jilata Juan:",
-            "Aski urukipanay Rosa:",
-            "Buenas dias Rosita",
 
-
-      ],
-      despedidas:[
-            "DESPEDIDAS: Sarxañ Arunaka",
-            "Jichhuru: Hoy",
-            "Qharuru: Mañana",
-            "Wasuru: Ayer",
-            "Jurpuru: Pasado Mañana",
-            "Jikisiña: Encontrarse",
-            "Jayp'u: Tarde",
-"------",
-            "A Continuacion algunos ejemplos",
-            "Qharurkama wawanaka:  Hasta mañana niños",
-            "Qharuru: mañana",
-            "Kama: Hasta",
-            "Wawa: niño",
-            "Naka: pluralizador",
-"------",
-            "Jayp'ukama Jila:  Hasta la tarde hermano",
-            "Jayp'u: tarde",
-            "Kama: Hasta",
-            "Jila: Hermano",
-"------",
-            "Jurpurkama awicha: Hasta pasado mañana abuela",
-            "Jurpuru: Pasado Mañana",
-            "Kama: Hasta",
-            "Awicha: Abuela, anciana",
-"------",
-            "-Jikisiñkama Pedro:  Hasta pronto Pedro",
-            "-Jikisiñkamay: Hasta pronto",
-            "Jikisiña: Encuentro no especificado",
-            "Kama: Hasta",
-"------",
-            "Marakama: Hasta el año",
-            "Mara: año",
-            "Kama: hasta",
-"------",
-            "Sarxä: Me voy",
-            "Sarxañani: Vámonos",
-            "Sarxapxam: Váyanse",
-      ]
     };
   }
 };
