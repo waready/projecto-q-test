@@ -1,23 +1,27 @@
 <template>
-<div>
-  <div class="container">
-    Temario
-    <div class="timeline">
-      <div v-for="(item,index) in temas" :key="index" :class="'timeline-container '+ item.color">
-        <div class="timeline-icon">
-          <i class="far fa-grin-wink"></i>
-        </div>
-        <div class="timeline-body" @click="enviar(item.url)">
-          <h4 class="timeline-title"><span class="badge">{{ item.color }}</span></h4>
-          <p>
-            {{ item.title }}
-          </p>
-          <p class="timeline-subtitle">{{item.semana}}</p>
+<q-page>
+  <div>
+    <div class="container">
+      Temario
+      <div class="timeline">
+        <div v-for="(item,index) in temas" :key="index" :class="'timeline-container '+ item.color">
+          <div class="timeline-icon">
+            <i class="far fa-grin-wink"></i>
+          </div>
+          <div class="timeline-body" @click="enviar(item.url)">
+            <h4 class="timeline-title"><span class="badge">{{ item.color }}</span></h4>
+            <p>
+              {{ item.title }}
+            </p>
+            <p class="timeline-subtitle">{{item.semana}}</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+</q-page>
+
 </template>
 
 <script>

@@ -1,10 +1,11 @@
-
 const routes = [
   {
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
+      { path: '', component: () => import('pages/Index.vue'), 
+        meta:{ autentificado:true} 
+      },
 
       { path:'vocabulario', component: () => import('pages/menus/MenuVocabulario.vue') },
       { path:'juegos', component: () => import('pages/menus/MenuJuego.vue')},
@@ -75,5 +76,6 @@ if (process.env.MODE !== 'ssr') {
     component: () => import('pages/Error404.vue')
   })
 }
+
 
 export default routes

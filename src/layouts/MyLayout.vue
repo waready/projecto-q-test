@@ -125,7 +125,7 @@
 
           <q-separator class="q-my-md" />
 
-          <q-item v-for="link in links3" :key="link.text" clickable class="GPL__drawer-item" :to="link.url">
+          <q-item v-for="link in registros" :key="link.text" clickable class="GPL__drawer-item" :to="link.url">
             <q-item-section avatar>
               <q-icon :name="link.icon" />
             </q-item-section>
@@ -151,9 +151,9 @@
     </q-drawer>
 
     <q-page-container class="">
-      
+
       <router-view />
- 
+
     </q-page-container>
 
     
@@ -207,7 +207,7 @@ export default {
       links3: [
         
         { icon: 'fingerprint', text: 'Login',url:'login' },
-        { icon: 'verified_user', text: 'Register',url:'' },
+        // { icon: 'verified_user', text: 'Register',url:'register' },
         { icon: 'settings', text: 'Settings',url:'' }
       ],
       createMenu: [
@@ -222,6 +222,16 @@ export default {
   },
   computed:{
     ...mapState('store',['userDetails']),
+
+    registros(){
+
+      if(this.userDetails.email){
+        return this.links3.filter((items) => items.text == 'Settings')
+      }
+      else{
+        return this.links3;
+      }
+    }
 
   },
   methods:{
