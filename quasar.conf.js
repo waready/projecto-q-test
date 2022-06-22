@@ -91,9 +91,9 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        // name: 'Quasar App',
-        // short_name: 'Quasar App',
-        // description: 'A Quasar Framework app',
+        name: 'App Mara',
+        short_name: 'App Mara',
+        description: 'Aplicacion para aprender aimara',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',

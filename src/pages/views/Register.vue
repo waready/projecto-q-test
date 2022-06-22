@@ -17,6 +17,12 @@
                 <input required class="full-width" type="email" v-model="email">
                 <label>Email</label>
                 </div> -->
+                <q-input class="q-ma-md" color="grey-8" outlined v-model="form.name" label="nombre">
+                  <template v-slot:append>
+                      <q-icon color="primary" name="account_box" style="font-size: 1em;" />
+                  </template>
+                </q-input>
+
 
                 <q-input class="q-ma-md" color="grey-8" outlined v-model="form.email" label="e-mail">
                   <template v-slot:append>
@@ -95,8 +101,9 @@
         
         isPwd: true,
         form:{
-            email: 'quasar@admin.com',
-            password: '123456',
+            name:'',
+            email: '',
+            password: '',
         },
        
         bgColor: 'amber',

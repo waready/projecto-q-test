@@ -15,7 +15,7 @@ const actions = {
             console.log(response)
             let UserID = firebase.auth().currentUser.uid;
             firebase.database().ref('users/'+ UserID).set({
-                //name:
+                name: payload.name,
                 email:payload.email,
                 online:true,
                 createdAt: firebaseServer.database.ServerValue.TIMESTAMP,
