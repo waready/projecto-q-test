@@ -30,12 +30,12 @@ export default {
   data: () => ({
     temas:[
       {color:"primary",title:"Aprendiendo Nuestras Primeras Palabras en Aimara.",semana:"1° Semana",url:"/semana1"},
-      {color:"danger", title:"Preguntas de Interrogacion Frecuente.",semana:"2° Semana",url:"/semana2"},
+      {color:"danger", title:"Preguntas de Interrogación  Frecuente.",semana:"2° Semana",url:"/semana2"},
       {color:"success",title:"Los números naturales y partes del cuerpo humano.",semana:"3° Semana",url:"/semana3"},
-      {color:"warning",title:"Sistema de escritura, cuadro Consonantico y Vocalico.",semana:"4° Semana",url:"/semana4"},
+      {color:"warning",title:"Sistema de escritura, cuadro Consonántico y Vocálico.",semana:"4° Semana",url:"/semana4"},
       {color:"secondary",title:"Sistema Silábico, la familia, alimentos, vestido, y hogar.",semana:"5° Semana",url:"/semana5"},
-      {color:"info",title:"Los adjetivo, descripcion de cosas y Animales.",semana:"6° Semana",url:"/semana6"},
-      {color:"info",title:"Los Adverbios, los vervos, descripcion de acciones y sucesos.",semana:"7° Semana",url:"/semana7"}
+      {color:"info",title:"Los adjetivo, descripción de cosas y Animales.",semana:"6° Semana",url:"/semana6"},
+      {color:"info",title:"Los Adverbios, los verbos, descripción de acciones y sucesos.",semana:"7° Semana",url:"/semana7"}
     ]
   }),
   methods:{

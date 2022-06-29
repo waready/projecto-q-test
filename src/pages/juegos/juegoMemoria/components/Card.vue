@@ -101,7 +101,7 @@ export default {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   transition: 0.6s;
   transform-style: preserve-3d;
-  position: relative;
+  //position: relative;
 }
 
 .card--flipped .card__inner {
