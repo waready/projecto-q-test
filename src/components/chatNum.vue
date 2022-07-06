@@ -5,7 +5,7 @@
         <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="['Aski alwakipana wiraxucha']"
+        :text="['Aski alwakipana awki']"
         stamp=""
         sent
         bg-color="amber-7"
@@ -13,7 +13,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="['Aski alwakipana mama']"
+        :text="['Aski alwakipana tayka']"
         stamp=""
         text-color="white"
         bg-color="primary"
@@ -21,7 +21,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="['Nayax patak sulisa apsuñ munta']"
+        :text="['Nayaxa pataka sulisa apsuña muntxa']"
         stamp=""
         sent
         bg-color="amber-7"
@@ -29,7 +29,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="['Tarjetan llavep uchañamaxa, akaru','¿Paqallq tunka sulisa juk’ampi apsuñax wakisispati?']"
+        :text="['Tarjetana llawipa uchañamaxa, akaru','¿Paqallqu tunka sulisa jukhampi apsuñaxa wakisispati?']"
         stamp=""
         text-color="white"
         bg-color="primary"
@@ -37,12 +37,12 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="['Walikiwa, ukampixa patak paqallq tunk sulisa apsuwayxtaja']"
+        :text="['Walikiwa, ukampixa pataka paqallqu tunka sulisa apsuwaytaxa']"
         stamp=""
         sent
         bg-color="amber-7"
       />
-      <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
+      <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom','semana3-1')" />
       </div>
 
       <div style="text-align:center" >
@@ -65,7 +65,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="[`Mä sulis chikatani t’ant’a aljtawita`]"
+        :text="[`Mä sulisa chikatani t’ant’a alxtawita`]"
         stamp=""
         sent
         bg-color="amber-7"
@@ -73,7 +73,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="[`Akaway, ¿kunamcha?`]"
+        :text="[`Akaway, ¿kunampcha?`]"
         stamp=""
         text-color="white"
         bg-color="primary"
@@ -81,7 +81,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="[`Tunka payani k'anwampi aljtawita`]"
+        :text="[`Tunka payani k'awnampi alxt'awita`]"
         stamp=""
         sent
         bg-color="amber-7"
@@ -89,20 +89,20 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="[`Akaway.`]"
+        :text="[`Akaway..`]"
         stamp=""
         text-color="white"
         bg-color="primary"
       />
 
-      <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
+      <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom','semana3-2')" />
       </div>
 
       <div style="text-align:center" >
         <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="['Jumax qawqha maranitasa? ']"
+        :text="['Jumaxa qhawqha maranïtasa?']"
         stamp=""
         sent
         bg-color="amber-7"
@@ -110,7 +110,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="['Nayax pä tunka maranitwa']"
+        :text="['Nayaxa pä tunka maranïtwa']"
         stamp=""
         text-color="white"
         bg-color="primary"
@@ -118,7 +118,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="[`¿Kunas ustamja?`]"
+        :text="[`¿Kunasa ustamxa?`]"
         stamp=""
         sent
         bg-color="amber-7"
@@ -126,7 +126,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="[`Usutuwa p'iqixa, puraka ukamaraki q'unqurixa`]"
+        :text="[`Usutuwa p'iqixa, puraka ukhamaraki qunqurixa`]"
         stamp=""
         text-color="white"
         bg-color="primary"
@@ -134,7 +134,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="[`¿kunurutsa usutajtaxa? `]"
+        :text="[`¿kunurutsa ustamxa? `]"
         stamp=""
         sent
         bg-color="amber-7"
@@ -142,25 +142,140 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="[`walürutwa`]"
+        :text="[`Walürutwa`]"
         stamp=""
         text-color="white"
         bg-color="primary"
       />
 
-      <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom',objeto)" />
+      <q-btn round class="q-mt-md" color="primary" icon="volume_up" @click="open('bottom','semana3-3')" />
       </div>
 
     </div>
+
+    <q-dialog v-model="dialog" :position="position">
+      <q-card style="width: 350px">
+        <q-linear-progress
+          :value="valor"
+          max="1"
+          color="primary"
+          id="segundo"
+          class="q-pb-sm"
+        />
+        <!--span id="seekObjContainer">
+              <progress id="seekObj" value="0" ></progress>
+            </span-->
+        <q-card-section class="row items-center no-wrap">
+          <div class="q-mr-md">
+            <div class="text-weight-bold">{{ modal.nombre }}</div>
+            <div class="text-grey">{{ modal.name }}</div>
+          </div>
+          <audio controls autoplay id="audio1" @timeupdate="play()">
+            <source :src="'statics/audio/'+modal.audio+'.mp3'" type="audio/ogg" />
+            <source :src="'statics/audio/'+modal.audio+'.mp3'" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <q-space />
+          <q-btn flat round icon="replay_circle_filled" @click="replay()" />
+          <!--q-btn flat round icon="fast_rewind" />
+                // <q-btn flat round icon="pause" /-->
+        </q-card-section>
+      </q-card>
+    </q-dialog>
   </div>
 </template>
 
 <script>
 export default {
+   data() {
+    return {
+      tam: 5,
+      TextoBuscado: "",
+      datos: this.ObjetoFiltrado,
+      dialog: false,
+      position: 'top',
+      valor:0,
+      modal:{
+        nombre:'',
+        name:'',
+        audio:null
+      }
+    };
+  },
   methods: {
-    hola(){
-      console.log("hola")
-    }
+    play(){
+    
+      if(this.dialog){
+        function calculateTotalValue(length) {
+            var minutes = Math.floor(length / 60),
+              seconds_int = length - minutes * 60,
+              seconds_str = seconds_int.toString(),
+              seconds = seconds_str.substr(0, 2),
+              time = minutes + ':' + seconds
+
+            return time;
+          }
+
+        function calculateCurrentValue(currentTime) {
+          var current_hour = parseInt(currentTime / 3600) % 24,
+            current_minute = parseInt(currentTime / 60) % 60,
+            current_seconds_long = currentTime % 60,
+            current_seconds = current_seconds_long.toFixed(),
+            current_time = (current_minute < 10 ? "0" + current_minute : current_minute) + ":" + (current_seconds < 10 ? "0" + current_seconds : current_seconds);
+
+          return current_time;
+        }
+
+
+        var player = document.getElementById('audio1');
+        var length = player.duration
+        var current_time = player.currentTime;
+
+        // calculate total length of value
+        var totalLength = calculateTotalValue(length)
+        //jQuery(".end-time").html(totalLength);
+
+        // calculate current value time
+        var currentTime = calculateCurrentValue(current_time);
+        //jQuery(".start-time").html(currentTime);
+
+        // var progressbar = document.getElementById('seekObj');
+        // progressbar.value = (player.currentTime / player.duration);
+        // progressbar.addEventListener("click", seek);
+
+        var progressbar1 = document.getElementById('segundo');
+        this.valor = (player.currentTime / player.duration);
+        progressbar1.addEventListener("click", seek);
+
+        if (player.currentTime == player.duration) {
+          //$('#play-btn').removeClass('pause');
+        }
+
+        function seek(evt) {
+          var percent = evt.offsetX / this.offsetWidth;
+          player.currentTime = percent * player.duration;
+          progressbar1.value = percent / 100;
+        }
+
+      }
+    },
+    open(position, index) {
+      this.position = position;
+      this.dialog = true;
+      //this.modal.nombre = index.nombre;
+      //this.modal.name = index.name;
+      //console.log(index)
+      this.modal.audio = index;
+    },
+     replay(){
+      var audio = document.getElementById('audio1');
+      //console.log(audio)
+      if (audio.paused) {
+          audio.play();
+      }else{
+          audio.currentTime = 0
+      }
+    },
   },
   computed: {
     layout () {
