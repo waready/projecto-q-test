@@ -102,7 +102,7 @@ export default {
         {
           aymara: 'inas jichhuruxa thayächini',
           castellano: 'tal vez haga frío hoy',
-          tipo: 'inasa=tal vez(duda), jichüru=hoy(duda)',
+          tipo: 'inasa=tal vez(duda), jichüru=hoy(tiempo)',
         },
 
       ]

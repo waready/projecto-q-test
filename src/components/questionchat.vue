@@ -4,25 +4,25 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['¿Kunas sutimaxa?']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Sutijaxa Maria satawa...','¿Jumansti?']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
         name="otra opcion para responder nombres, es remplazar y juntar el sufijo 'satawa' por 'wa'"
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['Nayax(a) Antoniowa...']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
@@ -32,17 +32,17 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="[`¿Sutipax(a) Juanäpachati?`]"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="[`Jisa juanäpachawa`]"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
@@ -52,17 +52,17 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['¿Jumax(a) kawkhansa utjta?']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Nayax(a) Puno(na) utjtha']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />

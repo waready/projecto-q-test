@@ -4,33 +4,33 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['¿Jupaxa mamapati?']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Jisa, mamapawa']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['¿Kitisa awkipaxa?']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Khayawa']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
@@ -39,18 +39,18 @@
 
       <div style="text-align:center" >
         <q-chat-message
-        name="Rosa"
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        name=""
+        avatar="../statics/images/avatars/2.jpg"
         :text="[`¿Jupaxa mamapati kullakapacha?`]"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
-        name="Juan"
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        name=""
+        avatar="../statics/images/avatars/1.jpg"
         :text="[`Janiwa, mamapakisa kullakapakisa`]"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
@@ -60,33 +60,33 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="[`¿Jupaxa kunapäpachasa?`]"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Jupaxa warmipawa']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['¿Jupaxa chachapäpachati?']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Janiwa jupaxa chachapakpachati, tatapäpachawa']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />

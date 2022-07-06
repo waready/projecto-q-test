@@ -4,17 +4,17 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['Aski arumakipan jilata']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Aski arumakipanay jilaku','Jurpurkamay']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
@@ -23,26 +23,26 @@
 
       <div style="text-align:center" >
         <q-chat-message
-        name="Rosa"
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        name=""
+        avatar="../statics/images/avatars/2.jpg"
         :text="[`Aski jayp'ukipan Jilata Juan`]"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
-        name="Juan"
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        name=""
+        avatar="../statics/images/avatars/1.jpg"
         :text="[`Aski jayp'ukipanay Kullaka Rosa`]"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
-        name="Rosa"
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        name=""
+        avatar="../statics/images/avatars/2.jpg"
         :text="[`Jikisiñkama Juan`]"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
@@ -53,25 +53,25 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['Aski urukipan Jilata Juan']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Aski urukipanay Rosa']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="[`Jayp'ukamay`]"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />

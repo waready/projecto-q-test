@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Niramit:300,300i,700");
 /**font**/
-@import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
 /***/
 // reset some browser default styles
 * {
@@ -15,12 +15,12 @@ $secondary: #4f537b;
 $info: #11cdef;
 $success: #00bf9a;
 $warning: #ff8d72;
-$danger: #fd5d93;
+$danger: #d60000;
 
 // timeline variables
 $body-bg: #fff;
 $timeline-before-bg: #222a42;
-$timeline-body-bg: #27293d;
+$timeline-body-bg: linear-gradient(#4097e7,#51d1ac);
 $timeline-body-round: 3px;
 $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
 
@@ -74,7 +74,7 @@ p {
       border-radius: 50%;
       text-align: center;
       font-size: 2rem;
-      background: $secondary;
+      background: $warning;
       cursor: default;
       i {
         position: absolute;
@@ -112,7 +112,7 @@ p {
         margin-bottom: 1.4rem;
 
         .badge {
-          background: $secondary;
+          background: $warning;
           padding: 4px 8px;
           border-radius: 3px;
           font-size: 12px;
@@ -126,6 +126,8 @@ p {
         opacity: 0.4;
         margin-top: 16px;
         font-size: 11px;
+        color:black;
+        font-weight: 700;
       }
     }
 
@@ -133,7 +135,7 @@ p {
     &.primary {
       .badge,
       .timeline-icon {
-        background: $primary !important;
+        background: $warning !important;
       }
     }
 
@@ -141,7 +143,7 @@ p {
     &.info {
       .badge,
       .timeline-icon {
-        background: $info !important;
+        background: $warning !important;
       }
     }
 
@@ -149,7 +151,7 @@ p {
     &.success {
       .badge,
       .timeline-icon {
-        background: $success !important;
+        background: $warning !important;
       }
     }
 
@@ -165,7 +167,7 @@ p {
     &.danger {
       .badge,
       .timeline-icon {
-        background: $danger !important;
+        background: $warning !important;
       }
     }
   }
@@ -205,5 +207,11 @@ p {
     &:active {
       background-color: lighten(black, 10%);
     }
+  }
+}
+
+@media screen and (max-width:650px) {
+  .container{
+    max-width: 90%;
   }
 }

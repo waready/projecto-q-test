@@ -4,33 +4,33 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['Aski urukipana,¿Kamisaraki?']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Walikïsktwa, ¿kunsa jichhürojj lurataxa?']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['Inas nayax yapu tuqir sarchï']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Inas jichhuruxa thayächini']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
@@ -41,33 +41,33 @@
       <div style="text-align:center" >
         <q-chat-message
           name=""
-          avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+          avatar="../statics/images/avatars/2.jpg"
           :text="[`¿Kawkïr frutas jumatakix jukʼamp munasmaxa?`]"
-          stamp="7 minutes ago"
+          stamp=""
           sent
           bg-color="amber-7"
         />
         <q-chat-message
           name=""
-          avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+          avatar="../statics/images/avatars/1.jpg"
           :text="[`Nayax manzanarux walpun muntxa`]"
-          stamp="4 minutes ago"
+          stamp=""
           text-color="white"
           bg-color="primary"
         />
         <q-chat-message
           name=""
-          avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+          avatar="../statics/images/avatars/2.jpg"
           :text="[`¿Uka alañatakix alañäniti?`]"
-          stamp="7 minutes ago"
+          stamp=""
           sent
           bg-color="amber-7"
         />
         <q-chat-message
           name=""
-          avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+          avatar="../statics/images/avatars/1.jpg"
           :text="[`Jïsa, walja manzananaka alasiñäni`]"
-          stamp="4 minutes ago"
+          stamp=""
           text-color="white"
           bg-color="primary"
         />
@@ -78,41 +78,41 @@
       <div style="text-align:center" >
         <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="['¿Inas jumax llavinakaxa uñjsta?']"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Ukax misa patxankänwa']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="[`¿Jachʼa misantï?`]"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar5.jpg"
+        avatar="../statics/images/avatars/1.jpg"
         :text="['Janiwa, uka jiskʼa misa patxankänwa']"
-        stamp="4 minutes ago"
+        stamp=""
         text-color="white"
         bg-color="primary"
       />
       <q-chat-message
         name=""
-        avatar="https://cdn.quasar.dev/img/avatar1.jpg"
+        avatar="../statics/images/avatars/2.jpg"
         :text="[`Nayax jank’akiw jikxatañaja`]"
-        stamp="7 minutes ago"
+        stamp=""
         sent
         bg-color="amber-7"
       />

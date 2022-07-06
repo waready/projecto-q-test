@@ -6,8 +6,8 @@
         <div class="q-pa-md q-gutter-sm">
             <div id="hangman">
                  <q-btn  label="PISTA" color="primary" @click="bar2 = true" />
-            </div>   
-       
+            </div>
+
             <q-dialog v-model="bar2" persistent transition-show="flip-down" transition-hide="flip-up">
                 <q-card class="bg-deep-orange-6 text-white">
                     <q-bar>
@@ -28,7 +28,7 @@
                     </q-card-section>
 
                     <q-card-section>
-                        Arrastra los cuadros ordenando de número menor al mayor                     
+                        Arrastra los cuadros ordenando de número menor al mayor
                     </q-card-section>
                 </q-card>
             </q-dialog>
@@ -39,7 +39,7 @@
                 <q-card>
                 <q-tabs
                     v-model="tab"
-                    dense 
+                    dense
                     inline-label
                     outside-arrows
                     mobile-arrows
@@ -52,16 +52,16 @@
                     <q-tab name="numeros1" label="Numeros 0-10" />
                     <q-tab name="numeros2" label="Numeros 10-19" />
                 </q-tabs>
-        
+
                 <q-separator />
-        
+
                 <q-tab-panels v-model="tab" animated>
                     <q-tab-panel name="numeros1">
                     <div class="text-h6 text-center">Numeros 0-10</div>
                     <!-- <h3 class="q-ma-xs">Juego Orden Numero</h3> -->
                     <div class="row justify-center">
                         <div class="col-4 col-md-4 col-xs-10" >
-                               
+
                         <div class="q-pa-xs " v-if="random==true">
                             <q-list bordered separator>
                             <draggable v-model="items1" ghost-class="ghost" @end="onEnd">
@@ -84,17 +84,17 @@
                                                     <q-icon color="white" name="help" />
                                             </q-item-section>
                                     </div>
-            
+
                                     <q-item-section class="text-white text-center text-bold ">
                                        {{item.name}}
                                     </q-item-section>
                                 </q-item>
-                                
+
                                 </transition-group>
                                 </draggable>
                             </q-list>
                         </div>
-            
+
                         <div class="q-pa-xs " v-else>
                                 <q-list bordered separator>
                                 <draggable v-model="items1" ghost-class="ghost" @end="onEnd">
@@ -117,34 +117,34 @@
                                                         <q-icon color="white" name="help" />
                                                 </q-item-section>
                                         </div>
-                
+
                                         <q-item-section class="text-white text-center text-bold ">
                                            {{item.id}} {{item.name}}
                                         </q-item-section>
                                     </q-item>
-                                    
+
                                     </transition-group>
                                     </draggable>
                                 </q-list>
                             </div>
-                
-            
-                               
+
+
+
                         </div>
                     </div>
                     <div class="row justify-center q-gutter-md q-ma-xs">
                         <q-btn outline style="color: blue;" label="Otra vez" @click="try_again(items1)" />
                         <q-btn outline style="color: blue;" label="Comparar" @click="comparar_elementos(items1,original1)" />
-                        <q-btn outline style="color: blue;" label="Original" @click="ver_resultados(original1)" />
+                        <q-btn outline style="color: blue;" label="Solucinar" @click="ver_resultados(original1)" />
                     </div>
                     </q-tab-panel>
-        
+
                     <q-tab-panel name="numeros2">
                     <div class="text-h6 text-center">Numeros 10-19</div>
                     <!-- <h3 class="q-ma-xs">Juego Orden Numero</h3> -->
                         <div class="row justify-center">
                             <div class="col-4 col-md-4 col-xs-10" >
-                                
+
                             <div class="q-pa-xs " v-if="random==true">
                                 <q-list bordered separator>
                                 <draggable v-model="items2" ghost-class="ghost" @end="onEnd">
@@ -172,7 +172,7 @@
                                         {{item.name}}
                                         </q-item-section>
                                     </q-item>
-                                    
+
                                     </transition-group>
                                     </draggable>
                                 </q-list>
@@ -200,28 +200,28 @@
                                                             <q-icon color="white" name="help" />
                                                     </q-item-section>
                                             </div>
-                    
+
                                             <q-item-section class="text-white text-center text-bold ">
                                             {{item.id}} {{item.name}}
                                             </q-item-section>
                                         </q-item>
-                                        
+
                                         </transition-group>
                                         </draggable>
                                     </q-list>
                                 </div>
-                    
 
-                                
+
+
                             </div>
                         </div>
                         <div class="row justify-center q-gutter-md q-ma-xs">
                             <q-btn outline style="color: blue;" label="Otra vez" @click="try_again(items2)" />
                             <q-btn outline style="color: blue;" label="Comparar" @click="comparar_elementos(items2,original2)" />
-                            <q-btn outline style="color: blue;" label="Original" @click="ver_resultados(original2)" />
+                            <q-btn outline style="color: blue;" label="Solucionar" @click="ver_resultados(original2)" />
                         </div>
                     </q-tab-panel>
-        
+
                 </q-tab-panels>
                 </q-card>
             </div>
@@ -243,7 +243,7 @@ export default{
     components:{
         draggable
     },
- 
+
 mounted() {
     this.random_element(this.items1)
     this.random_element(this.items2)
@@ -278,7 +278,7 @@ data () {
             {color:"bg-lime", check:null, name:"tunka-kimsaqalquni", id:18},
             {color:"bg-purple", check:null, name:"tunka-llatunkani", id:19}
         ],
-        
+
         original1:[
             {name:"Ch’usa", id:0, color:"bg-purple",check:true},
             {name:"Maya", id:1, color:"bg-indigo",check:true},
@@ -320,21 +320,21 @@ methods: {
     random_element(items){
         //s console.log(items);
         let elemento = items;
-        let newIndex; 
+        let newIndex;
         let temp;
         for(let i=0;i<items.length-1;i++){
             newIndex = Math.floor(Math.random() * (items.length));
             temp = items[i];
             items[i]=items[newIndex];
             items[newIndex]=temp;
-            
+
         }
         this.element.push(items)
         this.element = []
     },
 
     comparar_elementos(items,original){
-        
+
             console.log(items[0]);
             console.log(original);
             // if(items==original){
@@ -346,7 +346,7 @@ methods: {
             // }
             for(var i=0;i<items.length;i++){
                 if(JSON.stringify(items[i].id)===JSON.stringify(original[i].id)){
-                    
+
                     console.log("el card "+i+" es igual")
                     items[i].check = true
                     console.log('check :', items[i].check )
@@ -362,7 +362,7 @@ methods: {
     ver_resultados(original){
         for(let i=0;i<original.length;i++){
             original[i].check=true
-            
+
             // console.log(this.element.push(original))
         }
         // console.log(this.element.push(original))
@@ -376,7 +376,7 @@ methods: {
             items[i].check=null;
         }
         this.random=true
-        
+
     }
 },
 
@@ -396,7 +396,7 @@ methods: {
 }
 .ghost{
     border-left: 6px solid black;
-    
+
 }
 .texto-borde {
   -webkit-text-stroke: 1.5px white;
@@ -412,4 +412,3 @@ methods: {
 
 </style>
 
-  
