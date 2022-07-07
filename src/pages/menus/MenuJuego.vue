@@ -28,10 +28,10 @@ export default {
       scrollInfo: {},
       prop:"juegos",
       menu:[
-        {id:1,name:"Cartas", img:"../statics/images/img-juegos/cartas.jpg", desc:"juego de comparación de tarjetas", url:"/juego_memoria" },
-        {id:2,name:"Números", img:"../statics/images/img-juegos/numeros.jpg",desc:"juego para ordenar (números)", url:"/juego_orden_numero" },
-        {id:3,name:"Adivina", img:"../statics/images/img-juegos/ahorcado.jpg",desc:"juego para adivinar la palabra correcta", url:"/juego_ahorcado" },
-        {id:4,name:"Crucigrama", img:"../statics/images/img-juegos/crucigrama.jpg", desc:"juego de crucigrama", url:"/juego_ahorcado_1" },
+        {id:1,name:"Cartas", img:"statics/images/img-juegos/cartas.jpg", desc:"juego de comparación de tarjetas", url:"/juego_memoria" },
+        {id:2,name:"Números", img:"statics/images/img-juegos/numeros.jpg",desc:"juego para ordenar (números)", url:"/juego_orden_numero" },
+        {id:3,name:"Adivina", img:"statics/images/img-juegos/ahorcado.jpg",desc:"juego para adivinar la palabra correcta", url:"/juego_ahorcado" },
+        {id:4,name:"Crucigrama", img:"statics/images/img-juegos/crucigrama.jpg", desc:"juego de crucigrama", url:"/juego_ahorcado_1" },
       ]
     }
   },
