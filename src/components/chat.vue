@@ -74,7 +74,7 @@
         <q-chat-message
           name=""
           avatar="../statics/images/avatars/1.jpg"
-          :text="['Aski urukipanay jilaa Pedro']"
+          :text="['Aski urukipanay jilata Pedro']"
           stamp=""
           text-color="white"
           bg-color="primary"
