@@ -5,7 +5,7 @@
         <q-chat-message
           name=""
           avatar="../statics/images/avatars/2.jpg"
-          :text="['Aski arumakipan jilata']"
+          :text="['Aski arumakipana jilata']"
           stamp=""
           sent
           bg-color="amber-7"
@@ -13,7 +13,7 @@
         <q-chat-message
           name=""
           avatar="../statics/images/avatars/1.jpg"
-          :text="['Aski arumakipanay jilata', 'Jurpiurkama']"
+          :text="['Aski arumakipana jilata', 'Jurpiurkama']"
           stamp=""
           text-color="white"
           bg-color="primary"
@@ -31,7 +31,7 @@
         <q-chat-message
           name=""
           avatar="../statics/images/avatars/2.jpg"
-          :text="[`Aski jayp'ukipan Jilata Juan`]"
+          :text="[`Aski jayp'ukipana Jilata Juan`]"
           stamp=""
           sent
           bg-color="amber-7"
@@ -39,7 +39,7 @@
         <q-chat-message
           name=""
           avatar="../statics/images/avatars/1.jpg"
-          :text="[`Aski jayp'ukipanay jilata Pedro`]"
+          :text="[`Aski jayp'ukipana jilata Pedro`]"
           stamp=""
           text-color="white"
           bg-color="primary"
@@ -66,7 +66,7 @@
         <q-chat-message
           name=""
           avatar="../statics/images/avatars/2.jpg"
-          :text="['Aski urukipan Jilata Juan']"
+          :text="['Aski urukipana Jilata Juan']"
           stamp=""
           sent
           bg-color="amber-7"
@@ -74,7 +74,7 @@
         <q-chat-message
           name=""
           avatar="../statics/images/avatars/1.jpg"
-          :text="['Aski urukipanay jilata Pedro']"
+          :text="['Aski urukipana jilata Pedro']"
           stamp=""
           text-color="white"
           bg-color="primary"
@@ -149,7 +149,7 @@ export default {
   },
   methods: {
     play(){
-    
+
       if(this.dialog){
         function calculateTotalValue(length) {
             var minutes = Math.floor(length / 60),

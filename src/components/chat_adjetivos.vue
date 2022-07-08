@@ -13,7 +13,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="['Utajaxa janq’u larama samiwa ukatxa jach’akiwa	']"
+        :text="['Utajaxa janq’u larama samiwa ukatxa jach’arakiwa	']"
         stamp=""
         text-color="white"
         bg-color="primary"
@@ -29,7 +29,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="['Punkupaxa ch’umpiwa ukatxa machaqäxiwa']"
+        :text="['Punkupaxa ch’umpiwa ukatxa machaqäraxiwa']"
         stamp=""
         text-color="white"
         bg-color="primary"
@@ -161,7 +161,7 @@ export default {
   },
   methods: {
     play(){
-    
+
       if(this.dialog){
         function calculateTotalValue(length) {
             var minutes = Math.floor(length / 60),

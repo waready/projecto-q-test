@@ -5,7 +5,7 @@
         <q-chat-message
         name=""
         avatar="../statics/images/avatars/2.jpg"
-        :text="['¿Kunas sutimaxa?']"
+        :text="['¿Kunasa sutimaxa?']"
         stamp=""
         sent
         bg-color="amber-7"
@@ -133,7 +133,7 @@ export default {
   },
   methods: {
     play(){
-    
+
       if(this.dialog){
         function calculateTotalValue(length) {
             var minutes = Math.floor(length / 60),
