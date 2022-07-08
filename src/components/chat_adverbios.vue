@@ -29,7 +29,7 @@
       <q-chat-message
         name=""
         avatar="../statics/images/avatars/1.jpg"
-        :text="['Inas jichhuruxa thayächini']"
+        :text="['Inas jichhuruxa thayächiniwa']"
         stamp=""
         text-color="white"
         bg-color="primary"
@@ -172,7 +172,7 @@ export default {
   },
   methods: {
     play(){
-    
+
       if(this.dialog){
         function calculateTotalValue(length) {
             var minutes = Math.floor(length / 60),
