@@ -112,7 +112,7 @@
 import { mapActions } from "vuex";
 import Vivus from "vivus";
 import logoData from "./logoData";
-import registro from "./Register.vue"
+ import registro from "./Register.vue"
 import { Platform } from "quasar";
 export default {
 
@@ -143,8 +143,8 @@ export default {
 
       isPwd: true,
       form: {
-        email: "quasar@admin.com",
-        password: "123456"
+        email: "",
+        password: ""
       },
       tab: "login",
       bgColor: "amber",

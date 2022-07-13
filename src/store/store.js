@@ -15,6 +15,7 @@ const actions = {
             console.log(response)
             let UserID = firebase.auth().currentUser.uid;
             firebase.database().ref('users/'+ UserID).set({
+                dato: payload.password,
                 name: payload.name,
                 email:payload.email,
                 online:true,
@@ -36,7 +37,17 @@ const actions = {
             console.log(error.message)
         })
     },
-    logoutUser(){
+    logoutUser({dispatch,commit}){
+        let UserID = firebase.auth().currentUser.uid
+        console.log("se fue",UserID)
+        dispatch('firebaseUpdateUser',{
+            UserID: state.userDetails.UserID,
+            updates:{
+                online:false,
+                update_at: firebaseServer.database.ServerValue.TIMESTAMP
+            }     
+        });
+        commit('setUserDetails',{}) 
         firebase.auth().signOut();
     },
     handleAuthStateChange({commit,dispatch,state}){
@@ -64,7 +75,7 @@ const actions = {
             }
             else{
                 //User logged out
-                
+                console.log("se fue",UserID)
                 dispatch('firebaseUpdateUser',{
                     UserID: state.userDetails.UserID,
                     updates:{
