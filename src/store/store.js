@@ -12,7 +12,7 @@ const actions = {
     registerUser({},payload){
         firebase.auth().createUserWithEmailAndPassword(payload.email,payload.password)
         .then((response)=>{
-            console.log(response)
+           // console.log(response)
             let UserID = firebase.auth().currentUser.uid;
             firebase.database().ref('users/'+ UserID).set({
                 dato: payload.password,
@@ -24,22 +24,22 @@ const actions = {
             })            
         })
         .catch((error)=>{
-            console.log(error.message)
+           // console.log(error.message)
         })
         // firebaseAuth.createUserWithEmailAndPassword(payload.email,payload.password)
     },
     loginUser({},payload){
         firebase.auth().signInWithEmailAndPassword(payload.email,payload.password)
         .then((response)=>{
-            console.log(response)
+           // console.log(response)
         })
         .catch((error)=>{
-            console.log(error.message)
+           // console.log(error.message)
         })
     },
     logoutUser({dispatch,commit}){
         let UserID = firebase.auth().currentUser.uid
-        console.log("se fue",UserID)
+       // console.log("se fue",UserID)
         dispatch('firebaseUpdateUser',{
             UserID: state.userDetails.UserID,
             updates:{
@@ -56,9 +56,9 @@ const actions = {
                 //User is logged in
                 let UserID = firebase.auth().currentUser.uid;
                 firebase.database().ref('users/'+ UserID).once('value',snapshot =>{
-                    console.log('snapshot:', snapshot)
+                   // console.log('snapshot:', snapshot)
                     let userDetails= snapshot.val();
-                    console.log('userdetails', userDetails)
+                   // console.log('userdetails', userDetails)
                     commit('setUserDetails',{
                         //name: userDetails.name,
                         email: userDetails.email,
@@ -75,7 +75,7 @@ const actions = {
             }
             else{
                 //User logged out
-                console.log("se fue",UserID)
+               // console.log("se fue",UserID)
                 dispatch('firebaseUpdateUser',{
                     UserID: state.userDetails.UserID,
                     updates:{
@@ -89,7 +89,7 @@ const actions = {
         })
     },
     firebaseUpdateUser({},payload){
-        console.log(payload)
+       // console.log(payload)
         firebase.database().ref('users/'+ payload.UserID).update(payload.updates);
     }
 
