@@ -12,8 +12,8 @@
       align="justify"
       narrow-indicator
     >
-      <q-tab name="login" label="Iniciar Secion" />
-      <q-tab name="registro" label="Registro" />
+      <q-tab name="login" label="Iniciar Sesión" />
+      <!-- <q-tab name="registro" label="Registro" /> -->
     </q-tabs>
     
     <div
@@ -99,9 +99,9 @@
           </q-card>
         </q-tab-panel>
 
-        <q-tab-panel name="registro"> 
+        <!-- <q-tab-panel name="registro"> 
           <registro></registro>
-        </q-tab-panel>
+        </q-tab-panel> -->
       </q-tab-panels>
     </div>
   </div>

@@ -12,8 +12,8 @@ const routes = [
       { path:'frases', component: () => import('pages/menus/MenuFrases')},
       { path:'gramatica', component: () => import('pages/menus/MenuGramaticas.vue')},
         /**gramatica**/
-        { path:'palabras', component: () => import('pages/views/gramatica/Palabras.vue')},
-        { path:'sufijos', component: () => import('pages/views/gramatica/SistemaSufijos.vue')},
+       // { path:'palabras', component: () => import('pages/views/gramatica/Palabras.vue')},
+       // { path:'sufijos', component: () => import('pages/views/gramatica/SistemaSufijos.vue')},
         { path:'verbos', component: () => import('pages/views/gramatica/Verbos.vue')},
         { path:'adjetivos', component: () => import('pages/views/gramatica/Adjetivos.vue')},
         { path:'adverbio', component: () => import('pages/views/gramatica/Adverbio.vue')},
@@ -21,7 +21,7 @@ const routes = [
 
 
       { path:'login', component: () => import('pages/views/Login.vue')},
-      { path:'register', component: () => import('pages/views/Register.vue')},
+     // { path:'register', component: () => import('pages/views/Register.vue')},
 
       { path:'colores', component: () => import('pages/views/Colores.vue')},
       { path:'numeros', component: () => import('pages/views/Numeros.vue')},

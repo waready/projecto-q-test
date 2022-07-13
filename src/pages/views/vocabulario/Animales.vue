@@ -16,7 +16,7 @@
             align="justify"
             narrow-indicator
           >
-            <q-tab name="domesticos" label="Animales domesticos" />
+            <q-tab name="domesticos" label="Animales domésticos" />
             <q-tab name="silvestres" label="Animales Silvestres" />
             <q-tab name="insectos" label="Insectos" />
             <q-tab name="pez-aves" label="Peces y Aves" />

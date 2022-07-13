@@ -114,7 +114,7 @@
             <div class="text-weight-bold">{{ modal.nombre }}</div>
             <div class="text-grey">{{ modal.name }}</div>
           </div>
-          <audio controls autoplay id="audio1" @timeupdate="play()">
+          <audio controls  autoplay id="audio1" @timeupdate="play()" >
             <source :src="'statics/audio/'+modal.audio+'.mp3'" type="audio/ogg" />
             <source :src="'statics/audio/'+modal.audio+'.mp3'" type="audio/mpeg" />
             Your browser does not support the audio element.

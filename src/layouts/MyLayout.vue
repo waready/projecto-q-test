@@ -70,7 +70,7 @@
              <!-- <q-toolbar-title>{{userDetails.email}}</q-toolbar-title>  -->
 
             
-             <q-btn-dropdown color="primary" :label="userDetails.email">
+             <q-btn-dropdown color="primary" :label="name">
                 <q-list>
                   <q-item clickable v-close-popup >
                     <q-item-section>
@@ -94,7 +94,7 @@
       <q-scroll-area class="fit">
         <q-toolbar class="GPL__toolbar bg-primary">
           <q-toolbar-title class="row items-center text-white ">
-            <span class="q-ml-sm" to="/juegos">Aprender Aymara</span>
+            <span class="q-ml-sm" to="/juegos">Aprender Aimara</span>
           </q-toolbar-title>
         </q-toolbar>
 
@@ -194,21 +194,21 @@ export default {
       storage: 0.26,
       links1: [
        { icon:  'home', text: 'Inicio', url:"/"  },
-        { icon: 'g_translate', text: 'Aymara y vocabulario', url:"vocabulario" },
-        { icon: 'translate', text: 'Gramatica', url:"gramatica" },
+        { icon: 'g_translate', text: 'Aimara y vocabulario', url:"vocabulario" },
+        { icon: 'translate', text: 'Gramática', url:"gramatica" },
         // { icon: 'record_voice_over', text: 'Pronunciación', url:"frases" },
         { icon: 'videogame_asset', text: 'Juegos', url:"juegos" }
       ],
       links2: [
-        { icon: 'color_lens', text: 'Colores',url:"colores" },
-        { icon: 'format_list_numbered_rtl', text: 'Numeros',url:"numeros" },
-        { icon: 'access_time', text: 'Tiempo', url:"tiempo" }
+        { icon: 'color_lens', text: 'Colores',url:"Colores" },
+        { icon: 'format_list_numbered_rtl', text: 'Números',url:"numeros" },
+        { icon: 'access_time', text: 'Tiempo', url:"Tiempo" }
       ],
       links3: [
         
         { icon: 'fingerprint', text: 'Login',url:'login' },
         // { icon: 'verified_user', text: 'Register',url:'register' },
-        { icon: 'settings', text: 'Settings',url:'' }
+        { icon: 'settings', text: 'Configuración',url:'' }
       ],
       createMenu: [
         { icon: 'photo_album', text: 'Album' },
@@ -231,6 +231,9 @@ export default {
       else{
         return this.links3;
       }
+    },
+    name(){
+      return this.userDetails.email.substring(0, this.userDetails.email.lastIndexOf("@"));;
     }
 
   },
