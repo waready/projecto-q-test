@@ -7,17 +7,17 @@
     { "id": 5, "name": "jurpüru", "nombre": "pasado mañana" ,"name_folder":""},
     { "id": 6, "name": "Anchhita, jichha ", "nombre": "ahora" ,"name_folder":""},
     { "id": 7, "name": "nayra", "nombre": "antes" ,"name_folder":""},
-    { "id": 8, "name": "pasir mara", "nombre": "año pasado" ,"name_folder":""},
-    { "id": 9, "name": "pasir simana", "nombre": "la semana pasada" ,"name_folder":""},
-    { "id": 10, "name": "pasir phaxsi", "nombre": "el mes pasado" ,"name_folder":""},
-    { "id": 11, "name": "jutir mara", "nombre": "el año que viene" ,"name_folder":""},
-    { "id": 12, "name": "jutir phaxsi", "nombre": "próxima semana" ,"name_folder":""},
+    { "id": 8, "name": "pasïri mara", "nombre": "año pasado" ,"name_folder":""},
+    { "id": 9, "name": "pasïri simana / Laphana", "nombre": "la semana pasada" ,"name_folder":""},
+    { "id": 10, "name": "pasïri phaxsi", "nombre": "el mes pasado" ,"name_folder":""},
+    { "id": 11, "name": "jutïri mara", "nombre": "el año que viene" ,"name_folder":""},
+    { "id": 12, "name": "jutïri phaxsi", "nombre": "próxima semana" ,"name_folder":""},
     { "id": 13, "name": "ni kunawsa", "nombre": "nunca" ,"name_folder":""},
-    { "id": 14, "name": "lunis jayp'u", "nombre": "lunes por la tarde" ,"name_folder":""},
+    { "id": 14, "name": "phaxsi uru jayp'u", "nombre": "lunes por la tarde" ,"name_folder":""},
     { "id": 15, "name": "ukata", "nombre": "después" ,"name_folder":""},
     { "id": 16, "name": "jayp'u", "nombre": "tarde" ,"name_folder":""},
     { "id": 17, "name": "mara tukuya", "nombre": "fin de año" ,"name_folder":""},
-    { "id": 18, "name": "mara qallta", "nombre": "empiezo del año" ,"name_folder":""},
+    { "id": 18, "name": "mara qallta", "nombre": "inicio del año" ,"name_folder":""},
     { "id": 19, "name": "alwa", "nombre": "temprano, alba" ,"name_folder":""}
   ],
   "Lugar":
@@ -28,28 +28,28 @@
     { "id": 4, "name": "khayana", "nombre": "ahí" ,"name_folder":""},
     { "id": 5, "name": "patxa", "nombre": "encima" ,"name_folder":""},
     { "id": 6, "name": "aynacha", "nombre": "debajo" ,"name_folder":""},
-    { "id": 7, "name": "ukataypina", "nombre": "entre" ,"name_folder":""}
+    { "id": 7, "name": "uka taypina", "nombre": "entre" ,"name_folder":""}
   ],
   "Cantidad":
   [
     { "id": 1, "name": "alluxa", "nombre": "bastante" ,"name_folder":""},
-    { "id": 2, "name": "walja", "nombre": "mucho" ,"name_folder":""},
-    { "id": 3, "name": "sintipuni, ancha", "nombre": "demasiado" ,"name_folder":""},
+    { "id": 2, "name": "walja", "nombre": "mucho / bastante" ,"name_folder":""},
+    { "id": 3, "name": "sintipuni, ancha", "nombre": "demasiado siempre" ,"name_folder":""},
     { "id": 4, "name": "juk'ampi", "nombre": "más" ,"name_folder":""},
     { "id": 5, "name": "juk’a", "nombre": "menos, poco, apenas" ,"name_folder":""},
-    { "id": 6, "name": "janiwa", "nombre": "nada" ,"name_folder":""},
+    { "id": 6, "name": "janiwa", "nombre": "no" ,"name_folder":""},
     { "id": 7, "name": "wali", "nombre": "muy" ,"name_folder":""}
   ],
   "Duda":
   [
-    { "id": 1, "name": "Inasa", "nombre": "Acaso, Quizá, Tal vez" ,"name_folder":""},
+    { "id": 1, "name": "Inasa", "nombre": "Acaso, Quizá, Tal vez, Posiblemente" ,"name_folder":""},
     { "id": 2, "name": "ukhampuni", "nombre": "probablemente" ,"name_folder":""},
-    { "id": 3, "name": "inas ukham lurarakchispa", "nombre": "posiblemente" ,"name_folder":""},
+    { "id": 3, "name": "inasa ukhama lurarakchispa", "nombre": "posiblemente pueda hacerlo así" ,"name_folder":""},
     { "id": 4, "name": "ukhamäspawa", "nombre": "Puede ser" ,"name_folder":""}
   ],
   "Afirmación":
   [
-    { "id": 1, "name": "jan payachasisa", "nombre": "sin duda" ,"name_folder":""},
+    { "id": 1, "name": "jani payachasisa", "nombre": "sin duda" ,"name_folder":""},
     { "id": 2, "name": "chiqpachansa", "nombre": "en efecto, efectivamente, verdaderamente" ,"name_folder":""},
     { "id": 3, "name": "chiqa", "nombre": "cierto" ,"name_folder":""},
     { "id": 4, "name": "jisa", "nombre": "si" ,"name_folder":""},
@@ -62,14 +62,14 @@
     { "id": 1, "name": "janiwa", "nombre": "tampoco" ,"name_folder":""},
     { "id": 2, "name": "janiwa", "nombre": "nunca" ,"name_folder":""},
     { "id": 3, "name": "janiwa", "nombre": "no" ,"name_folder":""},
-    { "id": 4, "name": "janiwa", "nombre": "jamás" ,"name_folder":""}
+    { "id": 4, "name": "janipuniwa", "nombre": "jamás" ,"name_folder":""}
   ],
   "Modo":
   [
     { "id": 1, "name": "ukhamaki", "nombre": "simplemente" ,"name_folder":""},
     { "id": 2, "name": "chiqpachansa", "nombre": "sinceramente" ,"name_folder":""},
-    { "id": 3, "name": "wali jach’anchatawa", "nombre": "ampliamente" ,"name_folder":""},
-    { "id": 4, "name": "chiqachaña", "nombre": "regular" ,"name_folder":""},
+    { "id": 3, "name": "wali jach’anchatawa", "nombre": "ampliamente / está agrandado" ,"name_folder":""},
+    { "id": 4, "name": "chiqachaña", "nombre": "regular / enderezar" ,"name_folder":""},
     { "id": 5, "name": "waliki", "nombre": "bien" ,"name_folder":""}
   ]
   }

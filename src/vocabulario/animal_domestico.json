@@ -17,23 +17,23 @@
   { "id": 14, "name": "Wallpa", "nombre": "gallina" ,"name_folder":"img_animal_dom2"}
 ],
 "insectos":[
-  { "id": 1, "name": "Laqu", "nombre": "gusano" ,"name_folder":"img-animal_insec"},
+  { "id": 1, "name": "Laq'u", "nombre": "gusano" ,"name_folder":"img-animal_insec"},
   { "id": 2, "name": "Ch’uspi", "nombre": "mosquito" ,"name_folder":"img-animal_insec"},
   { "id": 3, "name": "K’uti", "nombre": "pulga" ,"name_folder":"img-animal_insec"},
   { "id": 4, "name": "Lap’a", "nombre": "piojo" ,"name_folder":"img-animal_insec"},
   { "id": 5, "name": "Ch’iñi", "nombre": "liendre" ,"name_folder":"img-animal_insec"},
   { "id": 6, "name": "Sut’i", "nombre": "nigua" ,"name_folder":"img-animal_insec"},
-  { "id": 7, "name": "Chhichhilinka", "nombre": "mosca" ,"name_folder":"img-animal_insec"},
+  { "id": 7, "name": "Chhichhirankha", "nombre": "mosca" ,"name_folder":"img-animal_insec"},
   { "id": 8, "name": "Wayrunqu", "nombre": "moscardón" ,"name_folder":"img-animal_insec"},
   { "id": 9, "name": "Jamak’u", "nombre": "garrapata" ,"name_folder":"img-animal_insec"},
   { "id": 10, "name": "Thutha", "nombre": "polilla" ,"name_folder":"img-animal_insec"},
   { "id": 11, "name": "K’isimiri", "nombre": "hormiga" ,"name_folder":"img-animal_insec"},
-  { "id": 12, "name": "Siripita", "nombre": "grillo" ,"name_folder":"img-animal_insec"},
+  { "id": 12, "name": "Siripita / T'isku t'isku", "nombre": "grillo" ,"name_folder":"img-animal_insec"},
   { "id": 13, "name": "Pilpintu", "nombre": "mariposa" ,"name_folder":"img-animal_insec"},
   { "id": 14, "name": "Nina nina", "nombre": "luciérnaga" ,"name_folder":"img-animal_insec"},
   { "id": 15, "name": "Tamuraya, pupa", "nombre": "abeja" ,"name_folder":"img-animal_insec"},
-  { "id": 16, "name": "Tanqa tanqa", "nombre": "escarabajo" ,"name_folder":"img-animal_insec"},
-  { "id": 17, "name": "Tixi tixi", "nombre": "saltamontes" ,"name_folder":"img-animal_insec"},
+  { "id": 16, "name": "Jama tanqa", "nombre": "escarabajo" ,"name_folder":"img-animal_insec"},
+  { "id": 17, "name": "T'iju t'iju", "nombre": "saltamontes" ,"name_folder":"img-animal_insec"},
   { "id": 18, "name": "Kusikusi", "nombre": "araña " ,"name_folder":"img-animal_insec"}
 ],
 "silvestres": [

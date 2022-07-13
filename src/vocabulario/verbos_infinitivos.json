@@ -9,7 +9,7 @@
   { "id": 8, "name": "Sawuña", "nombre": "tejer, en telar" ,"name_folder":""},
   { "id": 9, "name": "Munaña", "nombre": "quere, amar" ,"name_folder":""},
   { "id": 10, "name": "Thuquña", "nombre": "bailar" ,"name_folder":""},
-  { "id": 11, "name": "Awatiña", "nombre": "pastear" ,"name_folder":""},
+  { "id": 11, "name": "Awatiña", "nombre": "pastar" ,"name_folder":""},
   { "id": 12, "name": "Churaña", "nombre": "dar" ,"name_folder":""},
   { "id": 13, "name": "Mantaña", "nombre": "entrar" ,"name_folder":""},
   { "id": 14, "name": "Mistuña", "nombre": "salir" ,"name_folder":""},
@@ -22,7 +22,7 @@
   { "id": 21, "name": "Jikisiña", "nombre": "encontrarse" ,"name_folder":""},
   { "id": 22, "name": "Ist’aña", "nombre": "escuchar" ,"name_folder":""},
   { "id": 23, "name": "Alaña", "nombre": "comprar" ,"name_folder":""},
-  { "id": 24, "name": "Aljaña", "nombre": "vender" ,"name_folder":""},
+  { "id": 24, "name": "Alxaña", "nombre": "vender" ,"name_folder":""},
   { "id": 25, "name": "Jachaña", "nombre": "llorar" ,"name_folder":""},
   { "id": 26, "name": "Irnaqaña", "nombre": "trabajar" ,"name_folder":""},
   { "id": 27, "name": "Chhaqaña", "nombre": "perder" ,"name_folder":""},
@@ -32,7 +32,7 @@
   { "id": 31, "name": "Samaraña", "nombre": "descansar" ,"name_folder":""},
   { "id": 32, "name": "Qillqaña", "nombre": "escribir" ,"name_folder":""},
   { "id": 33, "name": "Ajlliña", "nombre": "escoger" ,"name_folder":""},
-  { "id": 34, "name": "Liyiña", "nombre": "leer" ,"name_folder":""},
+  { "id": 34, "name": "ullaña", "nombre": "leer" ,"name_folder":""},
   { "id": 35, "name": "Qallt’aña", "nombre": "comenzar" ,"name_folder":""},
   { "id": 36, "name": "Tukuña", "nombre": "terminar" ,"name_folder":""},
   { "id": 37, "name": "Yanapaña", "nombre": "ayudar" ,"name_folder":""},
@@ -52,7 +52,7 @@
   { "id": 51, "name": "Jawsaña", "nombre": "llamar" ,"name_folder":""},
   { "id": 52, "name": "Jaquña", "nombre": "tirar, botar" ,"name_folder":""},
   { "id": 53, "name": "Jaqsuña", "nombre": "expulsar, echar" ,"name_folder":""},
-  { "id": 54, "name": "Jiskt’aña, chikt’añ", "nombre": "preguntar" ,"name_folder":""},
+  { "id": 54, "name": "Jiskt’aña, chikt’aña", "nombre": "preguntar" ,"name_folder":""},
   { "id": 55, "name": "Uñjaña", "nombre": "ver, mirar" ,"name_folder":""},
   { "id": 56, "name": "Katuña", "nombre": "agarrar" ,"name_folder":""},
   { "id": 57, "name": "Waraña", "nombre": "verter líquido" ,"name_folder":""},
@@ -71,5 +71,5 @@
   { "id": 70, "name": "Jariña", "nombre": "lavar" ,"name_folder":""},
   { "id": 71, "name": "Jamp’atiña", "nombre": "besar" ,"name_folder":""},
   { "id": 72, "name": "Chhuxuña", "nombre": "orinar" ,"name_folder":""},
-  { "id": 73, "name": "Jamaña", "nombre": "defecar" ,"name_folder":""}
+  { "id": 73, "name": "Jamaraña", "nombre": "defecar" ,"name_folder":""}
 ]

@@ -21,15 +21,15 @@
 ],
 "Campo_silvestre":[
   { "id": 1, "name": "Juqhu", "nombre": "bofedal" ,"name_folder":"img-chacra/silvestre"},
-  { "id": 2, "name": "Ichu, wichhu", "nombre": "paja brava" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 2, "name": "Iru jichhu", "nombre": "paja brava" ,"name_folder":"img-chacra/silvestre"},
   { "id": 3, "name": "Waylla", "nombre": "paja amarilla" ,"name_folder":"img-chacra/silvestre"},
   { "id": 4, "name": "Siwinqa", "nombre": "cortadera" ,"name_folder":"img-chacra/silvestre"},
-  { "id": 5, "name": "Llapa", "nombre": "grama" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 5, "name": "Ch'iji", "nombre": "grama" ,"name_folder":"img-chacra/silvestre"},
   { "id": 6, "name": "Qura", "nombre": "yerba" ,"name_folder":"img-chacra/silvestre"},
   { "id": 7, "name": "Chhuxlla", "nombre": "pasto, yerba" ,"name_folder":"img-chacra/silvestre"},
   { "id": 8, "name": "Ch’iji", "nombre": "chépica silvestre" ,"name_folder":"img-chacra/silvestre"},
   { "id": 9, "name": "Ayawi", "nombre": "totora" ,"name_folder":"img-chacra/silvestre"},
-  { "id": 10, "name": "Saq’arara", "nombre": "llantén" ,"name_folder":"img-chacra/silvestre"},
+  { "id": 10, "name": "Saqharara", "nombre": "llantén" ,"name_folder":"img-chacra/silvestre"},
   { "id": 11, "name": "Q’uwa", "nombre": "planta ceremonial" ,"name_folder":"img-chacra/silvestre"},
   { "id": 12, "name": "Sillik’aya", "nombre": "romero" ,"name_folder":"img-chacra/silvestre"},
   { "id": 13, "name": "Sayri", "nombre": "tabaco" ,"name_folder":"img-chacra/silvestre"}
