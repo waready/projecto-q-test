@@ -40,7 +40,7 @@
             <q-banner inline-actions class="text-white bg-red">
               No se han encontrado resultados para tu búsqueda
               <template v-slot:action>
-                
+
                 <q-btn flat color="white" icon="close" @click="close_mensaje"/>
               </template>
             </q-banner>
@@ -69,9 +69,9 @@
           <div class="q-mr-md">
             <div class="text-weight-bold">{{modal.nombre}}</div>
             <div class="text-grey">{{modal.name}}</div>
-            
+
           </div>
-          <audio controls autoplay id="audio1" @timeupdate="play()">
+          <audio controls controlsList="nodownload" autoplay id="audio1" @timeupdate="play()">
             <source src="statics/audio/y2meta.mp3" type="audio/ogg">
             <source src="statics/audio/y2meta.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -80,7 +80,7 @@
             <q-btn flat round icon="replay_circle_filled" @click="replay()" />
           <!--q-btn flat round icon="fast_rewind" />
           // <q-btn flat round icon="pause" /-->
-          
+
         </q-card-section>
       </q-card>
     </q-dialog>
@@ -113,7 +113,7 @@
           }
         };
       },
-      
+
       computed: {
         datoFiltrado() {
           // var castellano= objeto.nombre.toUpperCase()
@@ -127,7 +127,7 @@
             );
           });
         },
-        
+
       },
     methods: {
       close_mensaje(){
@@ -150,7 +150,7 @@
       }
     },
     play(){
-    
+
       if(this.dialog){
         function calculateTotalValue(length) {
             var minutes = Math.floor(length / 60),
@@ -233,7 +233,7 @@
 }
 /* ------------------contenedor padre----------------------------------- */
 .contenedor{
-    
+
     display: grid;
     /* border: solid black 10px; */
     max-width: 1440px;
@@ -272,7 +272,7 @@
       grid-template-columns: repeat(3, 1fr);
       /* grid-template-rows: repeat(5, auto); */
       grid-template-areas: " card card card ";
-      
+
     }
     .contenedor>div:last-child{
       grid-column: 2/3;

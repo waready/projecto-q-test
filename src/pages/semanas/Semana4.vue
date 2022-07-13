@@ -289,7 +289,7 @@
             <div class="text-weight-bold">{{ modal.nombre }}</div>
             <div class="text-grey">{{ modal.name }}</div>
           </div>
-          <audio controls autoplay id="audio1" @timeupdate="play()">
+          <audio controls controlsList="nodownload" autoplay id="audio1" @timeupdate="play()">
             <source :src="'statics/audio/semana4/'+modal.audio+'.mp3'" type="audio/ogg" />
             <source :src="'statics/audio/semana4/'+modal.audio+'.mp3'" type="audio/mpeg" />
             Your browser does not support the audio element.
@@ -343,7 +343,7 @@ export default {
   },
    methods: {
     play(){
-    
+
       if(this.dialog){
         function calculateTotalValue(length) {
             var minutes = Math.floor(length / 60),
